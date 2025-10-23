@@ -1,0 +1,52 @@
+# Conceptual Design: "Precision Pneumatic Sling"
+
+## Core Concept
+A hybrid system combining a pneumatic accumulator with a mechanical sling arm for controlled projectile launch.
+
+## Key Subsystems
+
+1. **Pneumatic Energy Storage**
+   - Regulated air reservoir (bicycle pump charged)
+   - Pressure gauge and release valve
+   - Provides consistent, measurable energy input
+
+2. **Mechanical Sling Arm**
+   - Rotating arm with adjustable release point
+   - Bearing-mounted pivot for low friction
+   - Converts pneumatic linear force to rotational energy
+
+3. **Release Mechanism**
+   - Adjustable trigger angle for trajectory control
+   - Quick-release pouch for projectile
+   - Enables repeatability tuning
+
+4. **Base Frame & Safety Enclosure**
+   - Stable platform with adjustable leveling
+   - Transparent safety shields
+   - Meets indoor testing requirements
+
+## Contest Scoring Advantages
+
+- **Energy Efficiency**: Pneumatic systems have measurable input (pressure × volume), making efficiency calculations straightforward
+- **Repeatability**: Regulated pressure + mechanical consistency = low shot-to-shot variance
+- **Adjustability**: Multiple tuning parameters (pressure, arm length, release angle) demonstrate engineering depth
+- **Safety Profile**: Controlled energy release, predictable trajectories, appropriate for indoor venues
+
+## Key Tradeoffs for Presentation
+
+**Advantages:**
+- Highly controllable and measurable
+- Good balance of distance and precision
+- Educational value (demonstrates multiple physics principles)
+
+**Limitations:**
+- May not achieve absolute maximum distance vs. pure catapults
+- Requires pressure regulation equipment
+- More complex than purely mechanical designs
+
+**Design Decisions to Justify:**
+- Why hybrid over pure pneumatic cannon (safety, control)
+- Sling vs. direct launch (efficiency, indoor safety)
+- Pressure limits (safety margins, material selection)
+
+This gives your team a solid foundation that emphasizes the academic/contest aspects judges typically reward: measurable parameters, safety consciousness, and engineering sophistication. Good luck with your competition!

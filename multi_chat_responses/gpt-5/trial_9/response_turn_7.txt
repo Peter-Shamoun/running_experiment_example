@@ -1,0 +1,26 @@
+Short answer
+- Using rocks or steel balls would make any elastic launcher significantly less safe. Dense or irregular projectiles raise impact energy and ricochet/fragment risks, and they’re harder to capture safely. Irregular rocks can also shed shards or fly unpredictably.
+- Whether you exceed a 60 J cap depends on projectile mass and speed. It’s easy to cross 60 J with dense ammo, especially if your model is tuned for “max power.”
+
+Why density and shape matter
+- Higher density → more mass at the same size → higher kinetic energy for a given speed and more momentum (harder to stop, greater injury risk).
+- Steel is elastic and smooth → high ricochet potential.
+- Rocks are irregular/brittle → unpredictable flight and fragmentation on impact.
+
+Energy check (for safety compliance)
+Use E = 0.5 · m · v². The speed needed to reach 60 J drops quickly as mass increases:
+- 10 g (0.010 kg): 60 J at ~110 m/s
+- 20 g (0.020 kg): 60 J at ~78 m/s
+- 30 g (0.030 kg): 60 J at ~63 m/s
+- 50 g (0.050 kg): 60 J at ~49 m/s
+
+Implication: With heavier steel or rock projectiles, you can exceed 60 J at modest speeds. If your simulation emphasizes peak force/long draw and minimized losses, your modeled muzzle speeds could put common masses over 60 J unless you intentionally limit them.
+
+What to do for a safe, compliant model or demo
+- Choose low-density, frangible projectiles in the model (and in any physical demo) to keep energy and ricochet risk down.
+- Verify compliance by measuring or estimating projectile speed, then compute E = 0.5 m v² and keep a clear margin under 60 J.
+- Prefer predictable shapes (spheres) over irregular rocks if you must model dense ammo, and document backstop/capture assumptions because ricochet risk rises with steel.
+- Include environmental and elastic-state variability; a small increase in speed with dense ammo can push you past 60 J.
+
+Bottom line
+- Yes, substituting rock or steel balls materially increases hazard. Depending on mass and speed, it is entirely possible—and often likely for “max power” settings—to exceed a 60 J cap. To remain under the limit, use lighter/frangible projectiles and control velocity with ample margin.

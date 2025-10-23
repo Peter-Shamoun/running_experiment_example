@@ -1,0 +1,45 @@
+Short answer: a slingshot-class launcher changes the whole system architecture because the energy store, force profile, and release mechanics are elastomer-dominated rather than flywheel/cam‑dominated. That shifts the optimization toward managing viscoelastic behavior, temperature effects, and release consistency rather than gearing, cam profiles, and gyroscopic neutrality.
+
+Key ways the design differs vs. the flywheel cam concept
+
+- Energy storage and force profile
+  - Slingshot: elastomer bands/tubes with highly nonlinear, rate- and temperature-dependent force–elongation, hysteresis, and creep. Stored energy is set by draw length and pre-tension. Efficiency varies with pull speed and band condition.
+  - Flywheel/cam: nearly time‑invariant stored energy with a designed acceleration profile. Easier to meter repeatably.
+  - Implication: more emphasis on characterizing bands, preconditioning cycles, and operating temperature; possibly using band packs or pulley/lever geometries to “linearize” the force curve.
+
+- Energy metering and repeatability
+  - Slingshot: shot‑to‑shot velocity varies with small changes in draw length, anchor consistency, and band aging. Add simple metering aids (fixed draw stops, reference anchors, and a tension indicator) to stabilize outputs.
+  - Flywheel/cam: velocity is governed by a mechanical transfer profile and stored energy readout.
+  - Implication: instrumentation focuses on draw length and band tension rather than flywheel RPM and cam timing.
+
+- Release mechanics and guidance
+  - Slingshot: a soft pouch and finger/mechanical release introduce lateral asymmetry and angular dispersion; projectile exits without a rigid guide.
+  - Flywheel/cam: rigid rail/tube and sabot enable controlled launch angle and reduced yaw.
+  - Implication: prioritize a clean, symmetric release (low-torque pouch geometry, low‑friction mechanical release) and a short alignment guide to tame initial tip‑off, while accepting more dispersion than rail launches.
+
+- Ergonomics and user scaling (for ~5'10" user)
+  - Slingshot: adjustability in draw length and pre‑tension is crucial; provide interchangeable anchor/reference points so users can reproduce the same stance and anchor location. Handle geometry should minimize wrist torque from band misalignment.
+  - Flywheel/cam: primary ergonomics revolve around crank reach, gearing, and sight alignment.
+  - Implication: make draw stops, grip angle, and fork spacing adjustable to accommodate body size while keeping the band path centered.
+
+- Structural loading and material focus
+  - Slingshot: frame sees fork bending and grip torsion from band tension; elastomer governs most losses. Material criteria: stiffness-to-weight (to limit fork tip deflection), fatigue resistance at clamp points, and damping for user comfort. Elastomer criteria: low hysteresis, stable modulus across expected temperature, good fatigue life.
+  - Flywheel/cam: structure resists drivetrain torques and rail straightness; material criteria center on precision and bearing alignment.
+  - Implication: a stiff, lightweight fork (e.g., fiber‑reinforced composite or thick‑section polymer/aluminum) with generous radii at band interfaces to avoid stress risers; avoid exact dimensions in favor of validating deflection under expected band forces in analysis.
+
+- Control and aiming
+  - Slingshot: anchor-point repeatability and sighting references dominate; micro-adjustable rests or peep references help, but the human release still adds variability.
+  - Flywheel/cam: mechanical trigger timing and rigid guidance yield inherently tighter groups.
+  - Implication: invest contest effort in simple, robust referencing (fixed anchor, level bubble, consistent stance markers) and a velocity chronograph to calibrate draw to range.
+
+- Environmental sensitivity and maintenance
+  - Slingshot: performance drifts with temperature, UV exposure, and cycle count; bands need periodic replacement and preconditioning.
+  - Flywheel/cam: performance drifts mainly with bearing drag and belt tension over longer intervals.
+  - Implication: include a warm‑up protocol and temperature note in your test plan to normalize elastomer behavior for judging.
+
+- Scoring outlook and tradeoffs
+  - Strengths of slingshot approach: low mass and part count, fast cadence, approachable human factors, easy field adjustment.
+  - Weak spots vs. flywheel/cam: more dispersion and velocity spread unless carefully metered; efficiency lost to hysteresis and release friction.
+  - Tradeoffs to present: simplicity and throughput versus ultimate precision; adjustability versus band-life and calibration stability.
+
+If you want to stay “slingshot-like” but move toward contest-grade repeatability, consider a high-level hybrid: an elastomer-powered linear rail launcher with a mechanical draw stop, centered band path, and a symmetric low‑torque release. It preserves the human‑friendly feel of bands while gaining some of the guidance and metering benefits—without the complexity of flywheels and cams.

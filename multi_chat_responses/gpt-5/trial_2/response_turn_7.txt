@@ -1,0 +1,30 @@
+Short answer
+- Using rock or steel spheres would be unsafe in practice and, in your “max‑power” simulation, very likely non‑compliant on energy unless you strictly cap speed or limit projectile mass.
+- Why unsafe: denser/harder projectiles carry more kinetic energy for the same speed, penetrate more, and ricochet violently. Rocks add irregular shape, off‑axis release, fragmentation, and unpredictable flight.
+
+Why energy would exceed the 60 J cap (math‑light)
+- Kinetic energy is E = 0.5 · m · v². For a fixed speed v, denser projectiles (steel, stone) make m larger and push E up.
+- Your max‑power variant assumes very high peak band force and long draw, so simulated muzzle speeds that are modest for light polymer ammo can push dense ammo over the cap.
+
+60 J “threshold speeds” for typical steel spheres (so you can sanity‑check your sim)
+- 10 mm dia steel (≈4.1 g): needs v ≥ ~171 m/s to hit 60 J.
+- 12.7 mm (½ in, ≈8.4 g): v ≥ ~119 m/s to hit 60 J.
+- 16 mm (≈16.8 g): v ≥ ~85 m/s to hit 60 J.
+- 20 mm (≈33.5 g): v ≥ ~60 m/s to hit 60 J.
+Interpretation:
+- Larger steel balls exceed 60 J at comparatively modest speeds (e.g., a 20 mm sphere at ~60 m/s is already ~60 J).
+- Smaller steel balls need very high speeds to reach 60 J, but your max‑force, long‑draw model can plausibly push lighter ammo into that regime in simulation.
+
+Rocks vs. steel
+- Density: typical rock (~2600 kg/m³) is ~1/3 the density of steel (~7850 kg/m³), so a rock of the same size has ~1/3 the mass. It therefore needs ~√3 (~1.7×) higher speed than steel of the same size to reach 60 J. Still, irregular shape and fragmentation make rocks particularly unsafe.
+- Ricochet and damage risk are higher with steel due to hardness and elasticity; rock can shatter unpredictably.
+
+How to keep a sim under 60 J (if required)
+- Use the cap directly: for a given simulated speed v, keep m ≤ 2Ecap / v². Examples:
+  - At 50 m/s, m ≤ 48 g to stay ≤ 60 J.
+  - At 70 m/s, m ≤ 24.5 g.
+  - At 100 m/s, m ≤ 12 g.
+- Or pick a low‑density projectile material/size so that even at your modeled speeds the product 0.5·m·v² stays below 60 J.
+
+Bottom line
+- In a max‑power slingshot simulation, substituting rock or steel greatly increases the chance of exceeding 60 J and introduces additional safety hazards (ricochet, penetration, fragmentation). Treat dense projectiles as non‑compliant by default unless your model explicitly shows m and v combinations that keep E ≤ 60 J. For safer, compliant scenarios, use low‑density, smooth, symmetric projectiles and cap the simulated velocity accordingly.

@@ -1,0 +1,70 @@
+Great question. A “simple slingshot” (elastic bands + fork + pouch) is a very different class of launcher than a flywheel-driven linear mass driver. Here’s how the design philosophy and subsystems would differ at a high level, with emphasis on contest-relevant metrics.
+
+System architecture differences
+- Energy storage and transfer
+  - Slingshot: Elastic bands store energy with a highly nonlinear force–extension curve; the human both charges and times the release. Energy transfer is impulsive and short in duration.
+  - Flywheel linear driver: Rotational inertia stores energy; a metered transfer drives a carriage over a controlled acceleration distance. Human effort is decoupled from the release.
+- Release mechanics
+  - Slingshot: Pouch/finger or mechanical “D-loop/trigger” style release; minor asymmetries strongly affect tip-off and dispersion.
+  - Linear driver: Rigid, inline release geometry that minimizes off-axis torque and reduces shot-to-shot variability.
+- Guidance and alignment
+  - Slingshot: No constrained barrel; projectile alignment depends on pocket geometry and band symmetry. Small misalignments change exit angle significantly.
+  - Linear driver: Constrained track and inline exit keep the launch vector fixed.
+
+Implications for contest scoring
+- Distance (exit velocity)
+  - Slingshot: Peak exit velocity can be high for light projectiles, but elastic hysteresis and air drag on bands limit efficiency; performance depends strongly on band condition and temperature.
+  - Linear driver: Higher mechanical efficiency and longer acceleration path generally yield more speed per unit human work.
+- Precision and repeatability
+  - Slingshot: Variability arises from draw length consistency, release timing, band symmetry, and operator form; precision improves with jigs and consistent anchors but remains operator-sensitive.
+  - Linear driver: Decoupled energy storage and fixed geometry reduce human-in-the-loop variability, improving grouping.
+- Energy efficiency
+  - Slingshot: Losses from elastic hysteresis and pouch/finger release; efficiency drops as bands age.
+  - Linear driver: Losses dominated by bearings, clutch slip, and track friction—more stable and measurable over time.
+- Cycle time and portability
+  - Slingshot: Extremely compact, instant reset, minimal setup.
+  - Linear driver: Heavier, slower to cycle (spin-up), but more controlled.
+
+Subsystem mapping (what changes)
+- Human input
+  - Slingshot: Direct draw with body posture as the “drive train.” Ergonomics focus on comfortable anchor, wrist support, and stable stance.
+  - Linear driver: Pedals/cranks + gearing isolate cadence from launch.
+- Energy storage
+  - Slingshot: Elastomer bands or tubes; performance varies with temperature, strain rate, and aging.
+  - Linear driver: Flywheel with measurable, repeatable stored energy (e.g., RPM).
+- Aiming and release
+  - Slingshot: Sights/anchor references mitigate aim variability; a mechanical release can reduce lateral torque, but alignment is still sensitive.
+  - Linear driver: Gimbaled mount and fixed release plane set angles precisely.
+- Instrumentation for consistency
+  - Slingshot: Draw-length indicator and band condition log; optional simple draw-force reference.
+  - Linear driver: Speed indicator, angle/azimuth scales, and clutch setting marks.
+
+Ergonomics and scaling (high level)
+- Slingshot
+  - Key dimension is draw length relative to the user’s wingspan and comfortable anchor point; consistency of anchor is critical to precision.
+  - Fork width and handle geometry aim to maintain neutral wrist alignment and clear projectile path.
+  - Operator training has outsized impact on repeatability.
+- Linear driver
+  - Scales to user via pedal/seat/handle positions; the device geometry carries the consistency burden rather than the operator.
+
+Structural and load considerations (conceptual, non-numeric)
+- Slingshot
+  - Peak loads occur at full draw; forks see a concentrated bending moment at the root and asymmetric loading if bands are not perfectly matched.
+  - The frame benefits from high stiffness-to-weight and good fatigue resistance; elastomers are the life-limited element.
+- Linear driver
+  - Loads are distributed along the track and through bearings/clutch; peak forces are lower but act over longer durations; stiffness of the frame governs alignment and release repeatability.
+
+Tradeoffs to highlight in a presentation
+- Consistency vs simplicity
+  - Slingshot: Simple and portable but operator- and environment-sensitive; repeatability is harder.
+  - Linear driver: Mechanically complex but delivers tighter control and measurability.
+- Maintenance and degradation
+  - Slingshot: Performance drifts with band wear and temperature.
+  - Linear driver: Performance tied to mechanical clearances and lubrication; more stable over a test session.
+- Safety envelope and control
+  - Slingshot: Immediate, impulsive release with limited energy metering; fewer “abort” options once drawn.
+  - Linear driver: Multiple gated steps (spin-up, arm, release) allow controlled operations and clearer range procedures.
+
+Bottom line
+- If contest scoring rewards precision, repeatability, and energy accounting, the flywheel linear driver architecture is inherently better aligned.
+- If weight, simplicity, and rapid setup are prioritized, a slingshot-style elastic system is lighter and faster but will need strong procedural controls (consistent anchors, band matching, environmental notes) to be competitive on precision.

@@ -1,0 +1,20 @@
+Using rock or steel balls instead of the designed aluminum projectile would significantly increase the potential for injury or damage. Here's why:
+
+1. **Mass and velocity:** Rock or steel balls are much denser and heavier than aluminum, which means they would have a higher kinetic energy when launched. This would result in a higher velocity and a greater potential for damage.
+2. **Impact force:** The impact force of a rock or steel ball would be much higher than that of an aluminum projectile. This is because the denser material would transfer more energy to the target upon impact.
+3. **Safety cap:** The safety cap of 60J is intended to prevent injuries from projectiles that are too powerful. Using rock or steel balls would likely exceed this safety cap, potentially causing serious harm to people or objects in the surrounding area.
+
+To estimate the potential impact force of a rock or steel ball, let's consider the following:
+
+* **Density:** Rock: 2.5-3.0 g/cm³, Steel: 7.9-8.1 g/cm³
+* **Mass:** Assuming a similar size to the aluminum projectile (20mm x 10mm x 70mm), the mass of a rock or steel ball would be significantly higher:
+	+ Rock: approximately 100-120 grams (3.5-4.3 oz)
+	+ Steel: approximately 300-350 grams (10.6-12.3 oz)
+* **Velocity:** Assuming the same launch speed as the aluminum projectile (approximately 50 m/s), the rock or steel ball would have a higher kinetic energy due to its increased mass.
+* **Impact force:** Using the formula for impact force (F = (m \* v^2) / (2 \* r)), where m is the mass, v is the velocity, and r is the radius of the projectile, we can estimate the impact force:
+	+ Rock: approximately 1,250-1,500 N (280-340 lbf)
+	+ Steel: approximately 3,500-4,000 N (790-900 lbf)
+
+These estimates suggest that using rock or steel balls instead of the designed aluminum projectile would significantly increase the potential for injury or damage. The impact force would likely exceed the safety cap of 60J, and the risk of serious harm to people or objects in the surrounding area would be much higher.
+
+In conclusion, while the UHPS design is impressive, it is not suitable for use with rock or steel balls. The increased mass and velocity of these projectiles would make them much more hazardous, and the potential for injury or damage would be significantly higher.

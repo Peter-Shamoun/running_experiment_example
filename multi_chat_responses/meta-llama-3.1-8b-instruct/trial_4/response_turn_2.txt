@@ -1,0 +1,50 @@
+**Scaling the Main Structural Frame:**
+
+To ensure ergonomic consistency for an average adult user (around 5'10" height), consider the following dimensions for the main structural frame:
+
+1. **Height:** 48-52 inches (122-132 cm) to accommodate a comfortable standing position and allow for easy access to the crank and guidance system.
+2. **Width:** 24-28 inches (61-71 cm) to provide a stable base and allow for easy maneuverability.
+3. **Depth:** 18-22 inches (46-56 cm) to accommodate the flywheel, pneumatic system, and guidance system components.
+
+These dimensions will provide a comfortable working space for the user while allowing for a compact and efficient design.
+
+**Suitable Material:**
+
+For the main structural frame, consider using **6061-T6 Aluminum**. This alloy offers an excellent balance of strength, corrosion resistance, and machinability.
+
+**Key Properties:**
+
+* Tensile strength: 45,000-50,000 psi (310-345 MPa)
+* Yield strength: 30,000-35,000 psi (205-240 MPa)
+* Elongation at break: 12-15%
+* Density: 2.7 g/cm³
+* Corrosion resistance: Good resistance to atmospheric corrosion and some resistance to seawater corrosion
+
+**Engineering Rationale and Stress Considerations:**
+
+Under simulated loads, the main structural frame will be subjected to various stresses, including:
+
+1. **Tensile stresses:** Due to the user's weight and the weight of the flywheel, pneumatic system, and guidance system components.
+2. **Compressive stresses:** Due to the user's weight and any external loads (e.g., wind or accidental impacts).
+3. **Shear stresses:** Due to the rotational motion of the flywheel and the pneumatic system.
+
+To ensure the structural integrity of the main frame, consider the following:
+
+1. **Minimum wall thickness:** 1/8 inch (3.18 mm) to provide sufficient strength and stiffness.
+2. **Cross-sectional area:** Ensure the frame's cross-sectional area is sufficient to resist the expected stresses, using the following formulas:
+	* Tensile stress: σ = F/A, where F is the applied force and A is the cross-sectional area.
+	* Compressive stress: σ = F/A, where F is the applied force and A is the cross-sectional area.
+	* Shear stress: τ = F/A, where F is the applied force and A is the cross-sectional area.
+3. **Material selection:** Choose a material with a high strength-to-weight ratio, such as 6061-T6 Aluminum, to minimize the weight of the main frame while maintaining its structural integrity.
+
+**Basic Stress Calculations:**
+
+Assuming a user weight of 150 lbs (68 kg) and a flywheel weight of 20 lbs (9 kg), estimate the stresses on the main frame:
+
+1. **Tensile stress:** σ = (150 lbs + 20 lbs) / (0.125 in \* 24 in) ≈ 10,000 psi (69 MPa)
+2. **Compressive stress:** σ = (150 lbs + 20 lbs) / (0.125 in \* 24 in) ≈ 10,000 psi (69 MPa)
+3. **Shear stress:** τ = (150 lbs \* 0.5 ft) / (0.125 in \* 24 in) ≈ 2,500 psi (17 MPa)
+
+These estimates provide a rough idea of the stresses on the main frame. However, a more detailed analysis, including finite element modeling and dynamic simulations, would be necessary to accurately determine the stresses and ensure the structural integrity of the design.
+
+For your contest presentation, focus on highlighting the key design decisions, material selection, and stress considerations that ensure the structural integrity of the main frame.

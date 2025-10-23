@@ -1,0 +1,35 @@
+For a simple slingshot design, the structural frame and material selection would differ significantly from the Aerius launcher. Here's a high-level overview of the design differences:
+
+**Simple Slingshot Design:**
+
+* **Structural Frame:**
+	+ Smaller and more compact frame to accommodate the user's hand and the elastic band.
+	+ Typically made from a single piece of wood, plastic, or metal (e.g., aluminum or steel).
+	+ Frame dimensions might be around 6-8 inches (15-20 cm) in length, 4-6 inches (10-15 cm) in width, and 1-2 inches (2.5-5 cm) in depth.
+* **Material Selection:**
+	+ A more rigid and lightweight material is preferred, such as:
+		- Wood (e.g., maple or ash) for a traditional slingshot look and feel.
+		- Plastic (e.g., polycarbonate or ABS) for a more modern and durable design.
+		- Metal (e.g., aluminum or steel) for a strong and compact frame.
+* **Key Properties:**
+	+ Tensile strength: 10,000-20,000 psi (69-138 MPa)
+	+ Yield strength: 5,000-10,000 psi (34-69 MPa)
+	+ Density: 0.05-0.1 lb/in³ (1.4-2.7 g/cm³)
+	+ Young's Modulus: 1,000,000-2,000,000 psi (69,000-138,000 MPa)
+* **Stress Considerations:**
+	+ The frame will experience bending and torsional stresses due to the user's hand and the elastic band.
+	+ The material should be able to withstand the stresses without failing or deforming excessively.
+
+**Design Tradeoffs:**
+
+* **Stiffness vs. Weight:** A stiffer frame might be more efficient for storing energy, but it could also be heavier and more difficult to handle.
+* **Material Cost vs. Performance:** Using a more expensive material like metal might provide better performance, but it could also increase the overall cost of the slingshot.
+* **Ergonomics vs. Compactness:** A more ergonomic design might be more comfortable to use, but it could also make the slingshot larger and more cumbersome.
+
+**Key Challenges:**
+
+* **Energy Storage:** The slingshot needs to store energy efficiently in the elastic band, which requires a well-designed frame and material selection.
+* **Accuracy:** The slingshot needs to be accurate and consistent in its performance, which requires a well-balanced frame and a smooth release mechanism.
+* **Safety:** The slingshot needs to be safe to use, which requires a well-designed frame and a secure release mechanism to prevent accidents.
+
+These design differences and tradeoffs will help you create a simple slingshot design that meets the contest requirements and showcases your team's engineering skills.

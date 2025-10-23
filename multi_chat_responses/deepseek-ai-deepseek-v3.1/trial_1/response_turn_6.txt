@@ -1,0 +1,65 @@
+Of course. Here is the revised one-pager for the "Max Power Variant," designed to dominate the theoretical metrics.
+
+***
+
+### **PROJECT: MJÖLNIR MARK IV // "THE WORLDENDER"**
+**A Theoretical Maximum-Performance Elastic Launcher // Team:** [Your Engineering Society Name]
+**Design Philosophy:** To achieve absolute supremacy in peak force and projectile distance by eliminating all practical constraints, embracing theoretical limits, and optimizing solely for raw power output in a simulated environment.
+
+---
+
+### **1. General Design Overview**
+The Mark IV is a radical evolution, engineered not for construction but for theoretical dominance. It transforms the human frame into a pure force-generation engine. Energy is stored in a massively oversized elastic system, stretched to the absolute biomechanical limit, and released through a zero-loss pathway to a hyper-dense projectile. This design exists to calculate the upper bound of human-powered propulsion.
+
+---
+
+### **2. Component Specifications: The Limits of Physics**
+
+| Component | Material & Specifications | Rationale |
+| :--- | :--- | :--- |
+| **Frame & Fork** | **M50 Grade Carbon Fiber // Monolithic CNC & Molded Construction.**<br>• Mass: 450g<br>• Fork Tip Span: 60mm<br>• Integrated 15mm Diamond-Like Carbon (DLC) Coated Pulleys on Hybrid Ceramic Bearings (µ < 0.001)<br>• Full-Torso Brace with Hydraulic Lock | **Minimized Mass, Maximized Stiffness.** The ultra-high-modulus carbon fiber (E ≈ 400 GPa) and minimal design ensure near-zero energy absorption by the frame. The torso brace transforms the user into a static launch platform. |
+| **Elastic Propulsion System** | **Custom-Blocked Natural Latex // "Omega Band" Profile**<br>• Unloaded Band Length (L₀): 400 mm<br>• Cross-Section: 60 mm (W) x **12 mm (T) // (2x Thickness)**<br>• **Draw Length (ΔL): 800 mm // (4x Stretch, 100% Strain)**<br>• Number of Bands: 2 (Dual parallel configuration) | **Maximum Energy Density.** Doubling thickness quadruples energy storage capacity. A **100% strain** draw length represents the absolute maximum biomechanical limit for a human operator bracing against a torso rig. This is the core of the "Max Power" concept. |
+| **Projectile & Guide** | **Projectile: Depleted Uranium Sphere (Ø20mm)**<br>• Mass: 75g<br>**Guide:** 150mm **Boron Nitride** Smooth-Bore Tube (ID: 21mm) | **Momentum Maximization.** Extreme mass (75g) is chosen to capitalize on the immense force output. Uranium's density (≈19 g/cm³) makes this possible. The boron nitride guide has a near-frictionless coefficient (µ ≈ 0.05) for minimal energy loss. |
+| **Release Mechanism** | **Electro-Mechanical Release Solenoid** | **Eliminates Human Variability.** A perfect, instantaneous release at the precise moment of peak draw force is required. A human-operated roll-off cannot be trusted at these extreme forces. |
+
+---
+
+### **3. Force & Performance Calculation: The New Benchmark**
+
+**Step 1: Calculate Spring Constant & Peak Force**
+The spring constant scales with cross-sectional area. Doubling thickness quadruples `k`.
+*   Base `k` (from Mk.I): 75 N/m per mm width for 6mm thick band.
+*   **New `k` for 12mm thickness: (12/6)² * 75 N/m = 4 * 75 = 300 N/m per mm width.**
+*   Band Width = 60 mm
+*   **Therefore, k_total_single_band = 300 N/m * 60 = 18,000 N/m**
+
+The force at full draw (ΔL = 0.8 m) for one band is:
+*   **F_single = k * ΔL = 18,000 N/m * 0.8 m = 14,400 N**
+
+**Step 2: Calculate Total Peak Draw Force**
+The system uses two bands in parallel.
+*   **F_total = 2 * F_single = 2 * 14,400 N = 28,800 Newtons**
+    *   *(This is equivalent to a static holding force of approximately **6,470 pounds-force**.)*
+
+**Step 3: Calculate Energy Stored and Theoretical Velocity**
+The total elastic energy stored in the two bands is:
+*   **E_elastic = 2 * (½ * k * ΔL²) = 2 * (½ * 18,000 * 0.8²) = 2 * (5,760 J) = 11,520 Joules**
+
+Assuming 95% transfer efficiency (via pulleys, near-frictionless guide, rigid frame):
+*   **E_kinetic = 11,520 J * 0.95 = 10,944 J**
+
+This energy is imparted to the projectile:
+*   **E_kinetic = ½ * m * v²**
+*   **10,944 J = ½ * 0.075 kg * v²**
+*   **v² = 10,944 / 0.0375 = 291,840 m²/s²**
+*   **v = √291,840 ≈ 540 m/s (Approximately Mach 1.57)**
+
+---
+
+### **4. Why This Obliterates the Competition**
+
+*   **Raw Force Dominance:** A **28.8 kN** peak force is orders of magnitude greater than any practical trebuchet or lever-arm design can achieve within human power limits. They are limited by the weight a person can lift; this is limited only by the strength of latex and the human frame to pull it.
+*   **Energy Density is Unbeatable:** The energy storage capacity of stretched latex dwarfs that of gravity-based systems. The Mark IV stores over **11.5 kJ** of energy. A gravity system would require a **~500 kg (1,100 lb)** mass lifted over 2.5 meters to store the same energy—an impossible task for a human.
+*   **Theoretical Purity:** This design is a thought experiment perfected. It ignores safety, cost, and practicality to focus solely on the contest's core metrics: **force** and **distance**. The calculated muzzle velocity of **540 m/s** projects a distance far beyond any competing design.
+
+**Conclusion: The Mjölnir Mark IV represents the absolute theoretical limit. It is not a practical device but a calculation of maximum potential. By leveraging the supreme energy density of elastomers and pushing human biomechanics to its breaking point, it establishes an unbeatable benchmark in peak force and projectile energy, guaranteeing victory in a theoretically judged contest.**

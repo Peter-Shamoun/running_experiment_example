@@ -1,0 +1,41 @@
+**Scaling the Dimensions:**
+
+To ensure ergonomic consistency for an average adult user (around 5'10" height), I recommend scaling the dimensions of the Aerius launcher as follows:
+
+1. **Height**: 48-52 inches (122-132 cm) to accommodate a comfortable standing position and allow for easy access to the flywheel and crank.
+2. **Width**: 24-28 inches (61-71 cm) to provide a stable base and allow for easy maneuverability.
+3. **Depth**: 18-22 inches (46-56 cm) to accommodate the flywheel, crank, and pneumatic launch system.
+4. **Crank Radius**: 12-15 inches (30-38 cm) to provide a comfortable and efficient pedaling radius.
+
+These dimensions should provide a comfortable and ergonomic workspace for the user, while also allowing for a compact and manageable design.
+
+**Suitable Material:**
+
+I recommend using **6061-T6 Aluminum** as the primary structural material for the Aerius launcher. This alloy offers an excellent balance of strength, stiffness, and weight:
+
+* **Tensile Strength**: 42,000-45,000 psi (290-310 MPa)
+* **Young's Modulus**: 10.3-11.4 GPa
+* **Density**: 2.7-2.8 g/cm³
+* **Corrosion Resistance**: Good resistance to corrosion and oxidation
+
+**Engineering Rationale and Stress Considerations:**
+
+Under simulated loads, the Aerius launcher will experience various stresses, including:
+
+1. **Tensile stresses**: Due to the weight of the flywheel, crank, and pneumatic launch system, as well as the user's weight.
+2. **Compressive stresses**: Due to the weight of the projectile and the launcher's own weight.
+3. **Shear stresses**: Due to the rotational motion of the flywheel and the pneumatic launch system.
+
+To ensure the structural integrity of the launcher, we'll need to consider the following stress considerations:
+
+1. **Flywheel and crank**: The aluminum frame will need to withstand the tensile stresses caused by the flywheel's rotational motion and the user's pedaling force. A minimum of 2-3 times the expected tensile stress should be accounted for in the design.
+2. **Pneumatic launch system**: The aluminum frame will need to withstand the compressive stresses caused by the high-pressure air cylinder and the projectile's acceleration. A minimum of 2-3 times the expected compressive stress should be accounted for in the design.
+3. **Structural members**: The aluminum frame will need to withstand the shear stresses caused by the rotational motion of the flywheel and the pneumatic launch system. A minimum of 1-2 times the expected shear stress should be accounted for in the design.
+
+To mitigate these stresses, we can use various design techniques, such as:
+
+1. **Thickening**: Increasing the thickness of structural members to reduce stress concentrations.
+2. **Reinforcement**: Adding reinforcement, such as ribs or gussets, to increase the structural integrity of the launcher.
+3. **Material selection**: Selecting materials with higher strength-to-weight ratios, such as 7075-T6 Aluminum or Titanium alloys.
+
+These design considerations will help ensure the structural integrity of the Aerius launcher under simulated loads, while also providing a safe and efficient design for the contest.

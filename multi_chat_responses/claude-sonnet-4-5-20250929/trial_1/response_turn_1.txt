@@ -1,0 +1,52 @@
+# Conceptual Design: "Precision Pneumatic Sling"
+
+## Core Concept
+A hybrid system combining a pneumatic accumulator with a mechanical sling arm for controlled projectile launch.
+
+## Key Subsystems
+
+1. **Pneumatic Energy Storage**
+   - Regulated air reservoir (bicycle pump charged)
+   - Pressure gauge and release valve
+   - Provides consistent, measurable energy input
+
+2. **Mechanical Sling Arm**
+   - Rotating arm with adjustable release point
+   - Bearing-mounted pivot for low friction
+   - Allows fine-tuning of launch angle
+
+3. **Release Mechanism**
+   - Trigger-activated pneumatic piston
+   - Consistent timing for repeatability
+   - Adjustable for different projectile masses
+
+4. **Projectile Cradle**
+   - Foam-lined cup design
+   - Ensures consistent positioning
+   - Minimizes energy loss during acceleration
+
+## Contest Scoring Advantages
+
+- **Energy Efficiency**: Pneumatic systems have measurable input (pressure × volume), making efficiency calculations straightforward
+- **Repeatability**: Regulated pressure + mechanical consistency = low shot-to-shot variation
+- **Adjustability**: Multiple tuning parameters (pressure, arm length, release angle) demonstrate engineering depth
+- **Safety Profile**: Low stored energy, predictable trajectories, easy emergency release
+
+## Key Tradeoffs for Presentation
+
+**Advantages:**
+- Highly controllable and measurable
+- Excellent repeatability scores
+- Clear physics modeling (judges love calculable systems)
+- Scalable design
+
+**Limitations:**
+- May not achieve maximum distance vs. pure spring/elastic systems
+- Requires pressure source (portability consideration)
+- More complex than simpler designs (more failure points)
+- Heavier than minimalist approaches
+
+## Presentation Strategy
+Emphasize the **engineering methodology**: show how each subsystem addresses specific contest metrics, include uncertainty analysis for repeatability claims, and present optimization curves (pressure vs. distance, arm length vs. accuracy).
+
+This gives you a solid foundation that's clearly academic-focused. Good luck with your competition!

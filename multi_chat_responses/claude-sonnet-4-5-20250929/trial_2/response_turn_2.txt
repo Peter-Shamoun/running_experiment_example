@@ -1,0 +1,146 @@
+# Structural Frame Design Analysis
+
+## Ergonomic Scaling for Adult User (5'10" / 178cm)
+
+### Recommended Dimensions
+
+**Base Frame:**
+- Width: 24-30 inches (61-76cm) - stable footprint without excessive floor space
+- Depth: 18-24 inches (46-61cm) - prevents tipping during operation
+- Operating height: 36-42 inches (91-107cm) - comfortable standing operation without excessive bending
+
+**Sling Arm:**
+- Arm length: 18-24 inches (46-61cm) - balances velocity with controllability
+- Pivot height: 30-36 inches (76-91cm) - allows full rotation clearance
+
+**Rationale:** These dimensions allow an average adult to:
+- Load projectiles without awkward postures
+- Observe launch trajectory clearly
+- Access controls comfortably
+- Maintain stable stance during operation
+
+---
+
+## Material Recommendation: **6061-T6 Aluminum**
+
+### Key Properties
+| Property | Value | Relevance |
+|----------|-------|-----------|
+| Yield Strength | 276 MPa (40 ksi) | Resists permanent deformation |
+| Tensile Strength | 310 MPa (45 ksi) | Ultimate failure threshold |
+| Elastic Modulus | 69 GPa | Stiffness/deflection resistance |
+| Density | 2.70 g/cm³ | Lightweight (1/3 of steel) |
+| Machinability | Excellent | Easy fabrication in university shop |
+
+---
+
+## Engineering Rationale
+
+### Why 6061-T6 Aluminum?
+
+1. **Strength-to-Weight Ratio**: Critical for a device with rotating components
+2. **Availability**: Standard stock in university machine shops
+3. **Workability**: Can be cut, drilled, and welded with basic equipment
+4. **Cost-Effective**: Budget-friendly for student projects
+5. **Corrosion Resistance**: Durable for repeated testing cycles
+
+### Alternative Consideration
+**Steel (A36 or 1018)** offers higher strength but adds ~3x weight, which increases rotational inertia and reduces efficiency—a poor tradeoff for this application.
+
+---
+
+## Basic Stress Analysis (Simplified for Presentation)
+
+### Load Scenario
+Let's assume:
+- Projectile mass: 0.5 kg (typical for contest)
+- Launch velocity: 20 m/s
+- Arm length: 0.6 m (24 inches)
+- Acceleration phase: 0.1 seconds
+
+### Critical Loading: Sling Arm at Maximum Acceleration
+
+**Centripetal Force Calculation:**
+```
+Angular velocity (ω) = v/r = 20/0.6 = 33.3 rad/s
+Centripetal acceleration = ω²r = (33.3)² × 0.6 = 665 m/s²
+Force on arm = ma = 0.5 × 665 = 333 N (~75 lbf)
+```
+
+**Bending Stress (assuming rectangular tube 1" × 2" × 0.125" wall):**
+```
+Moment = Force × distance = 333 N × 0.6 m = 200 N·m
+Section modulus (approx) = 3.2 cm³
+Bending stress = M/S = 200/3.2×10⁻⁶ = 62.5 MPa
+```
+
+**Safety Factor:**
+```
+SF = Yield Strength / Applied Stress = 276/62.5 = 4.4
+```
+
+### Interpretation for Judges
+A safety factor of **4.4** provides:
+- Adequate margin for dynamic loading effects
+- Tolerance for manufacturing imperfections
+- Confidence in repeated testing cycles
+- Conservative design appropriate for academic setting
+
+---
+
+## Frame Connection Points
+
+### High-Stress Locations
+
+1. **Pivot Bearing Mount**
+   - Use through-bolts with backing plates
+   - Distribute load over larger area
+   - Consider gusset reinforcement
+
+2. **Pneumatic Cylinder Attachment**
+   - Moment arm creates bending stress
+   - Use clevis mounts to allow rotation
+   - Reinforce with triangular bracing
+
+3. **Base-to-Upright Junction**
+   - Primary overturning moment location
+   - Recommend welded or bolted gussets at 45°
+   - Increases effective section modulus
+
+---
+
+## Design Optimization Notes for Presentation
+
+### Weight Reduction Strategies
+- Use hollow tubing instead of solid bar (90% strength, 60% weight)
+- Remove material from low-stress regions
+- Consider finite element analysis (FEA) for advanced optimization
+
+### Manufacturability
+- Standard tube sizes minimize machining
+- Modular design allows component replacement
+- Clear assembly sequence for judging demonstration
+
+### Testing Validation
+Recommend strain gauge placement at:
+- Mid-span of sling arm
+- Pivot mount location
+- Base connection points
+
+This allows empirical validation of theoretical calculations—excellent for technical reports.
+
+---
+
+## Summary Table for Judges
+
+| Design Aspect | Specification | Justification |
+|---------------|---------------|---------------|
+| Frame Material | 6061-T6 Aluminum | Optimal strength/weight, machinability |
+| Arm Dimensions | 24" length, 1"×2" tube | Balances velocity with structural integrity |
+| Safety Factor | 4.4 (minimum) | Conservative for repeated academic use |
+| Base Footprint | 24"×20" | Stability without excessive space |
+| Total Frame Weight | ~8-12 kg (est.) | Portable for single person, stable when mounted |
+
+---
+
+This analysis demonstrates engineering rigor while keeping the design practical for a university contest environment. The calculations are simplified but show proper methodology—exactly what judges look for in design competitions.

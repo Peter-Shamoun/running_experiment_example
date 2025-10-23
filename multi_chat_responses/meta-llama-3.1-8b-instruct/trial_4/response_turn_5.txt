@@ -1,0 +1,52 @@
+**Design Document: High-Performance Slingshot for Maximum Force Output**
+
+**Device Overview:**
+Our high-performance slingshot design is optimized for maximum force output, utilizing a combination of advanced materials and precise measurements to achieve exceptional performance.
+
+**Materials:**
+
+* **Frame:** 6061-T6 Aluminum (density: 2.7 g/cm³)
+* **Elastic (Rubber Band):** High-tension rubber (1.5 mm thick, 50 mm wide)
+* **Projectile:** Lightweight plastic (polycarbonate or ABS)
+* **Pivoting Yoke:** 1/4 inch (6.35 mm) thick aluminum rod
+* **Ratchet Mechanism:** Steel gears with a 1:10 gear ratio
+
+**Measurements:**
+
+* **Frame:**
+	+ Height: 12 inches (30.5 cm)
+	+ Width: 6 inches (15.2 cm)
+	+ Depth: 4 inches (10.2 cm)
+	+ Thickness: 1/8 inch (3.18 mm)
+* **Elastic (Rubber Band):**
+	+ Length: 30 inches (76.2 cm)
+	+ Stiffness: 150 N/mm (21.5 lbf/in)
+	+ Energy Storage: 180 J (approximately 42 ft-lbs)
+* **Projectile:**
+	+ Mass: 15 grams (0.53 oz)
+	+ Shape: Spherical (diameter: 2 cm or 0.8 in)
+	+ Aerodynamics: Streamlined shape with a low drag coefficient (Cd ≈ 0.2)
+* **Pivoting Yoke:**
+	+ Length: 12 inches (30.5 cm)
+	+ Diameter: 1/4 inch (6.35 mm)
+* **Ratchet Mechanism:**
+	+ Gear ratio: 1:10
+	+ Gear size: 1 inch (2.54 cm) diameter
+
+**Calculations:**
+
+1. **Elastic Force:**
+	* Stiffness (k) = 150 N/mm = 21.5 lbf/in
+	* Energy Storage (E) = 180 J = 42 ft-lbs
+	* Elastic Force (F_elastic) = √(2 \* k \* E) = 150 N (approximately 34 lbf)
+2. **Projectile Acceleration:**
+	* Mass (m) = 15 grams = 0.53 oz
+	* Acceleration (a) = F_elastic / m = 10 m/s² (approximately 21 ft/s²)
+3. **Total Force:**
+	* Total Force (F_total) = F_elastic + F_projectile = 150 N + 15 N (approximately 34 lbf + 3.4 lbf) = 153 N (approximately 34.5 lbf)
+
+**Rationale:**
+Our design maximizes force output by utilizing a high-stiffness rubber band, a lightweight projectile, and a precise ratchet mechanism. The 6061-T6 Aluminum frame provides a strong and durable structure, while the pivoting yoke and ratchet mechanism ensure smooth and consistent loading.
+
+**Conclusion:**
+Our high-performance slingshot design is optimized for maximum force output, with a total force of approximately 153 N (34.5 lbf). This design is sure to impress the judges and provide a competitive edge in the competition.

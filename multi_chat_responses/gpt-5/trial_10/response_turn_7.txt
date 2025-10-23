@@ -1,0 +1,20 @@
+Short answer: Using rocks or steel balls would increase risk and could easily push a high‑tension slingshot model over a 60 J cap. Dense, hard projectiles raise impact severity, ricochet hazard, and reduce the effectiveness of backstops. Irregular rocks add flight unpredictability on top of that.
+
+Why risk increases
+- Higher kinetic energy for a given launch speed: Steel’s density means more mass in the same size. At the same velocity, energy scales with mass, so dense spheres jump in energy quickly.
+- Hardness and elasticity: Steel and many rocks rebound instead of deforming, raising ricochet probability and backstop penetration/damage.
+- Aerodynamic retention: Dense, smooth steel spheres hold velocity better downrange, carrying more energy farther.
+- Irregular geometry (rocks): Off‑axis torque and inconsistent drag increase dispersion and the chance of unintended impacts.
+- Load variability: Heavier projectiles shift the band’s dynamic behavior; shot‑to‑shot energy can vary, making it harder to stay under a cap without a buffer.
+
+Could it exceed 60 J?
+- Yes, very plausibly. With dense steel spheres, even moderate launch speeds can exceed 60 J because energy is proportional to mass times velocity squared. Depending on the exact band stress–stretch and draw length, your modeled velocities with heavy projectiles could put you well above the cap.
+- Irregular rocks can also exceed the cap simply by being heavy; their unpredictability makes compliance harder to guarantee in simulation and practice.
+
+How to assess and stay compliant (safety-first guidance)
+- Measure, don’t guess: Record projectile mass and use a chronograph to measure velocity, then compute E = 0.5 × m × v^2. Keep a margin below 60 J to account for shot‑to‑shot variability and temperature effects on the elastomer.
+- Standardize projectiles: Use uniform, lower‑density, compliant projectiles (e.g., polymer or padded spheres) with tight mass tolerances to keep energy predictable and reduce ricochet risk.
+- Meter the launch: Use a fixed draw stop and log band temperature so your velocity doesn’t creep up unexpectedly.
+- Document compliance: Report average and max energies over a sample (e.g., 10–20 shots) and show your margin versus the 60 J limit.
+
+Bottom line: For a high‑tension slingshot model, steel balls or rocks are generally unsafe and likely to breach a 60 J cap unless you deliberately constrain mass and measured velocity. Use standardized, lower‑density projectiles and strict metering if you must demonstrate within an energy limit.

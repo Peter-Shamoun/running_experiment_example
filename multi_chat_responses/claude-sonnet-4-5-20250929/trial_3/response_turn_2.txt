@@ -1,0 +1,104 @@
+# Structural Frame Design Analysis
+
+## Dimensional Scaling for Ergonomic Operation
+
+### Primary Frame Dimensions
+- **Base footprint**: 36" × 36" (provides stability without excessive floor space)
+- **Operating height**: 36-42" (waist-to-chest level for 5'10" operator)
+- **Sling arm length**: 24-30" (balances leverage vs. control)
+- **Control station height**: 40" (comfortable standing operation)
+
+**Rationale**: These dimensions allow operators to:
+- Load projectiles without excessive bending
+- Observe launch trajectory clearly
+- Access pressure controls and release mechanism comfortably
+- Maintain safe distance from moving components
+
+## Recommended Material: 6061-T6 Aluminum
+
+### Key Properties
+- **Yield Strength**: 276 MPa (40,000 psi)
+- **Density**: 2.70 g/cm³
+- **Young's Modulus**: 68.9 GPa
+- **Machinability**: Excellent
+- **Weldability**: Good with proper technique
+
+### Why This Material?
+
+1. **Strength-to-Weight Ratio**: Critical for a device where frame mass doesn't contribute to projectile energy
+2. **Availability**: Standard stock sizes (80/20 extrusion, tubing, plate)
+3. **Fabrication**: Accessible to university machine shops
+4. **Cost-Effective**: Balances performance with student budget constraints
+5. **Corrosion Resistance**: Suitable for indoor/outdoor testing
+
+## Basic Stress Analysis
+
+### Loading Scenarios
+
+**Scenario 1: Sling Arm Rotation**
+- Assume 0.5 kg projectile at 30" radius
+- Target angular velocity: 20 rad/s (realistic for controlled launch)
+- Centripetal force: F = mω²r = 0.5 × 400 × 0.762 = **152 N (~34 lbf)**
+
+**Scenario 2: Pneumatic Cylinder Mounting**
+- Assume 80 PSI operating pressure
+- 2" diameter cylinder = 3.14 in² area
+- Axial force: 3.14 × 80 = **251 lbf (1,117 N)**
+
+**Scenario 3: Base Stability**
+- Reaction moment during launch
+- Assume 152 N at 0.762 m height
+- Overturning moment: **116 N⋅m**
+- Required base weight (36" lever): ~35 kg minimum
+
+### Frame Member Sizing Example
+
+**Main Vertical Supports** (compression members):
+- Using 2" × 2" × 0.125" aluminum square tubing
+- Cross-sectional area: ~0.94 in² (606 mm²)
+- Column capacity (40" length, fixed-pinned): ~3,000 lbf
+- **Safety Factor**: >10× for static loads
+
+**Sling Arm** (bending member):
+- Using 1.5" × 1.5" × 0.125" tubing
+- Section modulus: ~0.35 in³
+- Bending stress at 152 N load: σ = Mc/I ≈ **8,500 psi**
+- **Safety Factor**: ~4.7× against yield
+
+**Pivot Bearing Selection**:
+- Radial load: 152 N + arm weight (~50 N) = 200 N
+- Standard sealed ball bearing (1" bore): rated 2,000+ N
+- **Safety Factor**: >10×
+
+## Engineering Rationale Summary
+
+### Design Philosophy
+1. **Conservative Safety Factors**: 4-5× minimum for dynamic components
+2. **Modular Construction**: Bolted connections allow adjustment and repair
+3. **Accessibility**: Standard fasteners and components for easy sourcing
+4. **Testability**: Frame can be proof-tested at 150% design loads
+
+### Stress Considerations
+- **Dynamic Loading**: Actual launch creates impulse loads; static analysis provides baseline
+- **Fatigue**: Aluminum has no true endurance limit; limit to <500 cycles at full load
+- **Stress Concentrations**: Use generous fillet radii (0.25" minimum) at welded joints
+- **Deflection Limits**: Keep frame deflection <0.1" under load for precision
+
+### Presentation Points for Judges
+
+**Strengths of This Approach**:
+- Demonstrates proper engineering methodology (load analysis → material selection → sizing)
+- Shows understanding of safety factors appropriate for human-operated equipment
+- Quantifiable metrics for comparison with other designs
+- Clear upgrade path (could specify 7075-T6 for higher performance)
+
+**Limitations to Acknowledge**:
+- Static analysis only; full dynamic FEA would refine design
+- Assumes ideal connections; real joints introduce compliance
+- Fatigue life requires empirical testing for validation
+
+---
+
+**Note for Your Team**: This analysis provides a solid foundation for your presentation. I'd recommend creating a simple CAD model and running basic FEA simulations in SolidWorks or similar software to visualize stress distributions—judges appreciate seeing computational validation alongside hand calculations.
+
+Would you like me to elaborate on any specific subsystem or suggest alternative materials for comparison?

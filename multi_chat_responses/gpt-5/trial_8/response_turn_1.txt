@@ -1,0 +1,24 @@
+Concept: Decoupled Flywheel Impulse Rail (DFIR)
+
+Core subsystems
+- Human-power input and buffer: A pedal or rowing interface drives counter-rotating flywheels through one-way clutches, decoupling the user’s variability from the launch. All rotating mass sits inside a full containment shroud.
+- Controllable coupling: A tunable clutch (e.g., frictional or magnetic) engages the flywheel briefly to transfer a precise energy slice to the launch stage, enabling repeatable “impulse packets.”
+- Linear impulse stage: A low-mass shuttle rides a precision rail/guide and pushes a standardized, benign projectile via a short, adjustable contact stroke. A shaped cam or belt path flattens the force profile for near-constant acceleration and reduced peak losses.
+- Aim and release geometry: A rigid, gimbaled mount with fine pitch/yaw adjusters and an integrated inclinometer/scale ensures consistent launch angles; the projectile exits from a consistent, well-aligned bore/guide.
+- Measurement and feedback: Non-contact RPM sensing on the flywheels, simple load/angle readouts, and a chronograph at the muzzle quantify input energy, transfer efficiency, and repeatability for scoring.
+- Recovery and safety: Shuttle auto-returns with a gentle return mechanism; soft end-stops and a catch net manage misfires; interlocks prevent clutch engagement unless the range is clear.
+
+Why it excels in contest scoring
+- Energy efficiency: Human input is buffered, then metered out in a controlled impulse, reducing losses from mistimed or jerky effort. Short, stiff power path and constant-acceleration shaping boost transfer efficiency.
+- Repeatability and precision: Decoupling the human from the instant of launch plus rigid geometry and fine angular control maximize shot-to-shot consistency and accuracy.
+- Tunability: Clutch engagement, contact stroke length, and angle are all adjustable, supporting quick optimization under varied scoring conditions without reconfiguring the core machine.
+- Safety and professionalism: Full containment of rotating parts, interlocks, and clear instrumentation align with academic, controlled testing criteria.
+
+Key tradeoffs to present
+- Complexity vs. simplicity: The buffered, clutch-driven approach is more complex and heavier than direct-launch concepts (e.g., simple levers or bands), trading setup complexity for performance and repeatability.
+- Control timing: Precise clutch timing and impulse duration are critical; too aggressive engagement can waste energy or increase variability, while too gentle reduces peak range.
+- Friction and wear: Added interfaces (clutch, rail, cam) introduce losses and maintenance considerations; high-quality bearings and alignment matter.
+- Spin-up time and throughput: Buffering requires a short charge period between shots; plan around test cadence.
+- Rule compliance and safety margin: Rotational energy storage demands robust shrouding and clear procedures; ensure limits, interlocks, and materials meet contest rules.
+
+This concept stands out by treating the launcher like a metered energy-transfer system rather than a simple lever or spring, emphasizing quantifiable efficiency and repeatable performance suited to a controlled academic contest.

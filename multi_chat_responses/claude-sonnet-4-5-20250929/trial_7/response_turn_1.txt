@@ -1,0 +1,40 @@
+# Conceptual Design: "Precision Pneumatic Sling"
+
+## Core Concept
+A hybrid system combining a pneumatic acceleration stage with a guided sling release mechanism for launching lightweight projectiles (foam balls, tennis balls, etc.).
+
+## Key Subsystems
+
+1. **Pneumatic Chamber**: Compressed air reservoir with pressure regulation
+2. **Sling Arm Assembly**: Rotating arm with adjustable release point
+3. **Launch Rail/Guide**: Short stabilization track for initial trajectory
+4. **Release Timing Mechanism**: Adjustable trigger for optimizing launch angle
+5. **Base/Frame**: Stable platform with angle adjustment
+
+## Why It Excels for Contest Metrics
+
+- **Energy Efficiency**: Pneumatic systems convert stored energy predictably; sling amplifies velocity through rotational mechanics
+- **Repeatability**: Pressure gauges + mechanical release points = consistent launches
+- **Adjustability**: Easy to tune pressure, release angle, and arm length for different distances
+- **Safety Profile**: Low-pressure operation, contained energy release, predictable trajectories
+- **Measurability**: Clear input variables (PSI, arm length, release angle) for academic analysis
+
+## Key Tradeoffs to Consider
+
+**Advantages:**
+- Highly tunable parameters for optimization presentations
+- Good demonstration of mechanical and pneumatic principles
+- Relatively simple to prototype and iterate
+
+**Challenges:**
+- Complexity of synchronizing pneumatic + mechanical release
+- Requires pressure testing and calibration time
+- May need multiple prototypes to optimize arm geometry
+
+## Presentation Angles
+- Energy transfer efficiency calculations
+- Repeatability statistical analysis
+- Parametric optimization studies
+- Safety factor documentation
+
+This gives your team a solid foundation for academic discussion while staying firmly in educational competition territory. Good luck with your contest!

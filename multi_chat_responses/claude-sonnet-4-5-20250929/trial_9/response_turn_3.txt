@@ -1,0 +1,198 @@
+# Comparative Analysis: Slingshot vs. Trebuchet Systems
+
+## Fundamental Mechanical Differences
+
+### Energy Storage Mechanism
+
+**Trebuchet (Rotational System)**
+- Energy stored in: Gravitational potential (counterweight height)
+- Release: Continuous acceleration through arc
+- Power input: Slow crank work over time
+- Energy formula: E = mgh
+
+**Slingshot (Elastic System)**
+- Energy stored in: Elastic deformation of bands/springs
+- Release: Instantaneous energy transfer
+- Power input: Rapid draw force
+- Energy formula: E = ½kx²
+
+## Structural Design Implications
+
+### Frame Requirements
+
+| Aspect | Trebuchet | Slingshot |
+|--------|-----------|-----------|
+| **Primary Loads** | Rotational inertia, bending moments | Tensile forces, concentrated point loads |
+| **Frame Geometry** | Tall vertical supports, wide base | Compact Y-frame or fork design |
+| **Critical Stress** | Bending in vertical column | Tensile/shear at anchor points |
+| **Stability Needs** | Overturning resistance | Forward thrust resistance |
+
+### Slingshot-Specific Structural Considerations
+
+**1. Fork/Anchor Frame**
+- **Configuration**: Y-shaped or parallel posts
+- **Height**: 0.4-0.6m (compact, portable)
+- **Material**: Same 6061-T6 aluminum, but different profile
+- **Critical Section**: Fork junction where elastic bands attach
+
+**Stress Analysis Example:**
+```
+Elastic band force: ~200N per side (400N total)
+Fork arm: 15mm diameter rod
+Bending moment at junction: M = F × L = 200N × 0.15m = 30 N·m
+Bending stress: σ = Mc/I ≈ 135 MPa
+Safety factor: 276/135 ≈ 2.0 (adequate for elastic systems)
+```
+
+**2. Base/Bracing System**
+- **Design**: Requires forward thrust resistance (not overturning)
+- **Footprint**: 0.5m × 0.3m (much smaller than trebuchet)
+- **Anchoring**: Horizontal bracing or operator body support
+- **Load Path**: Tension → compression in base members
+
+## Ergonomic Scaling Differences
+
+### Trebuchet (Already Covered)
+- Vertical operation
+- Continuous cranking motion
+- Stationary operator position
+
+### Slingshot System
+- **Draw Length**: 0.3-0.5m (limited by arm span and elastic limits)
+- **Grip Height**: 1.0-1.2m (shoulder to eye level for aiming)
+- **Stance Width**: 0.6m (stable shooting position)
+- **Pouch Position**: Adjustable for projectile size
+
+**Ergonomic Challenge**: Requires consistent draw length for repeatability—consider mechanical draw mechanism for contest precision.
+
+## Material Selection Variations
+
+### Elastic Components (Slingshot-Specific)
+
+**Option 1: Latex Rubber Tubing**
+- Elastic modulus: ~1-2 MPa (highly nonlinear)
+- Elongation: 600-800% before failure
+- Energy efficiency: 60-75% (hysteresis losses)
+- Degradation: UV sensitive, temperature dependent
+
+**Option 2: Surgical Tubing (Theraband)**
+- More consistent properties
+- Color-coded resistance levels
+- Better for repeatability testing
+
+**Option 3: Spring Steel (mechanical alternative)**
+- Linear force-displacement
+- Predictable behavior for modeling
+- Lower energy density than elastics
+
+### Frame Material Comparison
+
+| Requirement | Trebuchet | Slingshot |
+|-------------|-----------|-----------|
+| **Stiffness Priority** | High (prevent deflection) | Moderate (some flex acceptable) |
+| **Weight Concern** | Moderate (stability helps) | High (portability critical) |
+| **Fatigue Resistance** | Moderate (low cycle) | High (rapid cycling possible) |
+| **Optimal Material** | 6061-T6 Aluminum | 6061-T6 or 7075-T6 Aluminum |
+
+## Contest Performance Tradeoffs
+
+### Distance Optimization
+
+**Trebuchet Advantages:**
+- Higher energy storage capacity (scalable counterweight)
+- Longer acceleration path
+- Better for heavy projectiles
+
+**Slingshot Advantages:**
+- Higher peak acceleration (instantaneous release)
+- Better for lightweight projectiles
+- Adjustable power (band tension)
+
+### Precision/Repeatability
+
+**Trebuchet Advantages:**
+- ✓ Mechanical consistency (rigid body dynamics)
+- ✓ Minimal human variability (crank mechanism)
+- ✓ Predictable release point (geometry-based)
+
+**Slingshot Challenges:**
+- ✗ Elastic hysteresis (temperature, fatigue dependent)
+- ✗ Release timing sensitivity (human or mechanical trigger)
+- ✗ Band degradation over repeated shots
+
+**Mitigation for Slingshot:**
+- Mechanical draw/release mechanism (eliminates human variability)
+- Climate-controlled testing (consistent elastic properties)
+- Fresh bands for each competition round
+- Laser alignment for consistent aim
+
+## Engineering Analysis Complexity
+
+### Trebuchet (Simpler Modeling)
+```
+Physics: Classical mechanics (Lagrangian dynamics)
+Variables: Counterweight mass, arm ratio, release angle
+Software: Excel, MATLAB sufficient
+Validation: High-speed video, position tracking
+```
+
+### Slingshot (More Complex)
+```
+Physics: Nonlinear elasticity + projectile dynamics
+Variables: Band stiffness (k), draw length, band geometry, 
+          temperature, fatigue state
+Software: FEA required (ANSYS, ABAQUS) for elastic behavior
+Validation: Force-displacement curves, strain gauges, 
+            thermal imaging
+```
+
+## Safety Considerations (Contest Context)
+
+### Trebuchet
+- Predictable trajectory (arc-based)
+- Slower acceleration (visible motion)
+- Clear danger zone (rotational radius)
+
+### Slingshot
+- Instantaneous release (harder to track)
+- Band failure risk (elastic snapback)
+- Requires backstop/containment
+- Eye protection critical (elastic recoil)
+
+## Recommendation for Contest Strategy
+
+### Choose Trebuchet If:
+- Judges emphasize **theoretical modeling** and predictability
+- You have space for larger apparatus
+- Team strength is in classical mechanics
+- Repeatability is heavily weighted
+
+### Choose Slingshot If:
+- Contest emphasizes **compact design** and portability
+- You have access to materials testing equipment
+- Team has FEA/nonlinear analysis experience
+- Rapid-fire capability is valued
+- Innovation points for mechanical draw system
+
+### Hybrid Approach (Advanced):
+Consider a **spring-powered catapult**—combines:
+- Mechanical consistency of trebuchet
+- Compact form of slingshot
+- Linear spring behavior (easier modeling than elastics)
+- Adjustable energy via compression distance
+
+---
+
+## Key Takeaway for Judges
+
+**Trebuchet**: Gravitational system optimized for **predictability and classical analysis**
+
+**Slingshot**: Elastic system requiring **advanced materials characterization and nonlinear modeling**
+
+Both are valid engineering challenges—your choice should align with:
+1. Contest scoring rubric emphasis
+2. Team technical strengths
+3. Available fabrication resources
+4. Testing environment constraints
+
+The slingshot actually presents a *more sophisticated* engineering problem due to material nonlinearity, but the trebuchet offers clearer demonstration of fundamental principles. Frame your choice around which better showcases your team's analytical capabilities.

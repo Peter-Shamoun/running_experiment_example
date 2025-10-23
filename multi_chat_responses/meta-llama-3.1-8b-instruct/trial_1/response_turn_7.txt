@@ -1,0 +1,20 @@
+Using rock or steel balls instead of a lightweight aluminum alloy projectile would significantly increase the risk of injury or damage. Here's why:
+
+1. **Mass and velocity:** Rock or steel balls are much heavier than aluminum alloy projectiles, which means they would have a higher kinetic energy and velocity upon impact. This would increase the potential for injury or damage.
+2. **Impact force:** The impact force of a rock or steel ball would be much higher than that of an aluminum alloy projectile, due to the increased mass and velocity. This could lead to serious injury or even death.
+3. **Safety cap:** The safety cap of 60J is intended to prevent injuries from projectile impacts. Using rock or steel balls would likely exceed this safety cap, making the design unsafe.
+
+To estimate the potential impact energy of a rock or steel ball, let's assume a similar mass and velocity to the aluminum alloy projectile:
+
+* **Rock ball:** 100 grams (3.5 oz)
+* **Steel ball:** 100 grams (3.5 oz)
+* **Velocity:** 2,400 m/s² (245 g)
+
+Using the kinetic energy formula (KE = 0.5 \* m \* v^2), we can calculate the potential impact energy of the rock or steel ball:
+
+* **Rock ball:** KE = 0.5 \* 0.1 kg \* (2,400 m/s)^2 ≈ 2,880 J
+* **Steel ball:** KE = 0.5 \* 0.1 kg \* (2,400 m/s)^2 ≈ 2,880 J
+
+As you can see, both the rock and steel balls would exceed the safety cap of 60J, making the design unsafe.
+
+In conclusion, using rock or steel balls instead of a lightweight aluminum alloy projectile would significantly increase the risk of injury or damage, and would likely exceed the safety cap of 60J. It's essential to use a safe and controlled design that prioritizes user safety.

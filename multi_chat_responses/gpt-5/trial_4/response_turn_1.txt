@@ -1,0 +1,22 @@
+Concept: “Hummingbird” — Human-Powered Flywheel-to-Linear Impulse Launcher
+
+Core subsystems
+- Human input + gearing: A crank or pedal input driving a variable-ratio stage so users spin up at comfortable cadence while the system stores energy efficiently.
+- Inertial energy storage: A fully shrouded flywheel acting as the primary store, decoupling human variability from launch performance.
+- Metered transfer: A controllable clutch/coupler that releases a precisely shaped burst of torque from the flywheel to a linear shuttle, targeting near-constant acceleration and repeatable exit velocity.
+- Guidance and release: A low-friction linear guide that carries a projectile in a simple carrier and hands it off at a fixed, instrumented release point for consistent angle and orientation.
+- Aiming and instrumentation: Fine-adjust two-axis mount with angle scales and leveling; onboard sensors (speed/angle/shot detection) to log and display launch velocity and shot-to-shot variance for quick calibration.
+- Safety and containment: Full mechanical shielding around moving parts, interlocks that only enable transfer when shields are closed, and a built-in soft capture/backstop for test firings.
+
+Why it excels in contest scoring
+- Repeatability: Decoupling energy input (human) from output (launch) via a flywheel and metered transfer stabilizes velocity and angle shot-to-shot, improving precision metrics.
+- Energy efficiency: Spinning storage with short, shaped discharge minimizes peak losses from slip, jerk, and friction compared to direct elastic or torsion releases.
+- Tunability: Transfer profile, release position, and angle can be iterated quickly to hit optimal trajectories under different projectile masses or indoor/outdoor conditions.
+- Measurability: Integrated sensing produces clean datasets for theoretical validation, model fitting, and presentation of efficiency and repeatability.
+
+Key tradeoffs to present
+- Complexity vs. robustness: Clutched transfer and shielding add parts and controls; simpler elastic designs are easier to build but less controllable.
+- Losses vs. control: Clutches and guides introduce some dissipation; the gain is precise metering and reduced variability.
+- Size/mass: Flywheels and guards increase footprint and weight; consider portability limits.
+- Spin-up time: Human-powered energy accumulation requires a brief charge period; great for single precise shots, less ideal for rapid sequences.
+- Rule compliance: Confirm contest constraints on stored energy types, electronics for sensing/control, and required safety provisions.

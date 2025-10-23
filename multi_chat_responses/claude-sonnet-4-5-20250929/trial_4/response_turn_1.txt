@@ -1,0 +1,61 @@
+# Conceptual Design: "Precision Pneumatic Sling"
+
+## Core Concept
+A hybrid system combining a pneumatic accumulator with a mechanical sling arm for controlled projectile launch.
+
+## Key Subsystems
+
+1. **Pneumatic Energy Storage**
+   - Regulated air reservoir (bicycle pump charged)
+   - Pressure gauge and release valve
+   - Provides consistent, measurable energy input
+
+2. **Mechanical Sling Arm**
+   - Rotating arm with adjustable release point
+   - Bearing-mounted pivot for low friction
+   - Allows fine-tuning of launch angle
+
+3. **Release Mechanism**
+   - Trigger-activated pneumatic piston
+   - Consistent timing for repeatability
+   - Adjustable for different projectile masses
+
+4. **Projectile Cradle**
+   - Foam-lined cup design
+   - Ensures consistent positioning
+   - Minimizes energy loss during acceleration
+
+## Contest Scoring Advantages
+
+- **Energy Efficiency**: Pneumatic systems offer ~40-60% efficiency with minimal losses
+- **Repeatability**: Pressure regulation + mechanical consistency = low shot-to-shot variance (<5%)
+- **Measurability**: Easy to quantify input energy (pressure × volume)
+- **Safety Profile**: Controlled energy release, predictable trajectories
+- **Adjustability**: Multiple tuning parameters for optimization
+
+## Key Tradeoffs for Presentation
+
+**Advantages:**
+- Highly repeatable performance
+- Clear energy accounting for academic analysis
+- Modular design allows systematic testing
+- Scales well within safety constraints
+
+**Limitations:**
+- Pneumatic charging adds setup time
+- Requires pressure testing/certification
+- Heavier than pure mechanical alternatives
+- More complex than simple catapults
+
+**Optimization Variables:**
+- Arm length vs. angular velocity
+- Pressure vs. piston stroke length
+- Release angle vs. projectile mass
+- Friction reduction vs. structural stability
+
+## Presentation Angle
+Frame this as exploring the **engineering tradeoff between stored energy density and release control**—a fundamental problem in many mechanical systems. The academic value is in quantifying these relationships through systematic testing.
+
+---
+
+This gives your team a legitimate starting point that emphasizes the **analytical and optimization aspects** judges typically reward in engineering competitions. Good luck with your contest!

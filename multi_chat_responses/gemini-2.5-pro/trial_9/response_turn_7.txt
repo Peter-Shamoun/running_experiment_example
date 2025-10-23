@@ -1,0 +1,46 @@
+Excellent and critical safety question. Even in a theoretical context, understanding these limits is what separates responsible engineering from dangerous speculation.
+
+Here is a clear breakdown of why this design would be profoundly unsafe with those projectiles and how it relates to the safety cap.
+
+---
+
+### **Safety Analysis: Axiom-X with Alternate Projectiles**
+
+**Direct Answer:** **Yes, this design would be exceptionally and unacceptably unsafe if rocks or standard steel balls were used.** The danger is not just high; it represents a guaranteed catastrophic failure of either the projectile, the system, or both.
+
+Here is the engineering rationale.
+
+#### **1. Why a Rock Would Be Unsafe: Unpredictable System Failure**
+
+Using a natural rock introduces multiple, simultaneous points of catastrophic failure.
+
+*   **Sharp Edges & Abrasive Surface:** The immense tension of the bands (556 N / 125 lbf) would press any sharp edge on a rock directly into the latex. This wouldn't just cause wear; it would act like a knife blade on a stretched rubber band. This would almost certainly result in **Catastrophic Band Failure**, where one or more bands sever at full draw. The resulting release of 292 Joules of energy snapping back toward the operator could cause severe, life-altering injury.
+*   **Inconsistent Mass & Shape:** A rock is not a uniform sphere. It cannot be seated securely in a precision release mechanism. It would likely slip during the draw or launch with an unpredictable, tumbling trajectory, making its flight path dangerously erratic.
+*   **Structural Integrity:** Many rocks (like sandstone or shale) lack the internal integrity to withstand the G-forces of such a violent launch. The rock could **disintegrate upon release**, effectively turning into a blast of high-velocity shrapnel.
+
+**Conclusion:** A rock introduces uncontrollable variables into a system operating at its absolute material limits. Failure is not a risk; it is a certainty.
+
+#### **2. Why a Steel Ball Would Be Unsafe: Destructive Energy Mismatch**
+
+While a steel ball is uniform, it is dangerously mismatched to the Axiom-X's power level, creating a different but equally hazardous scenario.
+
+*   **Density & Mass Mismatch:** Steel has a density of ~7.85 g/cm³. The specified tungsten alloy has a density of ~18 g/cm³.
+    *   A 15mm steel ball would have a mass of approximately **13.9 grams.**
+    *   The specified 15mm tungsten ball has a mass of **28.5 grams.**
+*   **Creation of a Hyper-Velocity Projectile:** The system is designed to transfer its ~292 Joules of energy into a heavy 28.5g projectile. When launching a steel ball that is less than half the mass, the energy transfer is radically different. According to the kinetic energy formula (KE = ½mv²), for the same energy, halving the mass results in a **~41% increase in velocity**. The lighter steel ball would exit at a speed far exceeding the design parameters, turning it into a hyper-velocity projectile with a flatter, more dangerous trajectory.
+*   **Destructive "Dry Fire" Effect:** Launching a projectile that is too light for the system is mechanically equivalent to a "dry fire." The elastic bands contract with such violence that the projectile cannot absorb the energy quickly enough. This excess energy is dissipated as destructive shock and vibration back into the titanium frame and, critically, the bands themselves. This causes accelerated material fatigue and can lead to a violent, premature failure of the entire launch system.
+
+#### **3. Would They Exceed the 60 Joule Safety Cap?**
+
+**Yes, unequivocally.** The 60 Joule cap is not a property of the projectile; it is a measure of the kinetic energy the system imparts upon it.
+
+Let's calculate the theoretical kinetic energy output of the Axiom-X.
+
+1.  **Stored Potential Energy (PE):** As calculated, the system stores **291.9 Joules.**
+2.  **Energy Transfer Efficiency:** No system is 100% efficient. A highly optimized design like this might achieve 85% efficiency, with 15% lost to band hysteresis, air resistance on the bands, and minimal frame vibration.
+3.  **Calculated Kinetic Energy (KE):**
+    *   KE = Stored PE × Efficiency
+    *   KE = 291.9 J × 0.85
+    *   **KE ≈ 248 Joules**
+
+**Conclusion:** The Axiom-X system is designed to produce a kinetic energy output of approximately **248 Joules.** This is **more than four times the 60 Joule safety cap.** This value remains consistent whether the projectile is tungsten, steel, or rock (assuming it survives the launch). The system's power level is the determining factor, and it fundamentally operates in a power class far beyond standard safety limitations.

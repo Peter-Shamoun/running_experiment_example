@@ -1,0 +1,71 @@
+Of course. Here is a one-page design document optimized for maximum force output, tailored for a judging panel in an academic engineering contest.
+
+---
+
+### **Project: Mjölnir Mark I - Force-Optimized Linear Launcher**
+**Team:** [Your Engineering Society Name]
+**Objective:** To design a human-powered projectile launcher that maximizes initial force output on the projectile, prioritizing peak acceleration over other metrics.
+
+---
+
+### **1. General Design Overview**
+
+The Mjölnir Mark I is a monolithic torsion-powered launcher. It utilizes a dual-stage energy storage system: potential energy is first stored in a massively pretensioned torsion spring and then released through a leveraged hammer mechanism. This design focuses all engineering effort on achieving a single, extremely high-force impulse on the projectile, trading off precision and repeatability for peak performance.
+
+**Core Operation:** The user uses a winch to rotate and heavily pretension a main spring. Upon release, the spring's energy rotates a massive arm (the "hammer"), which transfers its kinetic energy directly to the projectile over an extremely short contact distance, resulting in immense instantaneous force.
+
+### **2. Bill of Materials & Specifications**
+
+| Component | Material & Specification | Rationale |
+| :--- | :--- | :--- |
+| **Main Frame** | 80/20 1515 Series Aluminium T-Slotted Extrusion (50mm x 50mm). | Provides a rigid, modular, and incredibly strong structure to react against high torsional and impulse loads without flex. |
+| **Torsion Spring** | Chrome Silicon (ASTM A401). Wire Diameter: **16mm**. Mean Coil Diameter: **120mm**. Number of Coils: **12**. | Chrome Silicon alloy offers the highest ultimate tensile strength and fatigue resistance for energy storage. This large size is necessary to store the required energy without permanent deformation. |
+| **Lever Arm ("Hammer")** | Solid 6061-T6 Aluminum Bar. Length: **1.5 meters**. Cross-section: **50mm x 50mm**. | The length provides massive mechanical advantage. The solid aluminum provides the necessary mass to deliver a high-energy impulse without buckling. |
+| **Projectile & Sled** | Projectile: **100g** Tungsten Carbide Sphere. Sled: Delrin (POM) low-friction sled running on hardened steel rails. | Tungsten is one of the densest available materials, allowing high mass in a small form factor to absorb the immense force. Delrin minimizes energy loss to friction during the short launch phase. |
+| **Release Mechanism** | **Shear Pin Release**. Pin: 3mm Diameter 316 Stainless Steel Rod. | A shear pin fails predictably at a specific load, providing a safe and reliable method to release the stored energy instantaneously once the desired pretension is reached. |
+
+### **3. Force Production Calculations**
+
+The total force is not a single value but a peak instantaneous force (`F_max`) applied to the projectile. This is calculated from the spring's torque and the hammer's leverage.
+
+**Step 1: Calculate Spring Torque (τ)**
+The spring constant `k` for a torsion spring is given by:
+`k = (d^4 * G) / (64 * D * N)`
+Where:
+*   `d` = Wire diameter = **0.016 m**
+*   `G` = Modulus of Rigidity for Chrome Si ≈ **78 GPa**
+*   `D` = Mean Coil Diameter = **0.12 m**
+*   `N` = Number of active coils = **10** (12 total - 2 inactive ends)
+
+`k = ( (0.016)^4 * 78e9 ) / (64 * 0.12 * 10) ≈ 6,656 N*m/radian`
+
+**Assumption for Theta (θ):** The winch rotates the spring **3 full rotations** before the shear pin fails.
+`θ = 3 rotations * 2π radians/rotation = 18.85 radians`
+
+**Torque (τ) stored in spring at release:**
+`τ = k * θ = 6,656 N*m/rad * 18.85 rad ≈ 125,500 N*m`
+
+**Step 2: Calculate Tangential Force (F_tan) at End of Hammer**
+This is the force available at the end of the 1.5m lever arm.
+`F_tan = τ / L_arm = 125,500 N*m / 1.5 m ≈ 83,667 N`
+
+**Step 3: Estimate Peak Impulsive Force on Projectile (F_max)**
+This `F_tan` is applied to accelerate the hammer's own mass *and* the projectile. However, because the transfer of energy to the much lighter projectile occurs over an extremely short distance (e.g., the few centimeters of the hammer's arc before it loses contact), the **instantaneous force is vastly higher than the average force**.
+
+A conservative estimation is that the **peak force is 1.5x to 2x the average tangential force** due to the impulsive nature of the collision.
+
+**Therefore, the calculated peak force applied to the projectile is:**
+`F_max ≈ 83,667 N * 1.75 ≈ 146,417 Newtons`
+
+### **4. Conclusion & Trade-offs**
+
+**Total Peak Force Output:** **~150,000 N**
+
+The Mjölnir Mark I is designed to produce a theoretical peak force of approximately **150 kiloNewtons**. This represents an extreme optimization for a single judging metric: maximum force.
+
+**Acknowledged Trade-offs:**
+*   **Precision & Repeatability:** This device is a single-use, "one-shot" design. The spring will likely need to be reset or replaced after each firing due to stress. The release mechanism is destructive (shear pin must be replaced). Accuracy is secondary and not guaranteed.
+*   **Safety:** This device operates at the extreme limits of its material strengths. It **must** be operated remotely from behind a blast shield. All safety protocols for high-energy systems are mandatory.
+*   **Energy Efficiency:** Significant energy is lost to friction, sound, and permanent deformation of components (like the shear pin). Efficiency is sacrificed for peak force output.
+
+This design demonstrates a fundamental engineering principle: optimizing for one extreme performance parameter requires significant compromises in all others. The Mjölnir Mark I is a testament to theoretical force maximization.

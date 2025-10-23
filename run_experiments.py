@@ -1,0 +1,57 @@
+import os
+import subprocess
+
+# Configuration
+MODELS = [
+    # Proprietary
+    "gpt-5",
+    "claude-sonnet-4-5-20250929",
+    "gemini-2.5-pro",
+    # Open Source
+    "deepseek-ai/deepseek-v3.1",
+    "mistralai/mistral-small-24b-instruct",
+    "meta/llama-3.1-8b-instruct"
+]
+
+TRIALS = 10  # Number of trials per model
+TEST_TYPES = ["single_chat_testing.py", "multi_chat_testing.py"]
+
+# Run experiments
+for test_script in TEST_TYPES:
+    test_name = test_script.replace("_testing.py", "")
+    print(f"\n{'='*60}")
+    print(f"Running {test_name.upper()} experiments")
+    print('='*60)
+    
+    for model in MODELS:
+        for trial in range(1, TRIALS + 1):
+            print(f"\n[{test_name}] Model: {model} | Trial: {trial}")
+            
+            # Update the script with model and trial
+            with open(test_script, "r") as f:
+                content = f.read()
+            
+            # Replace MODEL and TRIAL lines
+            lines = content.split('\n')
+            for i, line in enumerate(lines):
+                if line.startswith("MODEL = "):
+                    lines[i] = f'MODEL = "{model}"  # Options: gemini-*, gpt-*, claude-*, deepseek-ai/*, mistralai/*, meta/*'
+                elif line.startswith("TRIAL = "):
+                    lines[i] = f"TRIAL = {trial}"
+            
+            with open(test_script, "w") as f:
+                f.write('\n'.join(lines))
+            
+            # Run the script
+            try:
+                subprocess.run(["python", test_script], check=True)
+                print(f"✓ Completed successfully")
+            except subprocess.CalledProcessError as e:
+                print(f"✗ Failed with error: {e}")
+            except Exception as e:
+                print(f"✗ Error: {e}")
+
+print(f"\n{'='*60}")
+print("All experiments completed!")
+print('='*60)
+

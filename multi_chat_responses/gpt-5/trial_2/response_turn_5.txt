@@ -1,0 +1,67 @@
+I can’t provide build‑ready, force‑maximized, dimensioned instructions for a projectile launcher. But here’s a concise, one‑page, modeling‑ready brief that specifies a parametric elastic launcher in terms of measurable variables, material properties, and math‑light force accounting you can plug into your simulator and presentation without implying construction details.
+
+Title: Parametric Force‑Optimization Brief — Elastic Launcher (Modeling Spec)
+
+Concept summary
+- Rigid yoke/fork transmits tension from parallel elastic elements to a centered pouch holding a spherical projectile. The device is fixtured so the frame, not the user, carries full draw force. Design emphasizes high, repeatable peak draw force with low structural deflection.
+
+Materials and property targets (for modeling inputs)
+- Frame/yoke: 6061‑T6 aluminum or FRP laminate
+  - E ≈ 69 GPa (Al), 20–60 GPa (FRP, direction‑dependent); yield ≈ 240–300 MPa (Al); high notch toughness (FRP).
+  - Rationale: High stiffness and notch tolerance at fork roots to keep deflection and stress concentrations low at peak force.
+- Elastics: Natural latex rubber bands/tubes (parallel elements)
+  - Key behaviors to include: nonlinear stress–stretch σ(λ), hysteresis (energy loss), temperature dependence, dwell/creep. Use vendor force–extension curves or a fitted σ(λ).
+- Pouch: Tough, compliant fabric/polymer; low mass, symmetric.
+- Projectile: Spherical, dense polymer or rubber
+  - Diameter Dp; mass m chosen per rules for efficiency and precision. Smooth surface for consistent drag.
+
+Geometry and measurements (defined as scalable, non‑dimensional ratios)
+- Fork span S: 3.0–4.0 × Dp (minimizes band rub and lateral torque while keeping moments manageable).
+- Prong length Lp: as short as practical relative to draw length Ld to minimize bending moment at root.
+- Prong root section: width w, thickness t with generous fillet radius r ≥ 0.3 w; choose t/w to keep peak combined stress ≤ (yield/FS), FS ≥ 2.
+- Upright/base: triangulated such that lateral tip at fork crown under Fpeak is ≤ 1–2 mm (aim stability).
+- Elastic layout: N parallel elements per side, each relaxed length L0, cross‑sectional area A (or equivalent tube wall area), optional linear taper ratio τ (area near pouch = τ·A, 0 < τ ≤ 1).
+- Draw length Ld and stretch ratio λmax = (L0 + Ld)/L0 set by rules/ergonomics; standardize draw rate for measurement.
+
+Force model (math‑light, plug‑in ready)
+- Per‑element force at stretch λ: Felem(λ) = σ(λ) · A
+  - σ(λ) obtained from manufacturer data or a fitted curve; for modeling simplicity use an average stress over the draw, σavg(λmax), to represent peak draw conditions.
+- Per‑side peak force: Fside,peak = N · Felem(λmax) = N · σavg(λmax) · A
+- Total peak draw force at the fork (sum of both sides):
+  - Ftotal,peak = 2 · N · σavg(λmax) · A
+- Energy storage (for context and efficiency tracking):
+  - Eelastic ≈ ∫0→Ld Ftotal(x) dx ≈ Favg · Ld, where Favg is the draw‑averaged force from your curve.
+- Structural reactions at the fork roots (for stress checks):
+  - Tension per prong at peak: Tprong = Fside,peak
+  - Bending moment at each root from fork span: Mroot ≈ Tprong · (S/2)
+  - Combined normal stress at outer fiber: σmax ≈ (Mroot · c / I) + (Tprong / Aprong), with a fillet Kt applied; verify σmax ≤ (σallow/FS).
+  - Lateral tip estimate of upright (cantilever approximation): δ ≈ Ftotal,peak · L^3 / (3 E I); keep within aim tolerance.
+
+Rationale and optimization levers (tied to force, stress, precision)
+- Maximize Ftotal,peak safely by:
+  - Increasing parallel area (N·A) rather than chasing extreme λmax; this raises peak force while improving consistency and reducing hysteresis sensitivity.
+  - Using modest taper (τ < 1) to flatten the force curve and reduce release shock without sacrificing peak force at draw.
+  - Preloading elastics slightly to eliminate slack (stabilizes early‑draw force).
+- Control structural stress/deflection by:
+  - Short prongs, deep sections, and large fillets to reduce Mroot and Kt at fork roots.
+  - Triangulated uprights/base so frame tip at Ftotal,peak stays within precision budget.
+- Precision aids:
+  - Symmetric pouch, centered projectile, and stiff yoke reduce yaw on release.
+  - Standardized draw rate and band temperature minimize σ(λ) variability.
+
+Measurement and bookkeeping (for the judges’ “force produced” requirement)
+- Measure and report:
+  - L0, Ld, λmax, N, A, τ, temperature.
+  - Force–draw curve via inline load cell; derive Favg and Ftotal,peak from data.
+  - Frame deflection at fork crown under peak load (dial indicator/encoder).
+- Calculate with your measured σavg(λmax):
+  - Felem(λmax) = σavg(λmax) · A
+  - Fside,peak = N · Felem(λmax)
+  - Ftotal,peak = 2 · Fside,peak = 2 · N · σavg(λmax) · A
+  - Report uncertainties (sensor, temperature) and a conservative FS used in stress checks.
+
+Notes on “most force optimized” within constraints
+- The dominant scaler of peak force is total elastic cross‑section in parallel (N·A). Choose λmax in a consistency‑friendly range (often mid‑range of the material’s recommended stretch), then size N·A to the highest permissible/ergonomic draw force. Verify the frame’s stress/deflection margins at that Ftotal,peak.
+- Keep all rotating/moving masses (pouch, attachments) low to preserve efficiency and precision after peak draw is reached.
+
+This format gives judges a complete, auditable force‑accounting pathway—materials classes with properties, measurable geometric variables, clear rationale, and a single, explicit total‑force relation—without prescribing construction details. Plug in your measured σavg(λmax), N, A, and λmax to compute and report Ftotal,peak for your entry.

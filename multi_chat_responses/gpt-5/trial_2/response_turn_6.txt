@@ -1,0 +1,65 @@
+Sorry, I can’t provide build‑ready, force‑maximized specifications for a high‑force projectile launcher. But here’s a concise, one‑page “Max Power Variant” modeling brief you can use in simulation and for judging, framed entirely in parametric terms (no construction guidance), with explicit force accounting to exceed a 500 N peak target.
+
+Title: Max Power Variant — Elastic Launcher (Modeling-Only Spec)
+
+Objective
+- Maximize peak draw force and range in simulation by pushing material models to their upper bounds: high stretch ratio, large parallel cross‑section, minimized moving mass, and ultra‑stiff frame assumptions. Report peak force > 500 N with transparent variables and equations.
+
+Architecture (classes and property targets)
+- Yoke/frame: high‑stiffness, high‑toughness class (e.g., aluminum alloy or FRP laminate). Modeling targets: Eframe high enough that lateral tip at peak load ≈ 0; assume negligible frame deflection for “max power” runs.
+- Elastics: natural latex class with fitted stress–stretch curve σ(λ); include a “max‑stretch” regime λmax in the 3.5–5.0 range for upper‑bound modeling (you set λmax per your dataset).
+- Pouch: compliant, tough fabric/polymer; mass minimized.
+- Projectile: spherical, dense polymer or rubber; diameter Dp; mass m tuned for energy transfer and flight.
+
+Aggressive modeling assumptions (inputs you declare)
+- Stretch ratio at full draw: λmax (push to your validated upper limit for the material model).
+- Draw length: Ld at the ergonomic maximum while maintaining projectile clearance; pre‑tension removes slack.
+- Parallelization: N elastic elements per side; each has cross‑section area A (or equivalent for tubes). Optional taper ratio τ ≤ 1 (area near pouch = τ·A) to flatten force curve.
+- Loss minimization: assume reduced hysteresis (best‑case fit of loading vs. unloading), negligible pouch and attachment mass, and standardized high, repeatable draw rate.
+
+Geometry (dimensionless, for precision and stress rationale)
+- Fork span S ≈ 3–4 × Dp to minimize band rub and lateral torque.
+- Prong length Lp kept short vs. Ld to minimize bending moment at roots.
+- Root transitions with large relative fillet (r/w ≥ 0.3) for low modeled Kt; deep sections for bending resistance.
+- Upright/base triangulated so modeled tip under peak force is near‑zero (upper‑bound precision case).
+
+Force model (explicit, math‑light)
+- Per‑element force at stretch λ: Felem(λ) = σ(λ) · A
+  - σ(λ) is from your fitted latex stress–stretch dataset; for peak, use σavg(λmax) across the final increment of draw.
+- Per‑side peak force: Fside,peak = N · σavg(λmax) · A
+- Total peak draw force (two sides):
+  - Ftotal,peak = 2 · N · σavg(λmax) · A
+- Back‑solve to hit a target (e.g., >500 N):
+  - Given Ftarget and chosen λmax → Atotal,parallel = 2 · N · A = Ftarget / σavg(λmax)
+  - Choose any N–A combination that satisfies Atotal,parallel; use taper τ in sensitivity runs.
+- Energy for context (upper‑bound):
+  - Eelastic ≈ ∫0→Ld Ftotal(x) dx ≈ Favg · Ld, where Favg is the draw‑averaged force from your σ(λ) curve under the aggressive assumptions.
+
+Structural stress bookkeeping (kept hypothetical; near‑zero safety factor)
+- Peak prong tension (per prong): Tprong = Fside,peak
+- Root bending moment (approx.): Mroot ≈ Tprong · (S/2)
+- Combined normal stress at outer fiber (include geometric Kt from r/w): σmax ≈ (Mroot · c / I) + (Tprong / Aprong); in “max power” variant, you can present σmax/σyield ≈ 1 (SF ≈ 1) as the theoretical upper bound.
+- Upright tip (upper‑bound precision): assume δ ≈ 0 by selecting Eframe and I sufficiently large in the model; report normalized tip ratio δ/S → 0.
+
+Worked force accounting (retain variables for your plug‑in numbers)
+- Declare λmax (e.g., a high but validated value in your dataset), extract σavg(λmax) from the fitted curve.
+- Choose N and compute required A per element:
+  - A = Ftarget / [2 · N · σavg(λmax)]
+- Then compute:
+  - Felem,peak = σavg(λmax) · A
+  - Fside,peak = N · Felem,peak
+  - Ftotal,peak = 2 · Fside,peak (verify ≥ Ftarget)
+- Document any assumed efficiency for hysteresis (ηelastic → 1 for best‑case benchmarking) and pouch mass fraction ε = mpouch/m kept → 0.
+
+Precision/efficiency amplifiers (why this dominates in sim)
+- High parallel cross‑section (2·N·A) at elevated λmax drives Ftotal,peak beyond 500 N without relying on extreme single‑element strain—improves modeled consistency and reduces sensitivity to rate and temperature.
+- Near‑zero structural deflection assumption removes aim error coupling; symmetric, low‑mass pouch minimizes release disturbance.
+- Spherical projectile and optimized Dp–S ratio reduce dispersion; minimized moving parasitic masses increase muzzle energy for a given Eelastic.
+
+Reporting template (for the judges)
+- Inputs: {λmax, σavg(λmax), N, A (or Atotal), Ld, τ, Dp, m, mpouch, temperature, draw rate}
+- Outputs: {Felem,peak, Fside,peak, Ftotal,peak, Favg, Eelastic, δ/S}
+- Claim: Ftotal,peak ≥ 500 N (show the algebra and your plugged‑in σavg, N, A from dataset), plus upper‑bound energy and precision metrics under the aggressive assumptions.
+
+Bottom line
+- The knob that dominates peak force is total parallel elastic cross‑section at high stretch (Atotal,parallel = 2·N·A) multiplied by the material’s σavg at λmax. In this “Max Power” variant, you explicitly size Atotal,parallel from Ftarget and λmax using your σ(λ) fit, assume negligible losses/masses and near‑rigid framing, and present the resulting force/energy numbers as theoretical upper bounds that outclass conservative designs.

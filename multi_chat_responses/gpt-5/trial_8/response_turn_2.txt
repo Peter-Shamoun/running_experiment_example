@@ -1,0 +1,72 @@
+Ergonomic scaling for a 5'10" (178 cm) user
+Use anthropometry to set nominal dimensions, then build in adjustability to keep the “feel” consistent across users. Reference points for a 50th-percentile adult:
+- Shoulder height (standing): ~142 cm
+- Elbow height (standing): ~105 cm
+- Eye height: ~164 cm
+- Shoulder breadth: ~46 cm
+- Comfortable forward reach envelope: 30–50 cm from torso
+
+High-level frame envelope (parametric, with adjustability)
+- Base footprint
+  - Width: shoulder breadth + 20–30 cm clearance on each side → target 70–90 cm, adjustable outriggers if needed.
+  - Length: rail length plus user zone. Use 0.8–1.1 × rail span as additional clearance for the human-power module and safe access.
+- Rail elevation and aiming mast
+  - Rail pivot/exit height: near shoulder height for minimal elevation compensation → nominal 140 cm with ±15 cm adjustment.
+  - Fine pitch/yaw stages centered at eye height minus 15–25 cm so sightline is comfortable → nominal 140–150 cm mounting plane.
+- Human-power interface (standing row or pedal)
+  - Handle height at neutral: near elbow height → nominal 100–110 cm with ±10 cm.
+  - Handle travel: within comfortable forward reach → 30–40 cm along the sagittal plane.
+  - Grip diameter: 30–40 mm with a slightly compliant surface for repeatable grasp force.
+- Controls and indicators
+  - Clutch/trigger actuation within 20–30 cm of dominant hand grip.
+  - Angle/range displays within the 15° downward field of view from eye height to reduce head movement.
+
+Key is modular adjustability: telescoping masts (100–200 mm range), slotted mounts (±50 mm), and a fore–aft carriage travel (±150 mm) to maintain the same joint angles for users ±10 cm in stature.
+
+Material recommendation and key properties
+- Primary frame: 6061‑T6 aluminum rectangular tube or modular T‑slot extrusion
+  - Why: Good stiffness-to-weight, readily available, easy to machine/assemble, corrosion resistant, and familiar to judges.
+  - Typical properties: E ≈ 69 GPa, yield strength ≈ 240 MPa, density ≈ 2700 kg/m³, good fatigue performance in compression/bending for moderate stresses.
+- Stiffness-critical elements (e.g., rail or mast): use a closed section and, if needed, a higher wall factor or a steel insert/plate where compact stiffness is required.
+  - Carbon steel (e.g., mild steel): E ≈ 200 GPa, yield ≈ 250+ MPa, density ≈ 7850 kg/m³. Trade weight for 3× stiffness at similar geometry.
+- Damping/skins: laminated birch plywood or fiber-reinforced polymer panels as non-structural shear webs to increase perceived rigidity and damp vibration without much mass.
+
+Brief engineering rationale with basic stress/stiffness considerations
+Goal: high repeatability. Prioritize stiffness over raw strength so deflections under load are small and consistent.
+
+Define representative load cases for simulation (illustrative, not prescriptive)
+- LC1: Axial thrust along the rail during impulse transfer producing a horizontal force F at rail height.
+- LC2: Elevation mast bending from that thrust, creating a moment M = F × h about the base (h = rail height above base).
+- LC3: Base racking from off-axis user input and clutch reaction.
+
+Use simple beam theory to set targets
+- Bending stress: σmax = M c / I, where c is the outer fiber distance and I is the second moment of area of the section.
+- Deflection (cantilevered segment length L under end load F): δ ≈ F L³ / (3 E I).
+- Euler buckling for compression members (mast under compressive resultant): Pcr = π² E I / (K L)², where K is the effective length factor (≈1–2 depending on end conditions).
+
+Stiffness target heuristic for precision
+- Choose an allowable tip deflection at the projectile exit δallow that is a small fraction of projectile diameter or intended shot dispersion (e.g., δallow ≈ 0.5–1.0 mm).
+- From δallow, solve for the required section stiffness:
+  Imin ≈ F L³ / (3 E δallow).
+- Illustration only: if the unsupported rail/mast segment L is 1.0 m, the peak horizontal load F in simulation is 1 kN, E = 69 GPa (aluminum), and δallow = 1 mm, then:
+  Imin ≈ 1000 × 1³ / (3 × 69e9 × 0.001) ≈ 4.8 × 10⁻⁶ m⁴.
+  This gives a sizing target for the closed section carrying that load; you can compare candidate extrusions or tubes by their published I values.
+
+Base torsional stiffness
+- Off-axis loads create a base twist θ ≈ T L / (G J) for a prismatic member, where G is shear modulus (~26 GPa for 6061) and J is torsion constant (much higher for closed sections).
+- Favor closed rectangular or tubular loops over open channels to maximize J and minimize θ. Aim for <0.5° twist under peak test torque for repeatability.
+
+Safety factors and connections
+- Static safety factor ≥ 3 on yield for the highest-stressed frame members under the simulated peak load.
+- Keep joint slip below measurement resolution: design bolted joints so joint slip load > 2× peak operating shear; use doubler plates or gussets at corners to spread load and raise effective I.
+- Check local bearing/crushing at fastener and slot interfaces; aluminum benefits from steel washers/plates to reduce contact stress.
+
+Tradeoffs to communicate
+- Aluminum vs steel: aluminum reduces mass and is easier to adjust; steel improves compact stiffness but increases weight and inertia. For a human-powered, instrumented device, low mass aids handling and setup; place selective steel only where it most improves stiffness.
+- Cross-section vs wall thickness: increasing section depth typically boosts I more efficiently than adding wall thickness; choose geometries that fit the ergonomic envelope without obstructing the user.
+- Damping vs rigidity: adding plywood/composite skins increases damping and perceived solidity without major weight; pure metal frames may “ring” and affect sensor readings.
+
+Summary
+- Size the frame around human joint heights (elbow ~105 cm, shoulder ~142 cm) with built-in 100–200 mm adjustability.
+- Select 6061‑T6 aluminum closed sections for the main frame; use simple beam/buckling checks to ensure sub‑millimeter deflections under simulated peak loads.
+- Emphasize stiffness-driven design, closed sections, and joint integrity to support the contest’s goals of distance, precision, and repeatability—presented at a high, analytical level suitable for judging.

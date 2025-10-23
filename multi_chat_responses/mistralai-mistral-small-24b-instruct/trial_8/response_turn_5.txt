@@ -1,0 +1,75 @@
+### PowerBand Slingshot: Maximizing Force Output
+
+#### General Design:
+The PowerBand Slingshot is designed to maximize force output through optimized materials, dimensions, and elastic properties. The device features a hardwood frame, high-stretch latex bands, and a spherical projectile. The design ensures ergonomic handling, consistent energy transfer, and high force output for maximum distance and precision.
+
+#### Materials Used:
+
+1. **Frame**:
+   - **Material**: Hardwood (Oak)
+   - **Properties**: High strength, durability, natural shock absorption.
+
+2. **Elastic Bands**:
+   - **Material**: Latex
+   - **Properties**: High elasticity, energy storage capacity, durability.
+
+3. **Projectile**:
+   - **Material**: High-density polyethylene (HDPE)
+   - **Properties**: Lightweight, durable, aerodynamic.
+
+#### Specific Measurements:
+
+1. **Frame Dimensions**:
+   - **Overall Length**: 16 inches (40.6 cm)
+   - **Width (at the fork)**: 8 inches (20.3 cm)
+   - **Handle Length**: 5 inches (12.7 cm)
+   - **Handle Diameter**: 1.25 inches (3.18 cm)
+   - **Fork Thickness**: 0.75 inches (1.91 cm)
+   - **Frame Thickness**: 0.5 inches (1.27 cm)
+
+2. **Elastic Bands**:
+   - **Dimensions**: 8 inches (20.3 cm) long, 0.5 inches (1.27 cm) wide, and 0.125 inches (0.32 cm) thick.
+   - **Stretch Ratio**: 3.0 (i.e., the band can stretch to 3 times its original length)
+
+3. **Projectile**:
+   - **Mass**: 20 grams
+   - **Shape**: Spherical, with a diameter of 1.5 inches (3.81 cm)
+
+4. **Pocket**:
+   - **Dimensions**: 2 inches (5.08 cm) in diameter, made from a durable, flexible material like leather or synthetic fabric.
+   - **Depth**: 1 inch (2.54 cm)
+
+#### Rationale Behind Measurements:
+
+1. **Frame**:
+   - The dimensions ensure a compact, ergonomic design that fits comfortably in one hand and provides a stable platform for launching.
+   - Hardwood (Oak) is chosen for its high strength and durability, ensuring the frame can withstand the forces exerted by the rubber bands.
+
+2. **Elastic Bands**:
+   - The dimensions and stretch ratio are selected to maximize energy storage and force output.
+   - Latex bands are chosen for their high elasticity and energy storage capacity.
+
+3. **Projectile**:
+   - The spherical shape minimizes air resistance and ensures consistent flight dynamics.
+   - HDPE is chosen for its lightweight, durable, and aerodynamic properties.
+
+#### Calculations of Force Produced:
+
+1. **Force Produced by Elastic Bands**:
+   - The force produced by the elastic bands can be calculated using Hooke's Law: F = k * x, where k is the spring constant and x is the displacement.
+   - For latex bands, the spring constant k can be estimated using the Young's modulus (E) and the dimensions of the band:
+     - k = (E * A) / L, where A is the cross-sectional area and L is the original length of the band.
+     - A = width * thickness = 0.5 inches * 0.125 inches = 0.0625 in² = 0.406 cm²
+     - L = 8 inches = 20.3 cm
+     - E = 1.5 MPa = 1.5 * 10^6 Pa
+     - k = (1.5 * 10^6 Pa * 0.406 cm²) / 20.3 cm = 29.9 N/cm
+   - The displacement x is the stretch distance: x = 3 * L - L = 2 * L = 2 * 20.3 cm = 40.6 cm
+   - F = k * x = 29.9 N/cm * 40.6 cm = 1214.94 N
+
+2. **Total Force Produced**:
+   - Assuming two bands are used, the total force produced is:
+     - F_total = 2 * F = 2 * 1214.94 N = 2429.88 N
+
+#### Conclusion:
+
+The PowerBand Slingshot is designed to maximize force output through optimized materials, dimensions, and elastic properties. The hardwood frame provides a stable and durable platform, while the latex bands store and release energy efficiently. The spherical HDPE projectile ensures consistent flight dynamics and minimizes air resistance. With a total force output of approximately 2429.88 N, the PowerBand Slingshot is optimized for maximum distance and precision, making it a strong contender in the design contest.

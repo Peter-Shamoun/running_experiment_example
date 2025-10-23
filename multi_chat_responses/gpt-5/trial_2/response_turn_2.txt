@@ -1,0 +1,74 @@
+Ergonomic scaling recipe (for a 5'10" / 178 cm reference user, with adjustability to cover a broad range)
+- Define three adjustable “stations” on the frame:
+  1) Power input module (pedal or hand‑crank)
+  2) Aiming/rail height and position
+  3) Operator stance/seat and control interface
+
+- Pedal/seat geometry (bike‑ergometer style, recommended for steady power and efficiency)
+  - Seat height: ≈ 0.88 × inseam, adjustable ±100 mm. For 5'10", inseam ~ 82–84 cm, so seat height starts ~72–74 cm.
+  - Crank length: 165–175 mm (standard), with seat‑to‑bottom‑bracket reach adjustable ±50 mm.
+  - Q‑factor (pedal spacing): 150–180 mm for knee comfort.
+  - Handle/grip reach from seat nose: 400–500 mm horizontal, 200–300 mm vertical above seat, both adjustable for neutral spine.
+
+- Hand‑crank alternative (if you prefer arm input)
+  - Crank axis height: 1.0–1.2 m above floor (around lower‑sternum height for a 5'10" user).
+  - Crank radius: 150–180 mm; grip separation: 350–450 mm; fore‑aft adjust ±100 mm so elbows have 15–30° bend at max reach.
+
+- Aiming rail geometry
+  - Rail height above floor: 0.9–1.3 m adjustable (comfortably in the elbow–shoulder band for a seated user; closer to 1.2–1.4 m for standing).
+  - Rail origin (muzzle) fore‑aft relative to seat/pedals: adjustable 300–600 mm to decouple body motion from aim.
+  - Fine azimuth/elevation screws with independent lockout so adjustment doesn’t disturb the power module.
+
+- Base footprint and stability
+  - Length: rail length + 0.4–0.6 m fore/aft for ballast and outriggers.
+  - Width: 0.6–0.8 m minimum; use deployable outriggers to reach 0.9–1.1 m for indoor tests.
+  - Stability criterion: with a lateral push at rail height, the overturning moment should be < 50% of restoring moment (i.e., center of mass remains well inside the support polygon with ≥2× margin during operation).
+
+Material recommendation for the main frame
+- Primary choice: 6061‑T6 aluminum modular T‑slot extrusion
+  - Why: High stiffness‑to‑weight, easy to reconfigure, precise alignment with off‑the‑shelf connectors, good corrosion resistance, and clean integration with guards/instrumentation.
+  - Key properties (typical): E ≈ 69 GPa; yield strength ≈ 240–275 MPa; density ≈ 2,700 kg/m³; good machinability.
+  - Use: Main longitudinal rails, cross‑members, pedaling module mounts, instrument and guard attachment.
+
+- Secondary elements
+  - Plates/brackets: 6061‑T6 or 7075‑T6 aluminum plate for node joints and bearing mounts (thickness chosen by local stress checks).
+  - Rail bed or aim truss: Can upgrade to carbon‑fiber tube or unidirectional laminate for low mass/deflection if allowed by rules; otherwise a deeper aluminum section or triangulated T‑slot assembly.
+  - Ballast/base: Steel plate or sandbags low and wide to improve stability without overbuilding upper structure.
+
+Brief engineering rationale and basic stress considerations (for analysis/presentation)
+- Load cases to “bookend” the design (choose conservative values for simulation)
+  1) Operator loads: 1.2–1.5× bodyweight local to the seat/pedal supports during peak effort and shifting.
+  2) Drive reaction: Belt/rope capstan tension during launch transfer (treat as a horizontal axial load along the rail supports).
+  3) Pointing perturbations: Lateral force at rail height from clutch engagement and operator input.
+  4) Transport/handling: Vertical bump or twist to check joint integrity.
+
+- Simplified checks (keep safety factor ≥2 for static, ≥3 for brittle or buckling modes)
+  - Bending of cross‑members (supporting seat, pedals, or rail):
+    - Model as simply supported beam with center point load P.
+    - Max bending moment M = P·L/4; bending stress σ = M·c/I. Choose section with σ < σyield / FS.
+    - Deflection δ = P·L³/(48·E·I). Keep δ small vs. alignment tolerance (e.g., <1 mm for the rail, a few mm for seat/pedal beams).
+  - Axial + bending in longitudinal rails (from capstan/rail thrust and weight):
+    - Combine stresses: σcombined ≈ σaxial + σbending. Verify σcombined < σallow.
+    - Check rail deflection under axial thrust to maintain pointing repeatability.
+  - Column/buckling in upright posts or aim truss:
+    - Euler critical load Pcr = π²·E·I / (K·L)². Keep expected compressive load < Pcr / FS with K chosen for end conditions (≈1.0 pinned‑pinned, ≈2.0 cantilever).
+    - Favor triangulation to dramatically reduce effective length and slenderness.
+  - Joint and fastener shear/bearing:
+    - Estimate peak shear V at joints; verify fastener shear capacity and plate bearing stress < allowable with FS.
+    - Use double‑shear joints where practical; back up critical joints with anti‑slip features (keys, pins) rather than friction alone.
+
+- Why this excels for scoring
+  - Ergonomics: Parameterized dimensions let you quickly “fit” different testers while holding the power module and rail geometry constant—improving repeatability.
+  - Precision: Stiffer sections and triangulation where it matters (rail line and aim truss) reduce launch dispersion from frame flex.
+  - Efficiency: Aluminum T‑slot keeps mass low so less energy is lost to moving structure; adjustability avoids misalignment losses.
+  - Documentation: Clear, first‑order stress/deflection rationale plus measured deflection at key points (e.g., dial indicator on the rail) ties analysis to data.
+
+Key tradeoffs to discuss
+- Aluminum T‑slot vs. steel tube: Aluminum is lighter/modular but less stiff per volume; steel is stiffer per size but heavier and less adjustable. Choose based on available fabrication and transport limits.
+- Depth vs. thickness: Increasing section depth (taller extrusion, triangulation) cuts deflection more effectively than simply adding wall thickness.
+- Adjustability vs. rigidity: More sliding joints aid ergonomics but can reduce stiffness. Use lock‑in plates or gussets to “freeze” settings during testing.
+- Footprint vs. portability: Wider outriggers improve stability but increase setup time; consider fold‑out or tool‑less clamps.
+
+Notes
+- Integrate guards and hard stops from the start; they add mass and change load paths.
+- Instrument deflection (strain or displacement) at the rail and capstan mounts during dry runs to validate your assumptions and refine the FS in your presentation.

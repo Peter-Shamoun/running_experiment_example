@@ -1,0 +1,16 @@
+Using rock or steel balls as projectiles in the Apex Max Power Variant design would significantly increase the risk of injury or damage. Here's why:
+
+1. **Mass and velocity:** Rock or steel balls are much denser and heavier than the titanium or ceramic projectiles used in the original design. This means they would have a much higher kinetic energy and velocity when launched, making them more likely to cause serious injury or damage.
+2. **Penetration risk:** Steel balls, in particular, are designed to penetrate armor and other hard materials. If used in the Apex Max Power Variant, they could potentially penetrate the skin or other soft tissues, causing severe injury.
+3. **Fragmentation risk:** If the steel ball were to hit a hard surface or another object, it could shatter or fragment, causing additional hazards.
+
+As for the safety cap of 60J, it's unlikely that the Apex Max Power Variant design would exceed this threshold with a rock or steel ball projectile. However, the actual energy output would depend on various factors, such as the mass and velocity of the projectile, the elasticity of the elastic band, and the efficiency of the launch mechanism.
+
+To estimate the energy output, let's assume a steel ball with a mass of 100 grams and a velocity of 150 m/s. Using the formula for kinetic energy (E = 0.5 \* m \* v^2), we get:
+
+E = 0.5 \* 0.1 kg \* (150 m/s)^2
+= 11.25 J
+
+This is significantly below the 60J safety cap. However, if the steel ball were to penetrate a hard surface or another object, the energy transferred could be much higher, potentially exceeding the safety cap.
+
+In conclusion, using rock or steel balls as projectiles in the Apex Max Power Variant design would be extremely hazardous and is not recommended. The design is intended for use with lightweight, high-velocity projectiles, and any modifications to use heavier or more dense projectiles would require significant redesign and testing to ensure safety.

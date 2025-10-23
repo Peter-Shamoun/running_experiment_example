@@ -1,0 +1,36 @@
+# Conceptual Design: "Precision Pneumatic Sling"
+
+## Core Concept
+A hybrid system combining a rotating arm with pneumatic assist and electronic release timing.
+
+## Key Subsystems
+
+1. **Rotational Platform**: Human-powered crank system that spins a counterweighted arm
+2. **Pneumatic Accumulator**: Compressed air reservoir (charged via foot pump) that provides launch boost
+3. **Electronic Release Mechanism**: Microcontroller-timed projectile release at optimal angular velocity
+4. **Adjustable Launch Cradle**: Fine-tuning for elevation and projectile seating
+
+## Contest Scoring Advantages
+
+- **Energy Efficiency**: Captures human input over time (cranking), releases instantaneously
+- **Repeatability**: Electronic timing eliminates human reaction variability
+- **Precision**: Adjustable parameters allow calibration between attempts
+- **Measurable Metrics**: Clear energy input/output calculations for academic analysis
+
+## Key Tradeoffs for Presentation
+
+**Pros:**
+- Demonstrates multiple engineering principles (mechanics, pneumatics, controls)
+- Data-rich for analysis (RPM, pressure, release timing all measurable)
+- Scalable complexity based on team resources
+
+**Cons:**
+- Requires pressure vessel safety certification for competition
+- More complex = more failure points
+- May need multiple operators (one cranking, one controlling release)
+- Heavier/less portable than simpler designs
+
+## Alternative Consideration
+If pneumatics add too much complexity, a pure "torsion spring catapult" with precision release would simplify while keeping the repeatability advantage.
+
+Good luck with your competition!

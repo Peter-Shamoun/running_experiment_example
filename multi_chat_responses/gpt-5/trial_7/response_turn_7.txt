@@ -1,0 +1,35 @@
+Short answer
+- Yes, substituting rock or steel balls makes the setup significantly less safe. Hard, dense projectiles carry more momentum, don’t deform to absorb energy, ricochet more, and can fragment (rocks), increasing injury risk and backstop loading.
+- Exceeding a 60 J cap is plausible to likely, depending on projectile mass and actual muzzle velocity. Many common steel sizes will breach 60 J at velocities that strong slingshots can reach.
+
+Why it’s less safe
+- Higher density/hardness: For the same velocity, steel delivers more energy and penetrates more than soft elastomer/foam. It also rebounds with little energy loss.
+- Ricochet/fragmentation: Steel can ricochet; irregular rocks can chip or shatter. Both create unpredictable secondary projectiles.
+- Guidance sensitivity: Heavier, rigid projectiles magnify any pouch/band asymmetry, increasing fork-strike or off-axis launch risk.
+- Backstop stress: Containment nets/targets that are fine for soft balls can fail with hard shot.
+
+Would it exceed 60 J? Use this quick test
+Kinetic energy E = 0.5 m v^2. To stay at or below 60 J, the maximum allowable velocity for a given mass m is:
+vmax = sqrt(120 / m), with m in kg and v in m/s.
+
+Examples (threshold to hit 60 J)
+- 10 g (0.010 kg): vmax ≈ 109 m/s
+- 20 g (0.020 kg): vmax ≈ 77 m/s
+- 28 g (0.028 kg): vmax ≈ 65.5 m/s
+- 30 g (0.030 kg): vmax ≈ 63 m/s
+- 50 g (0.050 kg): vmax ≈ 49 m/s
+- 100 g (0.100 kg): vmax ≈ 34.6 m/s
+
+Steel ballpark masses (for reference)
+- 12.7 mm (1/2 in) steel: ~8 g → 60 J at ~122 m/s (unlikely in typical human slingshot)
+- 16 mm steel: ~16.8 g → 60 J at ~84.5 m/s (possible in high-performance setups)
+- 20 mm steel: ~32.9 g → 60 J at ~60 m/s (very plausible)
+- 30 mm steel: ~111 g → 60 J at ~33 m/s (even modest speeds exceed cap)
+
+Rocks vary widely, but even a smooth 30–50 g stone will exceed 60 J if it leaves above roughly 39–49 m/s—speeds that many powerful elastics can achieve with that mass class.
+
+Practical implication
+- If your launcher is already capable of propelling a ~25–30 g soft sphere near or above ~65 m/s, swapping to steel or heavier rocks will likely put you over 60 J. Even if muzzle energy stays below 60 J, hard projectiles introduce ricochet and penetration hazards that soft balls largely avoid.
+
+Recommendation
+- For compliance and safety: stick to soft, deformable projectiles; verify muzzle velocity with a chronograph; and use the vmax formula above to ensure your chosen mass cannot exceed 60 J under your measured speeds. If there’s any uncertainty, assume hard shot is over the cap and disallowed.

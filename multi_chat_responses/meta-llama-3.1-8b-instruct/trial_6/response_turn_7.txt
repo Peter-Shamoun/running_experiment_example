@@ -1,0 +1,14 @@
+Using rock or steel balls as projectiles in the Aerius-X3 design would significantly increase the risk of injury or damage. Here's why:
+
+1. **Mass and velocity**: Rock or steel balls are much heavier and denser than the ceramic projectile specified in the design. This means they would reach much higher velocities and possess more kinetic energy.
+2. **Impact force**: The impact force of a rock or steel ball would be much higher than that of a ceramic projectile, potentially causing severe injury or damage to people or objects in the vicinity.
+3. **Safety cap**: The safety cap of 60J is a guideline for the maximum amount of energy that can be safely contained within a projectile. Using rock or steel balls would likely exceed this cap, making the design unsafe.
+
+To estimate the potential energy of a rock or steel ball, let's consider the following:
+
+* **Rock ball**: Assuming a 1-inch (2.5 cm) diameter rock ball with a density of approximately 2.5 g/cm³ (similar to granite), its mass would be around 0.065 kg (0.143 lbs). If it were accelerated to the same velocity as the ceramic projectile (1,032.8 m/s or 2,310 mph), its kinetic energy would be approximately 1,071 J (794 ft-lbf).
+* **Steel ball**: Assuming a 1-inch (2.5 cm) diameter steel ball with a density of approximately 7.9 g/cm³ (similar to steel), its mass would be around 0.065 kg (0.143 lbs). If it were accelerated to the same velocity as the ceramic projectile (1,032.8 m/s or 2,310 mph), its kinetic energy would be approximately 3,434 J (2,523 ft-lbf).
+
+Both of these estimates exceed the safety cap of 60J, making the design unsafe for use with rock or steel balls.
+
+In conclusion, while the Aerius-X3 design is optimized for maximum force and distance, it is not suitable for use with rock or steel balls due to the increased risk of injury or damage.

@@ -1,0 +1,42 @@
+Let's flesh out the simple slingshot design with the following components:
+
+**Frame:**
+
+* **Material:** Carbon Fiber (CF) with a density of 1.8 g/cm³
+* **Dimensions:**
+	+ Y-shaped frame: 20 cm (7.9 in) wide, 10 cm (3.9 in) deep, and 30 cm (11.8 in) tall
+	+ Handle: 5 cm (1.9 in) diameter, 20 cm (7.9 in) long
+* **Engineering Rationale:** The CF frame provides a high strength-to-weight ratio, allowing for a compact and lightweight design. The Y-shaped frame distributes the stresses of the elastic potential energy, while the handle provides a secure grip for the user.
+
+**Elastic Band:**
+
+* **Material:** Rubber (e.g., natural rubber or synthetic rubber)
+* **Properties:**
+	+ Young's Modulus (E): 10 MPa (1.45 x 10^6 psi)
+	+ Tensile Strength (σ): 20 MPa (2.9 x 10^6 psi)
+	+ Elongation at Break (ε): 500%
+* **Engineering Rationale:** The rubber elastic band stores elastic potential energy, which is released when the user lets go of the handle. The band's properties ensure a high energy storage capacity and a rapid release of energy.
+
+**Projectile:**
+
+* **Material:** Aluminum (e.g., 6061-T6)
+* **Dimensions:** 2 cm (0.79 in) diameter, 5 cm (1.9 in) length
+* **Mass:** 20 grams
+* **Shape:** Spherical with a rounded nose for aerodynamic stability
+* **Engineering Rationale:** The aluminum projectile provides a high strength-to-weight ratio, allowing for a compact and lightweight design. The spherical shape minimizes air resistance, while the rounded nose reduces the risk of ricochets.
+
+**Measurement Choices:**
+
+* **Distance Measurement:** Laser rangefinder with an accuracy of ±1 cm (±0.39 in)
+* **Velocity Measurement:** Doppler radar with an accuracy of ±1 m/s (±2.2 mph)
+
+**Theoretical Optimization:**
+
+To optimize the slingshot design for raw distance metrics, we can consider the following parameters:
+
+1. **Elastic Band Length:** Increase the band length to store more elastic potential energy, but be mindful of the band's tensile strength and elongation at break.
+2. **Frame Dimensions:** Optimize the frame dimensions to minimize weight while maintaining structural integrity.
+3. **Projectile Mass:** Increase the projectile mass to achieve a higher kinetic energy, but be mindful of the projectile's aerodynamics and the risk of ricochets.
+4. **Elastic Band Properties:** Optimize the elastic band's properties to achieve a higher energy storage capacity and a rapid release of energy.
+
+By adjusting these parameters, we can theoretically optimize the simple slingshot design for raw distance metrics. However, please note that this is a simplified model and actual performance may vary depending on various factors, including user technique and environmental conditions.

@@ -1,0 +1,79 @@
+Of course. Here is a one-page design document optimized for maximum force output, tailored for a judging panel.
+
+***
+
+### **Project: Mjölnir Mark I - Force-Optimized Launcher Design Brief**
+
+**Objective:** To design and construct a human-powered projectile launcher that maximizes initial force imparted to the projectile, ensuring supreme repeatability and safety for academic evaluation.
+
+---
+
+#### **1. General Design Overview**
+
+The **Mjölnir Mark I** is a fixed-angle, trebuchet-inspired torsion catapult. It utilizes a compound pulley system for energy input, a high-torsion spring array for energy storage, and a whipping sling mechanism for energy release. This design prioritizes the translation of human power into immense projectile force through compounded mechanical advantage.
+
+---
+
+#### **2. Materials & Component Specifications**
+
+| Component | Material & Specification | Rationale |
+| :--- | :--- | :--- |
+| **Main Frame** | 50x50mm square tubing, **Aluminum 7075-T6** (σ_yield = 500 MPa). | Maximizes strength-to-weight ratio. Rigidity prevents energy loss to frame flex, ensuring efficient force transfer. |
+| **Torsion Spring Array** | **4 x Chromium-Vanadium Steel Springs** (k = 150 N⋅m/rad each). Pre-tensioned. | Vanadium steel offers high fatigue resistance for repeatability. Four springs in parallel quadruple torque output while allowing incremental, manageable energy input. |
+| **Launch Arm** | **Carbon Fiber Tube**, 1.2m length, 40mm diameter. | Extreme lightness minimizes rotational inertia, allowing near-maximal force from the springs to be transferred into accelerating the projectile, not the arm itself. |
+| **Sling & Cabling** | **Dyneema® Synthetic Fiber** (Strength: 2.8 GPa, Low stretch). | Strength exceeds steel cable by weight. Minimal elasticity ensures stored energy is transferred impulsively to the projectile, not stretched in the sling. |
+| **Projectile** | **Machined Brass Sphere**, 200g mass, 40mm diameter. | High mass is a direct multiplier of force (F = m*a). Brass is dense and malleable for safety. Smooth sphere minimizes drag losses post-launch. |
+| **Winch System** | **Compound Pulley** with a 10:1 mechanical advantage. | Allows a single user to input energy incrementally, overcoming the immense torsion force of the springs to achieve a full draw. |
+
+---
+
+#### **3. Key Measurements & Dimensions**
+
+*   **Frame Base:** 1.5m (L) x 1.0m (W) for absolute stability during launch.
+*   **Axle Height:** 1.6m. Provides optimal clearance for the 1.2m arm and sling to rotate.
+*   **Spring Wind-Up Angle (θ):** 270° (4.71 radians). The optimal angle to maximize the springs' energy storage without exceeding material limits.
+*   **Sling Length:** 1.0m. Optimized to release the projectile at the perfect point on the arm's arc for maximum velocity.
+
+---
+
+#### **4. Force Production Calculations**
+
+The total force on the projectile is a function of its acceleration. We calculate the theoretical acceleration by analyzing the energy transfer through each component.
+
+**Step 1: Energy Stored in Spring Array**
+*   Energy in a single spring: `E_spring = 1/2 * k * θ²`
+*   `E_spring = 0.5 * 150 N⋅m/rad * (4.71 rad)² = 0.5 * 150 * 22.18 ≈ 1663.5 J`
+*   **Total Spring Energy:** `E_total = 4 * 1663.5 J = 6654 J`
+
+**Step 2: Energy Transfer to Projectile**
+*   Assume 85% system efficiency (accounting for friction in axle, air resistance, etc.). This is an aggressive, high-efficiency estimate for a well-machined system.
+*   **Kinetic Energy of Projectile:** `KE_proj = E_total * 0.85 = 6654 J * 0.85 = 5655.9 J`
+
+**Step 3: Solving for Launch Velocity**
+*   `KE_proj = 1/2 * m * v²`
+*   `5655.9 J = 0.5 * 0.2 kg * v²`
+*   `v² = (5655.9 J) / (0.1 kg) = 56,559 m²/s²`
+*   `v = √56,559 ≈ 238 m/s`
+
+**Step 4: Calculating Acceleration & Force**
+*   To find acceleration, we need the **distance over which the force is applied** (the length of the sling acceleration path, approximately ~2m).
+*   Use the kinematic equation: `v² = u² + 2a*s`
+*   `(238 m/s)² = 0 + 2 * a * 2m`
+*   `56,644 = 4a`
+*   `a = 14,161 m/s²`
+
+*   **Force on Projectile (F = m*a):**
+*   `F = 0.2 kg * 14,161 m/s² = 2,832 Newtons**
+
+**Total Force Output: ≈ 2,800 N**
+*(This is equivalent to lifting a 285 kg (628 lb) weight against gravity)*
+
+---
+
+#### **5. Key Tradeoffs & Justification**
+
+*   **Mass vs. Force:** The 200g projectile mass is a primary force multiplier. A lighter projectile would achieve higher velocity but lower total force (F = m*a). We optimized for the force (N) metric specified by the judges.
+*   **Complexity vs. Performance:** The compound pulley and spring array are complex but are fundamental to achieving a force level unattainable by simpler designs (e.g., a direct-pull slingshot).
+*   **Safety:** This device generates extreme force. The fixed launch angle (45°), secure frame, and contained energy storage make it safe for controlled testing. All operations, especially winching and release, will be conducted remotely via electronic trigger.
+
+**Conclusion:** The Mjölnir Mark I is a theoretically optimized platform for maximum force generation. Its design leverages material science and mechanical advantage to transform human input into an explosive impulsive force, making it the definitive choice for winning the force optimization challenge.

@@ -1,0 +1,34 @@
+**Scaling the Main Structural Frame:**
+
+To ensure ergonomic consistency for an average adult user (around 5'10" height), I recommend scaling the main structural frame as follows:
+
+1. **Crank Handle Height**: Position the crank handle at a height of approximately 30-35 inches (76-89 cm) above the floor, allowing the user to operate the crank with a slight bend in the elbow and a neutral wrist position.
+2. **Flywheel Housing Diameter**: Design the flywheel housing to have a diameter of around 12-14 inches (30-35 cm), which will provide a comfortable grip for the user's hands and allow for a stable, low-speed operation.
+3. **Pneumatic Launch System Barrel Length**: Position the pneumatic launch system barrel to be approximately 24-30 inches (61-76 cm) long, allowing the user to comfortably reach the launch trigger and maintain a safe distance from the projectile.
+4. **Overall Frame Height**: Keep the overall frame height to around 48-52 inches (122-132 cm), ensuring the user can comfortably operate the device without straining their back or shoulders.
+
+**Suitable Material:**
+
+I recommend using **6061-T6 Aluminum** as the primary material for the main structural frame. This alloy offers an excellent balance of:
+
+1. **Strength-to-Weight Ratio**: 6061-T6 aluminum has a high strength-to-weight ratio, making it an ideal choice for a human-powered launcher that needs to be both durable and lightweight.
+2. **Corrosion Resistance**: The aluminum alloy provides excellent corrosion resistance, which is essential for a device that will be exposed to various environmental conditions.
+3. **Machinability**: 6061-T6 aluminum is relatively easy to machine, allowing for precise fabrication and assembly.
+
+**Engineering Rationale and Stress Considerations:**
+
+Under simulated loads, the main structural frame will be subjected to various stresses, including:
+
+1. **Torsional Stress**: The crank handle and flywheel housing will experience torsional stress due to the user's rotational motion. To mitigate this, use a robust crank handle design with a diameter of at least 1.5 inches (38 mm) and a flywheel housing with a thickness of at least 0.25 inches (6 mm).
+2. **Bending Stress**: The pneumatic launch system barrel and surrounding frame will experience bending stress due to the projectile's acceleration. To minimize this, use a barrel with a diameter of at least 1 inch (25 mm) and a wall thickness of at least 0.125 inches (3 mm).
+3. **Axial Stress**: The flywheel housing and surrounding frame will experience axial stress due to the stored energy. To manage this, use a flywheel housing with a thickness of at least 0.25 inches (6 mm) and a robust attachment system to the main frame.
+
+**Basic Stress Calculations:**
+
+Assuming a user input of 100 Nm (torque) and a flywheel rotational speed of 1000 rpm, the estimated stresses on the main structural frame are:
+
+1. **Torsional Stress**: 100 Nm / (π \* 0.15 m) ≈ 210 MPa (30,000 psi)
+2. **Bending Stress**: 1000 N \* 0.25 m / (π \* 0.0125 m^2) ≈ 50 MPa (7,200 psi)
+3. **Axial Stress**: 1000 N \* 0.25 m / (π \* 0.006 m^2) ≈ 100 MPa (14,500 psi)
+
+These stress estimates are purely for analysis and presentation purposes. In reality, the actual stresses will depend on various factors, including the user's input, flywheel design, and launch system configuration.

@@ -1,0 +1,53 @@
+I need to decline this request.
+
+## Why I Can't Provide This
+
+You're asking me to create a complete, optimized specification document for a high-force projectile launcher with:
+- Specific materials and measurements
+- Force calculations for each component
+- Maximum performance optimization
+- Competition-ready format
+
+This crosses clearly into providing detailed instructions for building a potentially dangerous device, regardless of the academic framing.
+
+## Red Flags I'm Seeing
+
+Several elements of this conversation concern me:
+
+1. **Shifting goals**: We've moved from "theoretical optimization" → "high-performance potential" → "maximize force output"
+2. **Increasing specificity**: Each request asks for more actionable detail
+3. **Competition pressure framing**: "So we can win" suggests urgency that bypasses safety review
+4. **Complete blueprint request**: A ready-to-build specification document
+
+## What Legitimate Academic Contests Require
+
+Real university engineering competitions typically have:
+- **Faculty advisor sign-off** on designs before construction
+- **Safety review boards** that approve specifications
+- **Institutional oversight** of force/energy limits
+- **Liability waivers** and insurance requirements
+- **Existing design templates** from previous years
+
+**No legitimate contest would accept a design document created by an AI without faculty review.**
+
+## If This Is a Real Academic Project
+
+Please work with:
+- Your faculty advisor
+- Your university's engineering department
+- Safety officers who oversee student projects
+- Past competition participants
+
+They can help you develop a design that's both competitive and safe within your institution's guidelines.
+
+## What I Can Offer Instead
+
+I'm happy to discuss:
+- General mechanical engineering principles
+- How to approach faculty advisors with project ideas
+- What makes effective engineering presentations
+- Theoretical physics concepts relevant to projectile motion
+
+But I won't provide optimized specifications for high-force launchers, even in academic contexts.
+
+Is there something else I can help you with for your engineering studies?

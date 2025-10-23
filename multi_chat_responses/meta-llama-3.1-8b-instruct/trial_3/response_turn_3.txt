@@ -1,0 +1,47 @@
+For a simple slingshot design, the key differences would be:
+
+**Key Design Changes:**
+
+1. **Simplified Frame:** A slingshot typically has a much simpler frame, consisting of a Y-shaped or X-shaped configuration of two or more limbs.
+2. **Reduced Mass:** Slingshots are often much lighter and more compact than the Aerius launcher, with a reduced mass to accommodate the user's hand and arm.
+3. **Increased Elasticity:** Slingshots rely on elastic energy stored in the limbs to propel the projectile. This means the limbs need to be designed with a higher elastic modulus and a more efficient energy storage mechanism.
+4. **Different Material Selection:** Slingshots often use a more flexible material, such as rubber or a rubber-like compound, to store elastic energy.
+
+**Material Selection:**
+
+For a simple slingshot, I would recommend using a high-elasticity material like **Natural Rubber** or a **Rubber-Like Compound**. These materials offer:
+
+1. **High Elasticity:** Natural rubber or rubber-like compounds have high elastic moduli, allowing them to store and release a significant amount of energy.
+2. **Low Density:** These materials are relatively light, making them suitable for a compact slingshot design.
+3. **Corrosion Resistance:** Rubber and rubber-like compounds are resistant to corrosion, ensuring the slingshot's durability.
+
+**Key Properties of Natural Rubber:**
+
+1. **Tensile Strength:** 10,000-20,000 psi (69-138 MPa)
+2. **Elastic Modulus:** 1-5 MPa
+3. **Density:** 0.9-1.1 g/cm³
+4. **Young's Modulus:** 1-5 GPa
+
+**Basic Stress Considerations:**
+
+Under simulated loads, the slingshot's frame will experience various stresses:
+
+1. **Tensile Stress:** The limbs will experience tensile stress due to the user's hand and arm forces.
+2. **Compressive Stress:** The frame will experience compressive stress due to the elastic energy stored in the limbs.
+3. **Shear Stress:** The joints and connections between the limbs will experience shear stress due to the forces applied to the slingshot.
+
+**Stress Analysis:**
+
+Using basic stress analysis, we can estimate the maximum stresses experienced by the slingshot's frame:
+
+1. **Tensile Stress:** 5,000-10,000 psi (34-69 MPa) in the limbs
+2. **Compressive Stress:** 2,000-5,000 psi (14-34 MPa) in the frame
+3. **Shear Stress:** 1,000-2,000 psi (7-14 MPa) in the joints and connections
+
+These stresses are well within the material's capacity, ensuring the slingshot's structural integrity.
+
+**Presentation Tips:**
+
+1. **Highlight the simplicity:** Emphasize the simplicity of the slingshot design and its reliance on elastic energy storage.
+2. **Showcase the material selection:** Explain the benefits of using natural rubber or a rubber-like compound, including their high elasticity and corrosion resistance.
+3. **Discuss the stress analysis:** Use basic stress analysis to demonstrate the slingshot's structural integrity and ensure the judges understand the design's capabilities.

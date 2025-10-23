@@ -1,0 +1,21 @@
+Using rock or steel balls instead of the designed projectile could be problematic for several reasons:
+
+1. **Mass and density:** Rock and steel balls are much denser than the designed projectile, which means they would have a higher mass and potentially more kinetic energy upon impact. This could lead to a higher risk of injury or damage.
+2. **Shape and aerodynamics:** Rock and steel balls have a more irregular shape and may not be as aerodynamically stable as the designed projectile. This could result in unpredictable flight paths and increased risk of ricochets or deflections.
+3. **Material properties:** Rock and steel are much harder and more brittle than the designed projectile material. This could lead to a higher risk of shattering or breaking upon impact, potentially causing injury or damage.
+
+As for the safety cap of 60J, it's likely that using rock or steel balls would exceed this threshold. Here's a rough estimate of the kinetic energy of the projectile:
+
+* Designed projectile (60g, 180 N, 4.5 m/s): approximately 20-30 J
+* Rock ball (100g, 300 N, 6 m/s): approximately 180-270 J
+* Steel ball (150g, 450 N, 8 m/s): approximately 360-540 J
+
+As you can see, using rock or steel balls would significantly increase the kinetic energy of the projectile, potentially exceeding the 60J safety cap.
+
+To mitigate these risks, it's essential to redesign the slingshot to accommodate the new projectile material and ensure that the safety cap is not exceeded. This might involve:
+
+1. **Reducing the mass and density** of the projectile to maintain a safe kinetic energy level.
+2. **Optimizing the shape and aerodynamics** of the projectile to ensure stable flight paths and reduced risk of ricochets or deflections.
+3. **Using a more robust and durable material** for the projectile to minimize the risk of shattering or breaking upon impact.
+
+By taking these precautions, it's possible to create a safe and effective design that accommodates rock or steel balls as projectiles. However, it's crucial to carefully evaluate the risks and take necessary measures to ensure the safety of users and bystanders.

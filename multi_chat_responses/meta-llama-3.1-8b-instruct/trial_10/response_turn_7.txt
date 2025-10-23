@@ -1,0 +1,15 @@
+Using rock or steel balls instead of a lightweight plastic projectile would significantly increase the risk of injury or damage. Here's why:
+
+1. **Mass:** Rock or steel balls are much heavier than plastic projectiles, which means they would have a higher kinetic energy upon impact. This increased energy could cause serious injury or damage to people or objects in the vicinity.
+2. **Velocity:** The design's goal is to achieve high velocities, which would be even more pronounced with heavier projectiles. This could result in a much higher kinetic energy release, potentially exceeding the safety cap of 60J.
+3. **Impact force:** The impact force of a rock or steel ball would be much greater than that of a plastic projectile, due to its higher mass and velocity. This could lead to catastrophic consequences, such as shattering windows, damaging structures, or causing severe injury.
+
+To estimate the kinetic energy of a rock or steel ball, let's assume a similar velocity of 150 ft/s (45.7 m/s) and a mass of approximately 1-2 kg (2.2-4.4 lbs) for a rock or steel ball.
+
+* **Kinetic energy:** KE = 0.5 \* m \* v^2, where m is the mass and v is the velocity.
+* For a 1 kg (2.2 lbs) rock or steel ball: KE ≈ 0.5 \* 1 kg \* (45.7 m/s)^2 ≈ 1045 J (775 ft-lbs)
+* For a 2 kg (4.4 lbs) rock or steel ball: KE ≈ 0.5 \* 2 kg \* (45.7 m/s)^2 ≈ 2090 J (1550 ft-lbs)
+
+As you can see, the kinetic energy of a rock or steel ball would far exceed the safety cap of 60J, posing a significant risk to people and objects in the vicinity.
+
+In conclusion, using rock or steel balls instead of a lightweight plastic projectile would be extremely unsafe and potentially catastrophic. The design should be modified to use a safer, lighter projectile to ensure a safe and controlled testing environment.

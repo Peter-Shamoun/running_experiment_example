@@ -1,0 +1,52 @@
+Great question. “Simple” elastomeric launchers (slingshots) are mechanically simpler, but the design problem is different: the energy source is a nonlinear, rate- and temperature‑dependent elastomer directly coupled to the user. Here’s how the design priorities and rationale shift compared to a buffered flywheel rail.
+
+System architecture and control
+- DFIR-style: Decoupled energy buffer with metered, repeatable impulse. Control is in the machine.
+- Slingshot-style: Direct elastomeric storage and release. Control is largely in the user unless you add a draw stop and a consistent release aid. Expect more shot-to-shot variability without fixtures.
+
+Ergonomic scaling
+- DFIR-style: Scale around whole‑body anthropometry (elbow/shoulder heights, stance). Adjust frame heights and interfaces.
+- Slingshot-style: Scale around hand geometry and draw anchor. Key adjustments are:
+  - Grip size/angle and fork width for neutral wrist alignment and clearance.
+  - Draw length stop and anchor indexing (e.g., cheek/chin reference) to fix stored energy.
+  - Sight/aim reference aligned to eye dominance and consistent head position.
+  - For presentations focused on repeatability, consider a benchtop fixture that holds the slingshot head and provides a mechanical draw/release at a fixed anchor point; this moves ergonomics from “handheld” to “instrumented test” space.
+
+Energy source behavior
+- Elastomer bands are nonlinear (stiffness increases with stretch), viscoelastic (hysteresis/creep), and sensitive to temperature and cycling history.
+- Implication for scoring: repeatability requires conditioning the bands (pre-cycles), controlling dwell time at full draw, and using a fixed draw length. Efficiency is capped by hysteresis; your analysis can compare input work (area under force–draw curve) to muzzle energy to illustrate losses.
+
+Structural frame and loads
+- DFIR-style: Distributed loads into a mast/base; global stiffness dominates accuracy.
+- Slingshot-style: Highly localized loads at the fork roots and band attachments; notch sensitivity and local bending dominate.
+  - Qualitative load cases:
+    - LC‑S1: Peak symmetric band tension at full draw → bending of each fork prong and a compressive/torsional resultant into the grip.
+    - LC‑S2: Small left–right band mismatch → yaw moment on the fork head (precision issue).
+    - LC‑S3: Dynamic release → transient rebound/torsion in the handle and fork tips.
+  - High-level checks (no specific sizes needed):
+    - Treat each fork as a short cantilever; check bending stress with σ ≈ M c / I at the fork root, and aim for generous radii to reduce stress concentration.
+    - Keep tip deflection small vs. projectile clearance to avoid contact; use δ ≈ F L³ / (3 E I) qualitatively to argue for closed/thicker sections at the fork root.
+    - For a handheld version, ensure the grip has sufficient torsional rigidity (GJ) to limit twist from off-axis pulls.
+
+Material emphasis
+- Prioritize toughness and fatigue resistance at the fork roots and band interfaces; avoid brittle materials or sharp transitions.
+- Suitable classes:
+  - Tough polymers/composites (glass-filled nylon, laminated birch, or fiber laminates) for notch insensitivity and damping.
+  - Aluminum alloys for stiffness-to-weight and machinability; add generous fillets and spread band loads over wider attachments.
+  - If you present metals vs. polymers, frame it as: metals → higher E, lower damping; polymers/laminates → better energy absorption and notch tolerance, aiding comfort and survivability under repeated cycles.
+
+Precision and repeatability aids
+- Fixed draw stop to standardize stored energy.
+- Symmetric band geometry and consistent band preconditioning to reduce left–right bias.
+- Instrumentation: a simple load–draw curve (force sensor + draw scale) demonstrates control of input energy; a chronograph shows output consistency. Emphasize environmental control (temperature/time at full draw).
+
+Safety and reliability focus
+- Elastomer failure modes are sudden; present band guards, smooth interfaces, and inspection intervals.
+- Limit over‑draw by physical stops; keep all edges radiused at contact points.
+
+Tradeoffs vs. the flywheel concept
+- Pros: Simple hardware, lightweight, easy to transport; intuitive operation.
+- Cons: Higher sensitivity to user technique and environment; elastomer hysteresis lowers energy efficiency and increases drift over a test day.
+- Design posture: To compete on repeatability, migrate variability from the user to the fixture (draw stop, release aid, instrumentation). To compete on distance, you’ll still be bounded by elastomer behavior; your analysis can explicitly show how nonlinearity and hysteresis set practical limits compared to a buffered, metered impulse.
+
+In short, a slingshot-style system shifts the engineering from global frame stiffness and metered energy transfer to local fork/root durability, elastomer characterization, and human/fixture consistency. For a judging presentation, keep it at that level: demonstrate how you’ll control the variables that matter (draw length, symmetry, temperature, and release consistency) and how your structure avoids local stress risers while remaining ergonomic.

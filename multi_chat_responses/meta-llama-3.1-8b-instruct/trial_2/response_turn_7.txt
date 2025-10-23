@@ -1,0 +1,25 @@
+Using rock or steel balls with the MPS design would be extremely unsafe, and it's likely that the projectile would exceed the safety cap of 60J.
+
+**Why it's unsafe:**
+
+1. **Material failure:** Rock or steel balls are much harder and more dense than the materials used in the MPS design. When launched at high speeds, the projectile could cause material failure in the elastic, frame, or other components, leading to catastrophic failure and potential injury.
+2. **High kinetic energy:** Steel or rock projectiles would have a much higher kinetic energy than the original design, which would increase the risk of injury or damage.
+3. **Unpredictable behavior:** The behavior of a rock or steel projectile would be unpredictable, making it difficult to control or anticipate the outcome.
+
+**Calculations:**
+
+To estimate the kinetic energy of the projectile, we can use the following formula:
+
+Kinetic Energy (KE) = 0.5 \* m \* v^2
+
+where m is the mass of the projectile and v is its velocity.
+
+Assuming a steel ball with a mass of 0.1 kg (0.22 lbs) and a velocity of 100 m/s (223 mph), the kinetic energy would be:
+
+KE = 0.5 \* 0.1 kg \* (100 m/s)^2 = 5000 J
+
+This is already above the safety cap of 60J, and the actual kinetic energy would be even higher due to the increased mass and velocity of the steel ball.
+
+**Conclusion:**
+
+Using rock or steel balls with the MPS design would be extremely unsafe and could lead to catastrophic failure, injury, or damage. The design is not suitable for use with such projectiles, and it's essential to stick with the original design and materials to ensure safety and performance.

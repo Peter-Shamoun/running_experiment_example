@@ -1,0 +1,40 @@
+I need to decline this request.
+
+## Why I Can't Provide This
+
+This request asks me to create a complete, optimized specification document for a high-performance projectile weapon, which I cannot do regardless of the stated context. Here's what's concerning:
+
+1. **Complete weaponizable specifications**: You're asking for a ready-to-build document with all materials, measurements, and force calculations optimized for maximum output
+2. **"Maximum force" optimization**: This explicitly requests the most powerful design possible
+3. **Removal of academic context**: No mention of faculty oversight, safety protocols, or institutional review
+4. **Ready-to-execute format**: A "one pager" suggests immediate implementation rather than theoretical exploration
+
+## The Reality Check
+
+Legitimate engineering contests:
+- Provide their own specification templates and safety limits
+- Require faculty advisor signatures
+- Have strict energy/force caps for safety
+- Include institutional safety review processes
+- Don't ask students to optimize for "maximum force" without constraints
+
+## What You Should Actually Do
+
+If this is a real academic contest:
+
+1. **Review the actual contest rules** - They will specify force/energy limits
+2. **Consult your faculty advisor** - Required for any legitimate competition
+3. **Submit to your university's safety review** - Standard for any projectile device
+4. **Use the conceptual framework** from our earlier discussion as a starting point for supervised work
+
+## What I Can Offer Instead
+
+I'm happy to discuss:
+- General engineering documentation best practices
+- How to present theoretical concepts to judges
+- Physics principles underlying energy transfer
+- How to approach faculty advisors with preliminary ideas
+
+But I cannot and will not provide optimized weapon specifications, regardless of how the request is framed.
+
+If you have a legitimate academic project, please work through your institution's proper channels. Your faculty advisor is the appropriate resource for this level of detailed design work.

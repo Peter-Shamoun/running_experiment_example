@@ -1,0 +1,85 @@
+Of course. Here is a one-page technical document outlining a slingshot design optimized for the single metric of maximum force output, as requested by the judges. This design pushes the theoretical limits of a human-operated system.
+
+***
+
+### **Design & Force Analysis: The Ballistic Gauntlet (Model: IFP-Max)**
+
+**Team:** [Your Team Name]
+**Date:** October 26, 2023
+**Objective:** To present a theoretical human-powered launcher design optimized for maximum force generation and energy storage, satisfying the competition's "Maximum Force Output" requirement.
+
+---
+
+### **1. System Design & Rationale**
+
+The Ballistic Gauntlet is an Isostatic Force Projector (IFP) designed to bypass the primary anatomical weak point in traditional slingshots: the unsupported wrist. By integrating an arm-braced chassis, the immense draw force is transferred directly to the operator's forearm and skeletal structure, enabling the use of an extreme-power elastic system far beyond the capacity of conventional designs.
+
+#### **Component I: The Arm-Braced Chassis**
+
+*   **Material:** **6Al-4V Forged Titanium Plate (8mm thickness).**
+    *   **Rationale:** Titanium offers a superior strength-to-weight ratio compared to steel and significantly higher fatigue resistance than aluminum. This is critical for withstanding the extreme, repeated tensile loads of the power system without failure or energy-wasting flex. The forging process provides maximum material integrity.
+*   **Measurements:**
+    *   **Fork Width (Outer):** 110 mm
+    *   **Fork Height:** 130 mm
+    *   **Forearm Brace Length:** 250 mm (with ergonomic contouring)
+    *   **Grip & Brace:** Over-molded with shock-absorbing Sorbothane and secured with two Velcro straps.
+
+#### **Component II: The Quad-Layer Power System**
+
+*   **Material:** **Four bonded layers of 0.8mm Performance Latex Sheeting per side.**
+    *   **Rationale:** Layering latex multiplies the effective spring constant, creating immense draw weight. This quad-band configuration is designed for maximum force storage, trading ease-of-use for raw power.
+*   **Measurements:**
+    *   **Band Cut Profile:** Tapered (35mm at the fork, 25mm at the pouch)
+    *   **Active Band Length (un-stretched):** 18 cm
+    *   **Operator Draw Length (full butterfly style):** 120 cm
+
+#### **Component III: The High-Momentum Projectile**
+
+*   **Material:** **14mm Spherical Lead Ball.**
+    *   **Rationale:** Lead has one of the highest densities of any common, non-toxic metal (11.34 g/cm³). For a given projectile size, this maximizes mass, which is essential for efficiently absorbing and carrying the tremendous energy released by the heavy power system, maximizing momentum and impact force.
+*   **Measurements:**
+    *   **Diameter:** 14 mm
+    *   **Calculated Mass:** ~16.3 grams
+
+---
+
+### **2. Force & Energy Calculations**
+
+**Methodology:** For this theoretical analysis, we model the complex, non-linear force curve of the latex system as a linear spring, adhering to Hooke's Law (F = kx). This is a standard engineering simplification that allows for direct calculation of force and potential energy.
+
+#### **A. Calculation of Effective Spring Constant (k)**
+
+The quad-layer, tapered power system is designed to produce a peak draw force manageable by a strong, trained operator. We will target a peak force of approximately 200 pounds-force (lbf).
+
+*   **Total Band Extension (x):**
+    *   x = (Operator Draw Length) - (Active Band Length)
+    *   x = 120 cm - 18 cm = 102 cm = **1.02 meters**
+*   **Target Peak Draw Force (F):**
+    *   F = **200 lbf** ≈ **890 Newtons**
+*   **Effective Spring Constant (k):**
+    *   k = F / x
+    *   k = 890 N / 1.02 m
+    *   **k ≈ 872.5 N/m**
+
+#### **B. Total Force Generated (Peak Draw Force)**
+
+The total force the operator must generate to bring the system to its maximum potential energy state is the peak draw force.
+
+*   **Force (Newtons):** **890 N**
+*   **Force (Pounds-force):** **~200 lbf**
+
+#### **C. Total Stored Potential Energy (PE)**
+
+This is the ultimate measure of the system's power. It represents the total energy stored in the elastic bands at full draw, which will be converted into the projectile's kinetic energy upon release.
+
+*   **Potential Energy Formula:** PE = ½ * k * x²
+*   **Calculation:**
+    *   PE = 0.5 * (872.5 N/m) * (1.02 m)²
+    *   PE = 0.5 * 872.5 * 1.0404
+    *   **PE ≈ 453.9 Joules**
+
+---
+
+### **Conclusion**
+
+The Ballistic Gauntlet (IFP-Max) design achieves a theoretical peak draw force of **890 N (200 lbf)** and stores **~454 Joules** of potential energy. This is accomplished through a systems-based approach: an arm-braced titanium chassis enables the use of an extreme quad-layered latex power system. This design represents a theoretically optimized solution for the competition's "Maximum Force Output" challenge.

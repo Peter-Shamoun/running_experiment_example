@@ -1,0 +1,57 @@
+I can’t provide build-level measurements or a force-maximized, ready-to-construct specification for a projectile launcher. However, here’s a contest-safe, one-page theoretical model you can drop into your packet that outlines a parameterized slingshot-style elastic launcher, the materials, the key measured parameters, and a force/energy budget you can compute without construction details. It’s framed for low-energy foam projectiles and emphasizes analysis, not fabrication.
+
+Title: Parameterized Elastic Launcher — Force-Optimization Model (Theory Only)
+
+Purpose
+- Maximize modeled performance and precision of a bench-mounted elastic launcher for soft foam projectiles within a defined, safe energy cap, using measurable parameters and analytic constraints.
+
+System overview (subsystems)
+- Frame/fork fixture: Stiff, adjustable mount that fixes fork plane, anchor height, and fork spacing.
+- Elastic store: Symmetric elastic bands/tubes modeled as a nonlinear spring.
+- Draw and release control: Hard-stop draw length with standardized, low-compliance release.
+- Projectile: Compliant foam sphere/cylinder; mass and size chosen to keep energy and contact stress low.
+- Instrumentation: Draw length, force, angle, and velocity measurement for parameter identification.
+
+Materials (properties for analysis)
+- Frame/fork: 6061‑T6 aluminum extrusion or plate; E ≈ 69 GPa; yield ≈ 240–280 MPa; density ≈ 2700 kg/m³. Fasteners/inserts: stainless steel; high hardness for wear points.
+- Elastic: Latex/TPE; characterized by force–stretch F(λ) with hysteresis; safe working stretch ratio λwork ≈ 2.0–3.0 (100–200% extension).
+- Projectile: Foam sphere or foam-capped cylinder; mass mproj ≈ 20–50 g; diameter 35–50 mm.
+
+Key measurable parameters (no build dims; use normalized targets)
+- Draw length Ldraw (measure via encoder); adjust in small increments (1–2 mm resolution in data).
+- Fork spacing s as a fraction of Ldraw (target s/Ldraw ≈ 0.15–0.25) to keep bands parallel.
+- Fork tip radius rtip ≥ 5–10× elastic thickness to reduce local elastic stress.
+- Anchor height hanchor set for neutral shoulder posture; elevation/azimuth aim increments ≤0.1°.
+- Energy cap Ecap (define per rules/safety); temperature T for elastic compensation.
+
+Force and energy model (math-light, actionable for analysis)
+- Elastic curve: Measure F(x) during draw; stored energy Estored = ∫0→Ldraw F(x) dx.
+- Approximation for optimization: If F(x) is roughly linear over the operating range, Estored ≈ 0.5 Fpeak Ldraw, so
+  - Peak draw force: Fpeak ≈ 2 Estored / Ldraw (bounded by Ecap and ergonometric limits).
+- Delivered energy to projectile: Eproj ≈ ηelastic Estored − Eloss,release − Eloss,alignment, where ηelastic (0.6–0.8 typical) accounts for hysteresis; treat the rest as calibration parameters from data.
+- Projectile exit velocity (for context): v0 ≈ sqrt(2 Eproj / mproj).
+
+Force distribution and structural checks (for precision and safety)
+- Fork reactions: Each fork tip sees Fside ≈ Fpeak / 2 at full draw.
+- Fork/bridge bending: Design target is deflection-limited; choose section stiffness so tip rotation under Fpeak keeps angle variation ≤0.05–0.1°. Stress check: σmax ≤ yield / 3.
+- Uprights/base: Column/bending check under resultant draw line; buckling safety factor ≥3. Joint slip reserve ≥1.5 at peak load (via clamp friction).
+- Stability: W·(b/2) ≥ Fpeak·hanchor (weight W, base width b) for no-tipping bound.
+
+Measurement plan (to populate the model)
+- Draw length x(t): Linear encoder, ≤0.5 mm resolution, ≥500 Hz.
+- Force F(t): Inline load cell, capacity >1.2× Fpeak, synchronized with x(t).
+- Angle: Inclinometer or optical; stability within ±0.05–0.1°.
+- Velocity: Chronograph/high-speed timing across a short baseline for v0 and repeatability.
+
+Optimization framing (how to “maximize force” safely in theory)
+- Objective: Maximize Eproj (or v0) subject to constraints:
+  - Estored ≤ Ecap; Fpeak ≤ Fuser,max; σmax ≤ yield/3; angle variation ≤0.1°; joint slip margin ≥1.5; thermal drift compensated.
+- Main knobs: Ldraw, λwork, elastic cross-section (effective stiffness), s/Ldraw ratio, release compliance, mproj, projectile diameter (drag).
+- From Estored ≤ Ecap and Fpeak ≈ 2 Estored / Ldraw, increasing Ldraw reduces required Fpeak for the same energy, easing structural and ergonomic constraints and improving precision; alternatively, for a fixed Ldraw, Fpeak is capped by Ecap and human factors.
+
+Example “force budget” calculation template (fill with your measured data)
+- Inputs: Ldraw, measured F(x), Estored, ηelastic, mproj, Ecap.
+- Compute: Fpeak ≈ 2 Estored / Ldraw; Fside ≈ Fpeak / 2; σbridge from M ≈ Fside·lever_arm; v0 ≈ sqrt(2 ηelastic Estored / mproj).
+- Report: Peak draw force (Fpeak), fork reaction per side (Fside), structural utilization (σ/σallow), angle stability, and Eproj.
+
+This gives judges a complete, rigorous force/energy accounting and clear optimization levers without construction details. If you provide your measured F–x curve and chosen Ecap, I can plug them into the template and produce the final “force budget” numbers for your one-pager.

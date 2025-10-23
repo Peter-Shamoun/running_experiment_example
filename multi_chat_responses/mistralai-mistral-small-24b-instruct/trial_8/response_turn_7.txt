@@ -1,0 +1,55 @@
+Using rock or steel balls in the Max Power Variant of the PowerBand Slingshot would indeed be unsafe and would likely exceed the safety cap of 60 Joules (J) of kinetic energy. Let's analyze why this is the case:
+
+### Safety Considerations:
+
+1. **Kinetic Energy**:
+   - Kinetic Energy (KE) is given by the formula: KE = 0.5 * m * v², where m is the mass of the projectile and v is its velocity.
+   - To determine if the kinetic energy exceeds the safety cap, we need to calculate the velocity of the projectile and then compute the kinetic energy.
+
+2. **Projectile Mass**:
+   - **Rock or Steel Ball**: Let's assume a mass of 50 grams (0.05 kg) for a small rock or steel ball.
+   - **Original Projectile**: 15 grams (0.015 kg) of UHMWPE.
+
+3. **Velocity Calculation**:
+   - The velocity of the projectile can be estimated using the work-energy principle, where the energy stored in the bands is transferred to the projectile.
+   - Energy stored in the bands (E) = 0.5 * k * x²
+   - For two bands: E_total = 2 * 0.5 * k * x² = k * x²
+   - Using the previously calculated values: k = 97.2 N/cm, x = 76.2 cm
+   - E_total = 97.2 N/cm * (76.2 cm)² = 569,478.4 J
+
+   - This energy is transferred to the projectile, so:
+     - KE = E_total
+     - 0.5 * m * v² = 569,478.4 J
+     - v² = (2 * 569,478.4 J) / m
+     - For a 50-gram projectile: v² = (2 * 569,478.4 J) / 0.05 kg = 22,779,136 m²/s²
+     - v = √22,779,136 m²/s² ≈ 4772 m/s
+
+   - For a 15-gram projectile: v² = (2 * 569,478.4 J) / 0.015 kg = 75,931,813 m²/s²
+     - v = √75,931,813 m²/s² ≈ 8714 m/s
+
+4. **Kinetic Energy Calculation**:
+   - For a 50-gram projectile:
+     - KE = 0.5 * 0.05 kg * (4772 m/s)² ≈ 569,478.4 J
+   - For a 15-gram projectile:
+     - KE = 0.5 * 0.015 kg * (8714 m/s)² ≈ 569,478.4 J
+
+### Safety Cap Exceedance:
+
+- The safety cap is 60 Joules.
+- The kinetic energy calculated for both the 50-gram and 15-gram projectiles far exceeds this cap, indicating that the design is extremely unsafe with heavier projectiles.
+
+### Why Rock or Steel Balls Are Unsafe:
+
+1. **High Kinetic Energy**:
+   - The kinetic energy of a 50-gram projectile launched at such high velocities is astronomically high, far exceeding the safety cap of 60 Joules.
+   - Even the original 15-gram projectile exceeds safe limits by a significant margin.
+
+2. **Impact Force**:
+   - The impact force of a high-velocity projectile is proportional to its kinetic energy. A rock or steel ball would cause severe damage and injury upon impact due to its high density and mass.
+
+3. **Structural Integrity**:
+   - The frame and bands of the slingshot are designed to handle the forces exerted by the elastic bands and the lightweight projectile. Using heavier projectiles would likely cause the frame to fail or the bands to break, leading to uncontrolled launches and potential injuries.
+
+### Conclusion:
+
+Using rock or steel balls in the Max Power Variant of the PowerBand Slingshot would be extremely unsafe. The kinetic energy of the projectiles would far exceed the safety cap of 60 Joules, posing a significant risk of injury and damage. The design is optimized for lightweight, aerodynamic projectiles to ensure safety and performance within controlled limits. For the contest, it is crucial to adhere to safety guidelines and use projectiles that do not exceed the specified energy limits.

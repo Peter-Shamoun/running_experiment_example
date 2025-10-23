@@ -1,0 +1,52 @@
+Let's scale the dimensions of the Aerius launcher to fit an average adult user.
+
+**Structural Frame Dimensions:**
+
+To ensure ergonomic consistency and comfort for the user, we'll aim to position the crank handle at a height that allows the user to operate it with a slight bend in the elbow and a neutral wrist position. This will help distribute the force and reduce fatigue.
+
+Assuming a 5'10" (178 cm) user height, let's set the crank handle height at approximately 34-36 inches (86-91 cm) above the floor. This will allow the user to operate the crank with a slight bend in the elbow and a neutral wrist position.
+
+For the overall frame dimensions, we can use the following rough estimates:
+
+* **Height:** 48-52 inches (122-132 cm)
+* **Width:** 24-28 inches (61-71 cm)
+* **Depth:** 18-22 inches (46-56 cm)
+
+**Material Selection:**
+
+For the structural frame, we'll choose a material that balances strength, stiffness, and weight. A suitable material for this application is **6061-T6 Aluminum**.
+
+**Key Properties:**
+
+* **Tensile Strength:** 42,000 psi (290 MPa)
+* **Yield Strength:** 35,000 psi (241 MPa)
+* **Density:** 0.098 lb/in³ (2.7 g/cm³)
+* **Young's Modulus:** 10,000,000 psi (69,000 MPa)
+
+**Engineering Rationale and Stress Considerations:**
+
+The structural frame will be subjected to various loads during operation, including:
+
+1. **Crank force:** The user will apply a force to the crank handle, which will be transmitted to the flywheel and then to the launch system.
+2. **Weight of the launcher:** The frame will support the weight of the launcher, including the flywheel, launch system, and guidance system.
+3. **Launch acceleration:** During launch, the frame will experience a rapid acceleration, which will generate inertial forces.
+
+To ensure the structural frame can withstand these loads, we'll consider the following stress considerations:
+
+1. **Bending stress:** The frame will experience bending stresses due to the crank force and launch acceleration. We'll design the frame to withstand a maximum bending stress of 20,000 psi (138 MPa).
+2. **Torsional stress:** The crank handle will apply a torsional force to the frame, which will be transmitted to the flywheel. We'll design the frame to withstand a maximum torsional stress of 15,000 psi (103 MPa).
+3. **Compressive stress:** The frame will experience compressive stresses due to the weight of the launcher. We'll design the frame to withstand a maximum compressive stress of 30,000 psi (207 MPa).
+
+**Basic Stress Calculations:**
+
+To estimate the stresses in the frame, we'll use the following formulas:
+
+* **Bending stress:** σ = (M \* y) / I, where M is the bending moment, y is the distance from the neutral axis, and I is the moment of inertia.
+* **Torsional stress:** τ = (T \* r) / J, where T is the torsional moment, r is the radius of the crank handle, and J is the polar moment of inertia.
+* **Compressive stress:** σ = F / A, where F is the compressive force and A is the cross-sectional area.
+
+These calculations will provide a rough estimate of the stresses in the frame and help us determine the required material thickness and cross-sectional area.
+
+Please note that these are simplified calculations and actual stress analysis should be performed using more advanced methods, such as finite element analysis (FEA) or computational fluid dynamics (CFD).
+
+For the purposes of this contest entry, these calculations will provide a good starting point for our analysis and presentation.

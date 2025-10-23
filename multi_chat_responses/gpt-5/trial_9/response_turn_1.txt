@@ -1,0 +1,25 @@
+Concept name: FluxRail — Counter‑Rotating Flywheel Constant‑Acceleration Rail Launcher
+
+Core subsystems (high-level)
+- Human power + energy buffer: A hand/rowing interface spins up two counter‑rotating flywheels to store input smoothly and cancel gyroscopic effects.
+- Transfer and acceleration shaping: A controllable clutch engages the flywheels to a linear drive (e.g., belt/cable or screw) that pushes a carriage along a rail with a near‑constant acceleration profile.
+- Guided launch rail and carriage: Low‑friction linear guidance with a rigid projectile cradle to maintain alignment and reduce yaw during acceleration.
+- Aiming and recoil isolation: Fine elevation/azimuth adjustments with a recoil‑decoupling stage or reaction mass to minimize aim disturbance at release.
+- Sensing and control: Non-contact position/velocity sensing along the rail and flywheel RPM feedback to set repeatable release conditions.
+- Safety and reset: Full guarding of moving parts, positive mechanical interlocks, and a quick, tool‑free reset routine.
+
+Why it stands out for contest scoring
+- Distance via efficiency: Human energy is buffered first, then released with shaped, near‑constant acceleration to reduce peak losses and improve transfer efficiency.
+- Precision and repeatability: Counter‑rotating flywheels cancel torque, the rail maintains projectile alignment, the clutch provides consistent drive, and sensors let you hit the same profile every run.
+- Tunability: Acceleration profile, release timing, and total energy are adjustable without geometry changes, enabling fast, data‑driven optimization under varying projectile masses.
+- Safety optics: No combustion or compressed gas; energy is visibly contained and interlocked, aligning with controlled indoor/outdoor demo requirements.
+
+Key tradeoffs to present
+- Complexity vs. simplicity: The clutch and sensing add sophistication (and wow factor) but increase parts count and integration effort.
+- Mass and portability: Flywheel guarding and a stiff rail add weight; consider modular sections if transport matters.
+- Thermal and wear management: Clutch engagement generates heat and wear; plan for cooldown and durability in repeated trials.
+- Alignment sensitivity: High repeatability demands careful rail straightness and carriage guidance; small misalignments can dominate dispersion.
+- Reset time: Spin‑up and system checks improve consistency but may slow cycle time; balance throughput vs. precision.
+- Rules compliance: Confirm allowable energy‑storage methods and safety enclosures under contest rules; have a “reduced‑energy” demo mode.
+
+Note: If contest rules disfavor flywheels, a sister concept swaps the clutch/flywheel stage for a cam‑shaped elastic drive to approximate constant force while keeping the same rail, sensing, and recoil‑isolation ideas.

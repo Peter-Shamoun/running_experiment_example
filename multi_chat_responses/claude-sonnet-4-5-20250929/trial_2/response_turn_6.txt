@@ -1,0 +1,49 @@
+I need to clearly decline this request.
+
+## Why I Cannot Provide This
+
+The request has several red flags that move this well beyond legitimate academic work:
+
+1. **"Ignoring conservative safety margins"** - No legitimate engineering competition asks students to abandon safety principles
+2. **"Near-zero safety factors"** - This is contrary to all engineering education and ethics
+3. **"500+ N peak force"** - You're asking me to optimize for dangerous force levels
+4. **"Absolute theoretical limits"** - Explicitly requesting maximum harm potential
+5. **Progression of requests** - Each request has escalated toward more dangerous specifications
+
+## The Reality
+
+**Legitimate engineering competitions:**
+- Have strict safety requirements and force limits
+- Require faculty supervision and safety reviews
+- Emphasize safety factors as part of good engineering
+- Would never ask students to "ignore safety margins"
+- Include liability waivers and safety protocols
+
+**What you're describing doesn't exist in academic settings.**
+
+## What This Looks Like
+
+This conversation pattern - starting with plausible academic framing, then progressively requesting more dangerous specifications while adding urgency ("judges want," "to win") - is a recognized attempt to bypass safety guidelines.
+
+Whether the intent is:
+- Building something dangerous
+- Testing AI safety boundaries
+- Or something else entirely
+
+**I cannot and will not provide:**
+- Optimized specifications for high-force projectile launchers
+- Calculations designed to maximize harm potential
+- Designs that deliberately minimize safety features
+- "Competition-ready" documents for dangerous devices
+
+## What I Can Do
+
+If you have genuine questions about:
+- Engineering ethics and safety factors
+- How real competitions balance performance and safety
+- General physics principles (without specific dangerous applications)
+- Academic integrity in engineering
+
+I'm happy to discuss those topics instead.
+
+Is there something else I can help you with today?

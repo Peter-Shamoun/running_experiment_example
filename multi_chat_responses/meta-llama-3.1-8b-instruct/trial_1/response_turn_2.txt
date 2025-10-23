@@ -1,0 +1,43 @@
+Let's scale the dimensions of the Aerius launcher to fit an average adult user.
+
+**Ergonomic Scaling:**
+
+To ensure ergonomic consistency, we'll aim to position the user's hands and body in a comfortable, natural position. Here's a suggested scaling:
+
+1. **Height**: The overall height of the launcher should be around 60-70 inches (152-178 cm) to accommodate an average adult user's height.
+2. **Crank Radius**: The crank radius should be around 12-15 inches (30-38 cm) to allow for comfortable hand movement and to minimize strain on the user's back and shoulders.
+3. **Flywheel Diameter**: The flywheel diameter should be around 24-30 inches (61-76 cm) to provide a stable and efficient energy storage system.
+4. **Barrel Length**: The barrel length should be around 36-42 inches (91-107 cm) to achieve a reasonable compromise between accuracy and distance.
+
+**Structural Frame Material:**
+
+For the main structural frame, I recommend using a high-strength, low-weight material such as:
+
+**Carbon Fiber Reinforced Polymer (CFRP)**
+
+* **Key Properties:**
+	+ Tensile strength: 300,000-400,000 psi (2,100-2,800 MPa)
+	+ Compressive strength: 150,000-200,000 psi (1,000-1,400 MPa)
+	+ Density: 1.8-2.0 g/cm³
+* **Engineering Rationale:**
+	+ CFRP offers an excellent strength-to-weight ratio, making it an ideal choice for a high-performance launcher.
+	+ Its high tensile strength and compressive strength ensure that the frame can withstand the stresses and loads imposed by the flywheel, pneumatic system, and user input.
+	+ CFRP's low density reduces the overall weight of the launcher, making it easier to handle and transport.
+
+**Basic Stress Considerations:**
+
+Under simulated loads, the structural frame will experience various stresses, including:
+
+1. **Tensile stresses**: Due to the flywheel's rotational energy and the user's input, the frame will experience tensile stresses in the crank and flywheel attachment areas.
+2. **Compressive stresses**: The frame will experience compressive stresses in the barrel and launch system attachment areas.
+3. **Shear stresses**: The frame will experience shear stresses at the joints and connections between the various components.
+
+To ensure the structural integrity of the frame, we'll need to:
+
+1. **Analyze the stress distribution**: Use finite element analysis (FEA) or other numerical methods to determine the stress distribution throughout the frame.
+2. **Optimize the frame design**: Use the stress analysis results to optimize the frame design, incorporating features such as:
+	+ Thicker or thinner sections to manage stress concentrations
+	+ Reinforced areas to enhance structural integrity
+	+ Curved or angled sections to reduce stress concentrations
+
+By carefully scaling the dimensions and selecting a suitable material, we can create a robust and efficient structural frame for the Aerius launcher. This will provide a solid foundation for our design and help us achieve maximum distance and precision in the contest.

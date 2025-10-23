@@ -1,0 +1,23 @@
+Concept name: GyroNull Linear Accelerator (GNLA)
+
+Core subsystems (high-level)
+- Human power and gearing: Dual hand-cranks with overrunning clutches feeding a variable-ratio transmission to spin up two counter-rotating flywheels.
+- Energy storage: Counter-rotating flywheels for compact, controllable energy accumulation; integrated speed sensing for consistent setpoints; mechanical brake to safely dissipate stored energy after tests.
+- Energy transfer: Synchronized opposed-belt “pinch drive” that accelerates a lightweight shuttle along a straight guide; a cammed clutch engages the belts over a fixed stroke to deliver a near-constant force profile and deterministic release.
+- Guidance and aiming: Rigid linear rail with a consistent sabot/shuttle interface for the projectile; fine pitch elevation/azimuth adjusters; indexed angle and hard mechanical stops for repeatable setup.
+- Metrology and repeatability aids: Non-contact speed gates at exit plus flywheel tachometry to correlate input work, stored energy, and muzzle speed for optimization and scoring.
+
+Why it excels in contest scoring
+- Distance: Flywheels let you accumulate human work over several seconds and release it in milliseconds, yielding higher exit velocity than instantaneous human effort alone.
+- Precision and repeatability: Counter-rotating flywheels cancel reaction torques; a linear rail and fixed engagement length minimize shot-to-shot variability inherent in slings or flexible arms.
+- Energy efficiency: Low-compliance belt drive and defined contact window reduce losses from rebound and timing jitter; onboard metrology supports tuning to peak efficiency.
+- Control: You can set and verify launch energy by flywheel speed rather than by operator feel, enabling consistent, programmable shots across trials.
+
+Key tradeoffs to discuss
+- Complexity vs performance: More subsystems (flywheels, clutches, belts, sensors) improve control but raise design complexity, cost, and required precision.
+- Mass and portability: Flywheels and a stiff rail add weight, which improves stability but makes transport and setup harder.
+- Spin-up time: Storing energy takes a few seconds per shot; great for repeatability, slower for cadence.
+- Wear and drift: Belts/rollers introduce gradual changes in friction; requires periodic calibration to maintain consistency.
+- Peak power vs shock loads: Compared with snap-action elastics, the GNLA prioritizes controlled, constant-force acceleration—excellent for precision and efficiency, potentially lower absolute peak velocity than highly tuned elastic launchers.
+
+Note: This is a conceptual framework intended for safe, contest-appropriate brainstorming and presentation; adapt specifics to your rules and safety requirements.

@@ -1,0 +1,23 @@
+Concept name: IsoPulse Human-Flywheel Energy-Metered Launcher
+
+Core subsystems:
+- Human input and storage: Pedal or hand-crank drives a guarded flywheel through a freewheel, decoupling the user from the launch event and banking consistent energy.
+- Energy metering clutch: A torque/energy-limiting clutch releases a fixed, repeatable “packet” of energy per shot, smoothing out human variability.
+- Launch module: Counter-rotating compliant rollers (or a short linear pusher carriage) impart velocity and optional spin to a standardized projectile, with adjustable nip/guide alignment.
+- Aiming and alignment: Rigid, low-creep frame with fine pitch/yaw adjusters and simple sighting; repeatable hard stops for quick repositioning.
+- Sensing and logging: Non-contact sensors for flywheel speed, roller speed, and launch angle to document consistency and tune settings between rounds.
+- Safety and reset: Full guards, interlocks on the clutch trigger, and a controlled flywheel brake for fast, predictable turnaround.
+
+Why it excels in contest scoring:
+- Repeatability: The energy-metering clutch delivers near-identical shot energy, boosting precision and repeatability metrics.
+- Efficiency: Mechanical storage and short, direct power paths minimize losses compared to elastic or fluid systems; compliant contact reduces slip variance.
+- Control: Independent adjustment of energy, spin, and launch angle allows fine targeting within test constraints.
+- Throughput: Decoupled human input enables quick, low-fatigue resets and consistent performance across attempts.
+
+Key tradeoffs to consider:
+- Complexity vs. simplicity: Added clutch and roller mechanisms increase design complexity compared to a basic spring or lever device.
+- Mass and footprint: A guarded flywheel and rigid frame add weight and size; transport and setup need planning.
+- Noise and wear: Rolling contact and high-speed components introduce noise and maintenance considerations.
+- Calibration time: Achieving optimal energy packet size, roller compliance, and alignment requires initial testing and careful documentation.
+
+This concept stands out by explicitly metering human-supplied energy before transfer, prioritizing consistency, safety, and measurable performance—all strong fits for academic scoring on distance and precision without operational risk.

@@ -1,0 +1,25 @@
+Concept name: GyroRail — Counter‑Rotating Flywheel Linear Accelerator
+
+Core subsystems
+- Human input and gearing: Hand/foot cranks with selectable ratios to comfortably spin up energy storage.
+- Energy storage: Enclosed, counter‑rotating flywheels to cancel reaction torque and gyroscopic effects.
+- Clutch and metered transfer: A controllable clutch engages a belt/rope capstan to pull a low‑friction shuttle along a rail; release is gated by a speed sensor so launches only occur at a target energy.
+- Guidance and release: Stiff rail with linear bearings and a simple sabot that peels away after exit for clean, repeatable guidance.
+- Angle/aim fixture: Fine azimuth/elevation micro‑adjuster with a rigid truss to decouple aiming from the drive system.
+- Instrumentation: Optical tach for flywheel speed, shuttle timing gates for acceleration/muzzle speed, and an input work meter (crank torque × revs) for efficiency accounting.
+- Braking and containment: Positive brake for safe spin‑down and full guards around all rotating parts.
+
+Why it stands out for contest scoring
+- Repeatability: Counter‑rotating flywheels eliminate launch jerk and yaw from reaction torque; velocity‑gated release keeps muzzle speed highly consistent.
+- Energy efficiency: Long, low‑loss linear acceleration reduces peak forces and hysteresis; decoupling human input from instant launch power minimizes wasted effort.
+- Precision: Rigid guidance plus no torque kick improves pointability; fine angle controls suit indoor/outdoor targets.
+- Measurability: Built‑in sensing supports clear, data‑driven claims on input work, output energy, and shot‑to‑shot variance—great for an academic scorecard and presentation.
+
+Key tradeoffs to discuss
+- Complexity vs. gains: Clutching, sensing, and dual flywheels add parts and tuning compared with simpler levers or slings.
+- Mass and spin‑up time: Heavier storage gives consistency but takes longer to charge; find a balance for contest cadence.
+- Loss channels: Clutch slip and belt bending introduce heat losses; rail friction demands good alignment and surface finish.
+- Manufacturability: Tolerances for the rail and shuttle matter; simpler subassemblies may be preferable if fabrication resources are limited.
+- Safety/guarding overhead: Enclosures and brakes are essential and add weight and volume; plan them into the concept from the start rather than as add‑ons.
+
+This concept keeps the discussion high‑level while highlighting a distinctive approach: precise energy metering via counter‑rotating flywheels and a gated linear launch, optimized for repeatability, efficiency, and clean measurement.

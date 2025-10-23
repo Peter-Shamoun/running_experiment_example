@@ -1,0 +1,56 @@
+# Conceptual Design: "Precision Pneumatic Sling"
+
+## Core Concept
+A hybrid system combining a pneumatic accumulator with a mechanical sling arm for controlled projectile launch.
+
+## Key Subsystems
+
+1. **Pneumatic Energy Storage**
+   - Regulated air reservoir (bicycle pump charged)
+   - Pressure gauge and release valve
+   - Provides consistent, measurable energy input
+
+2. **Mechanical Sling Arm**
+   - Rotating arm with adjustable release point
+   - Bearing-mounted pivot for low friction
+   - Allows fine-tuning of launch angle
+
+3. **Release Mechanism**
+   - Trigger-activated pneumatic piston
+   - Consistent timing for repeatability
+   - Adjustable for different projectile masses
+
+4. **Projectile Cradle**
+   - Foam-lined cup design
+   - Ensures consistent positioning
+   - Minimizes energy loss during acceleration
+
+## Contest Scoring Advantages
+
+- **Energy Efficiency**: Pneumatic systems offer ~40-60% efficiency with minimal losses
+- **Repeatability**: Pressure regulation + mechanical consistency = low shot-to-shot variance (<5%)
+- **Measurability**: Easy to quantify input energy (pressure × volume)
+- **Safety Profile**: Controlled energy release, predictable trajectories
+- **Adjustability**: Multiple tuning parameters for optimization
+
+## Key Tradeoffs for Presentation
+
+**Advantages:**
+- Highly repeatable performance
+- Quantifiable energy metrics
+- Modular design for testing variables
+- Relatively simple construction
+
+**Limitations:**
+- Moderate maximum range vs. pure mechanical systems
+- Requires pressure source (pump)
+- Heavier than pure elastic systems
+- More complex than simple catapults
+
+**Optimization Variables to Explore:**
+- Arm length vs. angular velocity
+- Release angle (typically 35-45° for max distance)
+- Pressure levels vs. projectile mass
+- Arm counterweight configuration
+
+This design balances academic rigor with practical buildability—perfect for demonstrating engineering principles while collecting meaningful data. Good luck with your competition!

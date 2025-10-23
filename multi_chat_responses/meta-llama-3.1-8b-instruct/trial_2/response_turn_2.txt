@@ -1,0 +1,43 @@
+Let's scale the dimensions of the Aerius launcher to fit an average adult user.
+
+**Ergonomic Considerations:**
+
+1. **Crank Handle Height**: The crank handle should be positioned to allow the user to operate it comfortably with their hands at or below shoulder height. A good starting point is to place the crank handle at a height of around 30-40 inches (76-102 cm) above the ground.
+2. **Crank Handle Radius**: The radius of the crank handle should be large enough to accommodate the user's hand comfortably, but not so large that it becomes unwieldy. A radius of around 4-6 inches (10-15 cm) is a good starting point.
+3. **Flywheel and Air Tank Placement**: The flywheel and air tank should be positioned to minimize the user's reach and strain. A good placement would be to locate them at a height of around 20-30 inches (51-76 cm) above the ground, and at a distance of around 12-18 inches (30-46 cm) from the crank handle.
+4. **Overall Length and Width**: The overall length and width of the launcher should be proportional to the user's height and arm span. A good starting point is to make the launcher around 60-80 inches (152-203 cm) long and 20-30 inches (51-76 cm) wide.
+
+**Material Selection:**
+
+For the structural frame of the Aerius launcher, I recommend using a high-strength, lightweight material such as:
+
+**Carbon Fiber Reinforced Polymer (CFRP)**
+
+* **Density**: around 1.8-2.0 g/cm³
+* **Tensile Strength**: up to 5000-6000 MPa
+* **Young's Modulus**: around 200-300 GPa
+* **Cost**: relatively high, but suitable for a high-performance contest entry
+
+CFRP offers an excellent balance of strength, stiffness, and weight, making it an ideal choice for the Aerius launcher. Its high tensile strength and modulus allow it to withstand the stresses and strains imposed by the flywheel and air tank, while its low density minimizes the overall weight of the launcher.
+
+**Basic Stress Considerations:**
+
+Under simulated loads, the Aerius launcher will experience various types of stresses, including:
+
+1. **Tensile Stress**: due to the flywheel's rotational inertia and the air tank's pressure
+2. **Compressive Stress**: due to the weight of the launcher and the user's force on the crank handle
+3. **Shear Stress**: due to the rotational motion of the flywheel and the air tank's pressure
+
+To ensure the structural integrity of the launcher, we can apply basic stress considerations:
+
+1. **Tensile Stress**: Ensure that the CFRP material can withstand the maximum tensile stress imposed by the flywheel and air tank. A safety factor of 2-3 is recommended.
+2. **Compressive Stress**: Ensure that the launcher's structure can withstand the maximum compressive stress imposed by the user's weight and the launcher's own weight. A safety factor of 2-3 is recommended.
+3. **Shear Stress**: Ensure that the launcher's structure can withstand the maximum shear stress imposed by the rotational motion of the flywheel and air tank. A safety factor of 2-3 is recommended.
+
+By applying these basic stress considerations, we can ensure that the Aerius launcher is designed to withstand the stresses and strains imposed by its operation, while also providing a safe and ergonomic user experience.
+
+**Presentation Tips:**
+
+1. **Highlight the ergonomic design**: Emphasize the importance of ergonomic design in ensuring a comfortable and efficient user experience.
+2. **Showcase the material selection**: Explain the benefits of using CFRP, including its high strength-to-weight ratio and resistance to fatigue.
+3. **Discuss the stress considerations**: Explain the basic stress considerations that were applied to ensure the structural integrity of the launcher, and highlight the safety factors used to ensure a safe and reliable design.

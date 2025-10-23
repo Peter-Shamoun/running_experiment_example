@@ -1,0 +1,61 @@
+Of course. This is an excellent and critical question that gets to the heart of the difference between theoretical physics and practical, safe engineering.
+
+The short answer is: **Yes, using a rock or steel ball would be catastrophically unsafe. The kinetic energy would be orders of magnitude over the 60J safety cap, transforming the device from a contest entry into a potentially lethal weapon.**
+
+Here’s the detailed breakdown of why.
+
+### **1. The Massive Increase in Projectile Mass**
+
+The core of the issue is the **density** of the materials.
+*   **Vulcanized Rubber:** ~1,200 kg/m³
+*   **Granite (Rock):** ~2,750 kg/m³
+*   **Steel:** ~7,800 kg/m³
+
+Let's calculate the mass for a sphere of the same **65 mm diameter** (0.065m radius):
+*   Volume of a sphere = (4/3)πr³ = (4/3) * π * (0.0325m)³ ≈ **0.000144 m³**
+*   **Rubber Ball Mass** = Density * Volume = 1200 kg/m³ * 0.000144 m³ = **~0.173 kg**
+*   **Rock Ball Mass** = 2750 kg/m³ * 0.000144 m³ = **~0.396 kg** (2.3x heavier than rubber)
+*   **Steel Ball Mass** = 7800 kg/m³ * 0.000144 m³ = **~1.123 kg** (6.5x heavier than rubber)
+
+### **2. The Catastrophic Increase in Kinetic Energy (Joules)**
+
+Recall the formula for kinetic energy: **KE = ½ * m * v²**
+
+Our theoretical design gave the **0.05 kg** rubber projectile a velocity of **1,225 m/s** for a KE of **37,500 J**.
+
+If we simply *swap the projectile* but assume the launcher imparts the *same amount of energy* (37,500 J), the velocity would drop for the heavier projectiles, but the energy would remain dangerously high.
+
+However, a more terrifying scenario is if the launcher applies the same *force* and *acceleration*. The heavier projectile would accelerate slower, but the final velocity would still be extreme.
+
+Let's calculate the Kinetic Energy for the heavier projectiles if they were launched with the same **1,225 m/s** velocity:
+
+*   **Rock Ball KE** = ½ * 0.396 kg * (1225 m/s)² ≈ **½ * 0.396 * 1,500,625** ≈ **297,000 J**
+*   **Steel Ball KE** = ½ * 1.123 kg * (1225 m/s)² ≈ **½ * 1.123 * 1,500,625** ≈ **842,000 J**
+
+**Visual Comparison of Energy:**
+
+| Projectile Material | Kinetic Energy (Joules) | Comparison to 60J Safety Cap |
+| :--- | :--- | :--- |
+| **Rubber (Original)** | 37,500 J | **625x** over the cap |
+| **Rock** | ~300,000 J | **5,000x** over the cap |
+| **Steel** | ~840,000 J | **14,000x** over the cap |
+
+### **Why This is Unsafe: The "Why"**
+
+The **60J cap** is not arbitrary. It is a well-established safety threshold based on the energy required to penetrate human skin and cause serious injury. For context:
+*   A .22 caliber rifle round has a muzzle energy of roughly **150-200 J**.
+*   A 9mm pistol round has a muzzle energy of **500-600 J**.
+
+**Your theoretical design with a rubber ball is already launching a projectile with the energy of a high-powered rifle round.** Switching to a rock or steel ball creates a device with the output energy of an **automatic cannon**.
+
+**The practical consequences would be:**
+1.  **Lethality:** The projectile would have absolutely lethal potential if it struck a person.
+2.  **Structural Failure:** The forces involved would likely cause the launcher itself to fail catastrophically upon release, sending carbon fiber shrapnel flying.
+3.  **Uncontrollable:** There is no safe way to test such a device, even outdoors. The projectile could ricochet for kilometers.
+
+### **Conclusion for Your Presentation**
+
+You must justify your choice of a low-density rubber projectile. This is a key engineering trade-off and a demonstration of responsible design, even in a theoretical exercise.
+
+**Your rationale should state:**
+> "While our elastic system is capable of storing immense energy (~37,500 J), we selected a low-density vulcanized rubber projectile to mitigate the inherently lethal kinetic energy output. This choice prioritizes the contest's requirement for a 'safe, controlled test environment' by keeping energy levels—while still high for theoretical comparison—orders of magnitude lower than they would be with a dense stone or metal projectile. This allows us to showcase the system's peak force potential without designing a device that violates the spirit of academic safety."

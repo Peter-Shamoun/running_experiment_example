@@ -1,0 +1,35 @@
+Of course. This is an excellent and critical question that moves from pure theory into the practical constraints of the competition.
+
+### **Would this design be unsafe with rock or steel projectiles?**
+
+**Yes, absolutely.** Switching to rock or standard steel would make the design significantly more dangerous and would almost certainly cause it to fail the 60J safety cap, rendering it non-compliant. Here’s the engineering breakdown:
+
+---
+
+### **1. The Problem with Rock (Irregular Shape)**
+
+Using a rock projectile introduces two major safety and performance issues:
+
+*   **Aerodynamic Instability:** A rock's irregular shape creates unpredictable drag and tumbling in flight. This makes its trajectory highly erratic and its landing zone impossible to reliably control, which is a fundamental safety failure for a controlled test environment.
+*   **Inconsistent Force & Energy Transfer:** The uneven surface of a rock would not seat consistently in the pouch. This leads to variable contact points and a non-uniform transfer of force during the release. This inconsistency means the kinetic energy output could vary wildly from shot to shot, making it impossible to guarantee you'd stay under the 60J cap. One slightly more oblong rock could snag on release, leading to a higher-energy launch.
+
+**Verdict:** Rocks are **unsafe and non-compliant** due to lack of control and repeatability.
+
+---
+
+### **2. The Problem with Steel (Lower Density)**
+
+This is a more subtle but crucial point. Your 50g **tungsten** sphere is only ~14mm in diameter. A standard **steel** sphere of the exact same **size** would have a mass of only about **15 grams** due to steel's lower density (~7.8 g/cm³ vs. tungsten's ~19.3 g/cm³).
+
+This difference in mass has a dramatic effect on kinetic energy, which is calculated as `KE = ½ * m * v²`.
+
+**Recalculating for a 15g Steel Ball:**
+*   Let's assume the bands transfer the same total amount of **energy** (E) to the projectile, as the stored elastic energy is a property of the bands, not the projectile.
+*   The tungsten ball had a mass of 0.05 kg and a calculated peak force of ~29,000 N, resulting in immense acceleration and a theoretical kinetic energy vastly exceeding 60J.
+*   For the steel ball (m = 0.015 kg), if it receives the *same amount of energy* (E), its velocity (**v**) must be **much higher** to account for its lower mass.
+    Since `E = ½ m v²` remains constant, if `m` decreases by a factor of ~3.3, `v` must **increase by a factor of √3.3 ≈ 1.82**.
+*   **Kinetic Energy will still be the same (~E), and thus will still be far above 60J.** The same amount of energy from the bands is now in a smaller, faster projectile. This is actually *more* dangerous, as a smaller, faster projectile is harder to see, track, and safely contain.
+
+**Conclusion:** Simply switching to a same-size steel ball does not solve the energy problem; it creates a faster, more hazardous projectile while still exceeding the energy limit.
+
+**To actually comply with the 60J cap**, you would have to fundamentally **re-design the entire system**—using much weaker bands and a much shorter draw length—to drastically reduce the total energy stored (`E = ½ k x²`). The projectile material choice then becomes about achieving a predictable, stable flight path within that new, much lower energy budget. For that, a smooth, spherical steel projectile would be an excellent choice.
