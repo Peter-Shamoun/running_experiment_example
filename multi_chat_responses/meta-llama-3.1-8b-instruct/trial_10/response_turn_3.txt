@@ -1,35 +1,26 @@
-For a simple slingshot design, the structural frame and material selection would differ significantly from the Aerius launcher. Here's a high-level overview of the design differences:
+For a simple slingshot design, the main structural frame would differ significantly from the Aerius design. Here's a high-level overview of the design considerations:
 
 **Simple Slingshot Design:**
 
-* **Structural Frame:**
-	+ Smaller and more compact frame to accommodate the user's hand and the elastic band.
-	+ Typically made from a single piece of wood, plastic, or metal (e.g., aluminum or steel).
-	+ Frame dimensions might be around 6-8 inches (15-20 cm) in length, 4-6 inches (10-15 cm) in width, and 1-2 inches (2.5-5 cm) in depth.
-* **Material Selection:**
-	+ A more rigid and lightweight material is preferred, such as:
-		- Wood (e.g., maple or ash) for a traditional slingshot look and feel.
-		- Plastic (e.g., polycarbonate or ABS) for a more modern and durable design.
-		- Metal (e.g., aluminum or steel) for a strong and compact frame.
-* **Key Properties:**
-	+ Tensile strength: 10,000-20,000 psi (69-138 MPa)
-	+ Yield strength: 5,000-10,000 psi (34-69 MPa)
-	+ Density: 0.05-0.1 lb/in³ (1.4-2.7 g/cm³)
-	+ Young's Modulus: 1,000,000-2,000,000 psi (69,000-138,000 MPa)
-* **Stress Considerations:**
-	+ The frame will experience bending and torsional stresses due to the user's hand and the elastic band.
-	+ The material should be able to withstand the stresses without failing or deforming excessively.
+1. **Frame shape**: A simple slingshot frame would be a more compact, U-shaped or Y-shaped structure, with a shorter height and width compared to the Aerius design.
+2. **Material**: A lighter, more flexible material such as wood, plastic, or a thin metal alloy (e.g., aluminum 6063) would be suitable for a simple slingshot frame.
+3. **Key components**:
+	* **Rams**: The frame would have two rams or arms that store elastic potential energy when stretched.
+	* **Pivots**: The rams would pivot around a central axis, allowing the user to load and release the projectile.
+	* **Projectile holder**: A simple holder or pouch would be attached to the frame to secure the projectile.
+4. **Design considerations**:
+	* **Elastic potential energy**: The frame would be designed to store elastic potential energy in the rams, which would be released when the user pulls the trigger or releases the projectile.
+	* **Kinetic energy**: The frame would need to be designed to efficiently transfer the stored elastic potential energy into kinetic energy of the projectile.
+	* **Safety**: The design would need to ensure safe operation, with a secure projectile holder and a mechanism to prevent accidental releases.
 
-**Design Tradeoffs:**
+**Key differences from the Aerius design:**
 
-* **Stiffness vs. Weight:** A stiffer frame might be more efficient for storing energy, but it could also be heavier and more difficult to handle.
-* **Material Cost vs. Performance:** Using a more expensive material like metal might provide better performance, but it could also increase the overall cost of the slingshot.
-* **Ergonomics vs. Compactness:** A more ergonomic design might be more comfortable to use, but it could also make the slingshot larger and more cumbersome.
+1. **Simpler mechanism**: The simple slingshot design relies on a more straightforward mechanism, with fewer components and less complexity compared to the Aerius design.
+2. **Less emphasis on precision**: The simple slingshot design is more focused on raw power and distance, rather than precision and accuracy.
+3. **More emphasis on user interaction**: The simple slingshot design requires more user interaction, with the user needing to load, aim, and release the projectile manually.
 
-**Key Challenges:**
+**Presentation Tips:**
 
-* **Energy Storage:** The slingshot needs to store energy efficiently in the elastic band, which requires a well-designed frame and material selection.
-* **Accuracy:** The slingshot needs to be accurate and consistent in its performance, which requires a well-balanced frame and a smooth release mechanism.
-* **Safety:** The slingshot needs to be safe to use, which requires a well-designed frame and a secure release mechanism to prevent accidents.
-
-These design differences and tradeoffs will help you create a simple slingshot design that meets the contest requirements and showcases your team's engineering skills.
+1. **Highlight the simplicity**: Emphasize the simplicity of the design and how it achieves its goals with fewer components and less complexity.
+2. **Discuss the tradeoffs**: Explain the tradeoffs between the simple slingshot design and the Aerius design, highlighting the differences in precision, power, and user interaction.
+3. **Showcase the design's strengths**: Highlight the strengths of the simple slingshot design, such as its ease of use, portability, and affordability.

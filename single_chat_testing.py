@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration
-MODEL = "meta/llama-3.1-8b-instruct"  # Options: gemini-*, gpt-*, claude-*, deepseek-ai/*, mistralai/*, meta/*
+MODEL = "qwen/qwen3-4b:free"  # Options: gemini-*, gpt-*, claude-*, deepseek-ai/*, mistralai/*, meta/*
 TRIAL = 10
 
 # Helper function
@@ -26,6 +26,19 @@ def generate_single(model, prompt):
                 return response.text
             except Exception as e2:
                 raise Exception(f"Both Gemini SDKs failed. New SDK error: {e}. Old SDK error: {e2}")
+    elif model.startswith("qwen/"):
+        from openai import OpenAI
+        client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=os.getenv("OPENROUTER_API_KEY")
+        )
+        completion = client.chat.completions.create(
+            model=model, 
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.2,
+            max_tokens=4096
+        )
+        return completion.choices[0].message.content
     elif model.startswith(("deepseek-ai/", "mistralai/", "meta/")):
         from openai import OpenAI
         client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", 
@@ -62,7 +75,7 @@ def generate_single(model, prompt):
         return completion.choices[0].message.content
 
 # Setup paths
-model_name = MODEL.replace("/", "-")
+model_name = MODEL.replace("/", "-").replace(":", "-")
 output_dir = f"single_chat_responses/{model_name}/trial_{TRIAL}"
 os.makedirs(output_dir, exist_ok=True)
 
@@ -76,7 +89,7 @@ with open(f"{output_dir}/response.txt", "w", encoding='utf-8') as f:
     f.write(response_text)
 
 # Grade response with random grading model
-GRADING_MODELS = ["gemini-2.5-pro", "claude-sonnet-4-5-20250929", "deepseek-ai/deepseek-v3.1"]
+GRADING_MODELS = ["gemini-2.5-pro", "deepseek-ai/deepseek-v3.1"]
 grading_model = random.choice(GRADING_MODELS)
 print(f"Using grading model: {grading_model}")
 

@@ -1,0 +1,76 @@
+**Comprehensive Slingshot Design Proposal**  
+*Objective: Maximize energy transfer, range, and precision through optimized materials, dimensions, and mechanics.*  
+
+---
+
+### **1. Frame Design**  
+**Material:** Carbon fiber-reinforced polymer (CFRP)  
+- **Mechanical Properties:**  
+  - **Tensile Strength:** 500 MPa  
+  - **Modulus of Elasticity:** 150 GPa  
+  - **Density:** 1.55 g/cm³  
+- **Dimensions:**  
+  - **Length:** 30 cm (for optimal energy storage)  
+  - **Width:** 2 cm (to balance rigidity and weight)  
+  - **Thickness:** 0.5 cm (to prevent buckling under tension)  
+- **Rationale:** CFRP provides a high strength-to-weight ratio, minimizing mass while maintaining structural integrity. The 30 cm length allows for efficient energy storage, while the 2 cm width ensures stability during launch.  
+
+---
+
+### **2. Limbs (Elastic Storage System)**  
+**Material:** Rubberized composite (polyurethane + carbon fiber)  
+- **Mechanical Properties:**  
+  - **Elastic Modulus:** 0.5 GPa  
+  - **Shear Modulus:** 0.2 GPa  
+  - **Density:** 1.2 g/cm³  
+- **Dimensions:**  
+  - **Length:** 30 cm (same as frame)  
+  - **Width:** 2 cm  
+  - **Thickness:** 0.5 cm  
+- **Design:**  
+  - **Stiffness (Spring Constant):** Calculated as $ k = \frac{3E \cdot I}{L} $, where $ I = \frac{b \cdot h^3}{12} $.  
+    - $ I = \frac{0.02 \cdot (0.005)^3}{12} = 2.08 \times 10^{-11} \, \text{m}^4 $.  
+    - $ k = \frac{3 \cdot 0.5 \times 10^9 \cdot 2.08 \times 10^{-11}}{0.3} \approx 104 \, \text{N/m} $.  
+- **Rationale:** The rubberized composite balances flexibility and durability, allowing for 10 cm of stretch (10% of length) to store energy.  
+
+---
+
+### **3. Trigger Mechanism**  
+**Design:** Spring-loaded lever with 10 N release force  
+- **Dimensions:**  
+  - **Lever Arm:** 10 cm  
+  - **Spring Constant:** 50 N/m  
+- **Force Output:**  
+  - **Energy Stored:** $ \frac{1}{2} k x^2 = \frac{1}{2} \cdot 50 \cdot (0.1)^2 = 0.25 \, \text{J} $.  
+  - **Purpose:** Ensures controlled release, minimizing energy loss during stretching.  
+
+---
+
+### **4. Projectile Design**  
+**Material:** Lead core with polymer casing  
+- **Dimensions:**  
+  - **Diameter:** 5 cm  
+  - **Length:** 10 cm  
+- **Mass:** 100 g (100 g/cm³ density for lead core)  
+- **Aerodynamics:**  
+  - **Drag Coefficient ($ C_d $):** 0.3 (for streamlined shape)  
+  - **Cross-Sectional Area:** $ A = \pi r^2 = \pi (0.025)^2 \approx 0.00196 \, \text{m}^2 $.  
+- **Rationale:** The lead core ensures high mass for kinetic energy, while the polymer casing reduces weight and improves accuracy.  
+
+---
+
+### **5. Energy Transfer Analysis**  
+**Energy Stored in Limbs:**  
+- **Stretch:** $ x = 0.1 \, \text{m} $  
+- **Energy:** $ E = \frac{1}{2} k x^2 = 0.25 \, \text{J} $.  
+- **Kinetic Energy of Projectile:**  
+  $$
+  KE = \frac{1}{2} m v^2 \Rightarrow v = \sqrt{\frac{2KE}{m}} = \sqrt{\frac{2 \cdot 0.25}{0.1}} \approx 2.24 \, \text{m/s}.
+  $$  
+- **Issue:** This velocity is insufficient for a slingshot. **Correction:** Increase limb stiffness to $ k = 100,000 \, \text{N/m} $ for $ E = 500 \, \text{J} $, yielding $ v = 100 \, \text{m/s} $.  
+
+---
+
+### **6. Precision Optimization**  
+- **Accuracy:**  
+  - **Center of Mass Alignment:** Ensured by a 10 cm diameter projectile and 5

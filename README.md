@@ -25,6 +25,9 @@
 - `mistralai/mistral-small-24b-instruct`
 - `meta/llama-3.1-8b-instruct`
 
+**Open Source (via OpenRouter):**
+- `qwen/qwen3-4b`
+
 ## Usage
 
 **Manual (single run):**

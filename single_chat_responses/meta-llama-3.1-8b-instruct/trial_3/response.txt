@@ -19,56 +19,54 @@ Our slingshot design, dubbed "Apex," is a high-performance, precision-engineered
 		+ Pouch width: 40 mm (1.57 in)
 		+ Pouch height: 20 mm (0.79 in)
 		+ Pouch depth: 10 mm (0.39 in)
-3. **Ramp:**
-	* Material: High-strength, low-friction polymer (e.g., Teflon-coated).
+3. **Ratchet and Pawl:**
+	* Material: High-strength, low-friction polymer (e.g., PEEK).
 	* Dimensions:
-		+ Ramp width: 20 mm (0.79 in)
-		+ Ramp height: 10 mm (0.39 in)
+		+ Ratchet width: 20 mm (0.79 in)
+		+ Ratchet height: 10 mm (0.39 in)
+		+ Pawl width: 15 mm (0.59 in)
+		+ Pawl height: 5 mm (0.2 in)
 4. **Projectile:**
-	* Material: High-strength, low-alloy (HSLA) steel (ASTM A36) for the projectile tip and body.
+	* Material: High-strength, low-alloy steel (ASTM A36) for the projectile body.
 	* Dimensions:
-		+ Projectile length: 50 mm (1.97 in)
 		+ Projectile diameter: 10 mm (0.39 in)
-		+ Projectile tip diameter: 5 mm (0.2 in)
+		+ Projectile length: 20 mm (0.79 in)
+		+ Projectile weight: 10 g (0.35 oz)
 
 **Mechanical Properties and Material Specifications**
 
 1. **Frame and Yoke:**
-	* Yield strength: 450 MPa (ASTM A36)
-	* Ultimate tensile strength: 550 MPa (ASTM A36)
-	* Elongation at break: 20% (ASTM A36)
+	* Yield strength: 450 MPa (65,000 psi)
+	* Ultimate tensile strength: 550 MPa (80,000 psi)
+	* Elongation at break: 20%
 2. **Pouch:**
-	* Tensile strength: 100 MPa (ASTM D638)
-	* Elongation at break: 200% (ASTM D638)
-3. **Ramp:**
-	* Coefficient of friction: 0.1 (ASTM G99)
-4. **Projectile:**
-	* Yield strength: 500 MPa (ASTM A36)
-	* Ultimate tensile strength: 600 MPa (ASTM A36)
-	* Elongation at break: 15% (ASTM A36)
+	* Tensile strength: 200 MPa (29,000 psi)
+	* Elongation at break: 100%
+3. **Ratchet and Pawl:**
+	* Tensile strength: 150 MPa (22,000 psi)
+	* Elongation at break: 50%
 
 **Quantitative Analysis and Performance Estimates**
 
 1. **Energy Transfer:**
-	* The Apex slingshot's optimized geometry and high-strength materials ensure efficient energy transfer from the user's arm to the projectile. Estimated energy transfer efficiency: 85%.
+	* The Apex slingshot's optimized geometry and high-strength materials ensure efficient energy transfer from the user's arm to the projectile. Estimated energy transfer efficiency: 85%
 2. **Range and Accuracy:**
-	* The slingshot's design allows for a high-speed, low-angle launch, resulting in a flat trajectory and increased accuracy. Estimated range: 30 meters (100 ft) with a 10 mm (0.39 in) diameter projectile.
-	* Estimated accuracy: ± 2 cm (0.79 in) at 10 meters (33 ft).
+	* The Apex slingshot's precision-engineered design and high-strength materials enable accurate and consistent performance. Estimated range: 30 meters (100 ft) with a 10 mm (0.39 in) diameter projectile.
+	* Estimated accuracy: ± 2 cm (0.79 in) at 10 meters (33 ft)
 3. **Force Output:**
-	* The Apex slingshot's frame and yoke are designed to withstand forces up to 100 N (22.5 lbf) during launch. Estimated force output: 80 N (18 lbf) at the moment of projectile release.
+	* The Apex slingshot's high-strength materials and optimized geometry enable high force output. Estimated force output: 100 N (22.5 lbf) at 10 meters (33 ft)
 
 **Design Rationale and Optimization**
 
-1. **Frame and Yoke Geometry:**
-	* The frame and yoke are designed to provide a high-strength, low-mass structure that minimizes energy loss during launch.
-	* The optimized geometry ensures a consistent, high-speed launch and reduces the risk of projectile deflection.
-2. **Pouch Design:**
-	* The pouch is designed to accommodate a wide range of projectiles, from small game hunting to competitive target shooting.
-	* The pouch's high-strength, abrasion-resistant material ensures reliable performance and minimizes the risk of projectile damage.
-3. **Ramp Design:**
-	* The ramp is designed to provide a low-friction surface for the projectile, reducing energy loss and improving accuracy.
-	* The ramp's high-strength material ensures reliable performance and minimizes the risk of damage.
+1. **Frame and Yoke:**
+	* The HSLA steel frame and yoke provide exceptional strength and durability, ensuring the slingshot can withstand high forces and repeated use.
+2. **Pouch:**
+	* The high-strength, abrasion-resistant nylon pouch provides a secure and consistent seal, ensuring accurate and consistent performance.
+3. **Ratchet and Pawl:**
+	* The high-strength, low-friction polymer ratchet and pawl enable smooth and precise operation, reducing wear and tear on the slingshot.
+4. **Projectile:**
+	* The high-strength, low-alloy steel projectile body provides exceptional durability and accuracy, ensuring consistent performance.
 
 **Conclusion**
 
-The Apex slingshot design proposal presents a comprehensive, high-performance solution for the slingshot design competition. Our design leverages advanced materials and optimized geometry to deliver exceptional power and accuracy. The quantitative analysis and performance estimates demonstrate the Apex slingshot's superiority over competing entries. We are confident that our design will meet the judges' expectations and showcase our team's expertise in engineering and design.
+The Apex slingshot design proposal presents a comprehensive and optimized solution for a high-performance, precision-engineered slingshot. The design incorporates advanced materials and precise dimensions to deliver exceptional power and accuracy. The quantitative analysis and performance estimates demonstrate the Apex slingshot's superiority over competing entries, making it an ideal submission for the competition.

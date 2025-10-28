@@ -1,12 +1,11 @@
 import os
 import random
-from glob import glob
 from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration
-MODEL = "meta/llama-3.1-8b-instruct"  # Options: gemini-*, gpt-*, claude-*, deepseek-ai/*, mistralai/*, meta/*
-TRIAL = 10
+MODEL = "qwen/qwen3-4b:free"  # Options: gemini-*, gpt-*, claude-*, deepseek-ai/*, mistralai/*, meta/*, qwen/*
+TRIAL = 1
 
 # Helper functions
 def generate_multi_turn(model, conversation_history, new_prompt):
@@ -39,9 +38,16 @@ def generate_multi_turn(model, conversation_history, new_prompt):
                 return response.text
             except Exception as e2:
                 raise Exception(f"Both Gemini SDKs failed. New SDK error: {e}. Old SDK error: {e2}")
-    else:  # OpenAI-compatible (NVIDIA, OpenAI, Anthropic)
+    else:  # OpenAI-compatible (OpenRouter, NVIDIA, OpenAI, Anthropic)
         from openai import OpenAI
-        if model.startswith(("deepseek-ai/", "mistralai/", "meta/")):
+        if model.startswith("qwen/"):
+            client = OpenAI(
+                base_url="https://openrouter.ai/api/v1",
+                api_key=os.getenv("OPENROUTER_API_KEY")
+            )
+            max_tokens = 4096
+            extra = {}
+        elif model.startswith(("deepseek-ai/", "mistralai/", "meta/")):
             client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", 
                            api_key=os.getenv("NVIDIA_API_KEY"))
             max_tokens = 16384 if "deepseek" in model else (8192 if "mistral" in model else 4096)
@@ -90,6 +96,19 @@ def generate_single(model, prompt):
                 return response.text
             except Exception as e2:
                 raise Exception(f"Both Gemini SDKs failed. New SDK error: {e}. Old SDK error: {e2}")
+    elif model.startswith("qwen/"):
+        from openai import OpenAI
+        client = OpenAI(
+            base_url="https://openrouter.ai/api/v1",
+            api_key=os.getenv("OPENROUTER_API_KEY")
+        )
+        completion = client.chat.completions.create(
+            model=model, 
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.2,
+            max_tokens=4096
+        )
+        return completion.choices[0].message.content
     elif model.startswith(("deepseek-ai/", "mistralai/", "meta/")):
         from openai import OpenAI
         client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", 
@@ -126,36 +145,88 @@ def generate_single(model, prompt):
         return completion.choices[0].message.content
 
 # Setup paths
-model_name = MODEL.replace("/", "-")
+model_name = MODEL.replace("/", "-").replace(":", "-")
 output_dir = f"multi_chat_responses/{model_name}/trial_{TRIAL}"
 os.makedirs(output_dir, exist_ok=True)
 
-# Load prompts (sorted alphabetically)
-prompt_files = sorted(glob("preset_prompts/multi_chat/*.txt"))
+# Interactive multi-turn conversation
 conversation = []
+all_responses = []  # Store all turns for grading
+turn = 1
 
-# Multi-turn conversation
-for i, prompt_file in enumerate(prompt_files, 1):
-    with open(prompt_file, "r") as f:
-        user_prompt = f.read()
-    
-    response_text = generate_multi_turn(MODEL, conversation, user_prompt)
-    
-    with open(f"{output_dir}/response_turn_{i}.txt", "w", encoding='utf-8') as f:
-        f.write(response_text)
+print(f"\n{'='*60}")
+print(f"Interactive Multi-Chat Testing")
+print(f"Model: {MODEL}")
+print(f"Trial: {TRIAL}")
+print('='*60)
+print("\nInstructions:")
+print("  - Type your message and press Enter to send")
+print("  - Type 'done' (without quotes) when finished to grade the conversation")
+print("  - Type 'quit' to exit without grading")
+print(f"\n{'='*60}\n")
 
-# Grade final response with random grading model
-GRADING_MODELS = ["gemini-2.5-pro", "claude-sonnet-4-5-20250929", "deepseek-ai/deepseek-v3.1"]
+while True:
+    # Get user input
+    user_prompt = input(f"[Turn {turn}] You: ").strip()
+    
+    # Check for exit commands
+    if user_prompt.lower() == 'quit':
+        print("\nExiting without grading...")
+        exit(0)
+    elif user_prompt.lower() == 'done':
+        if turn == 1:
+            print("\nNo conversation to grade. Exiting...")
+            exit(0)
+        print("\n" + "="*60)
+        print("Conversation completed. Starting grading...")
+        print("="*60 + "\n")
+        break
+    
+    if not user_prompt:
+        print("(Empty input, please type a message or 'done' to finish)")
+        continue
+    
+    # Get model response
+    try:
+        response_text = generate_multi_turn(MODEL, conversation, user_prompt)
+        print(f"\n[Turn {turn}] Assistant: {response_text}\n")
+        
+        # Save individual turn
+        with open(f"{output_dir}/response_turn_{turn}.txt", "w", encoding='utf-8') as f:
+            f.write(f"User: {user_prompt}\n\nAssistant: {response_text}")
+        
+        # Store for full conversation grading
+        all_responses.append(f"=== TURN {turn} ===\nUser: {user_prompt}\n\nAssistant: {response_text}\n")
+        
+        turn += 1
+    except Exception as e:
+        print(f"\n[ERROR] Failed to get response from model: {e}\n")
+        continue
+
+# Grade full conversation history with random grading model
+GRADING_MODELS = ["gemini-2.5-pro", "deepseek-ai/deepseek-v3.1"]
 grading_model = random.choice(GRADING_MODELS)
-print(f"Using grading model: {grading_model}")
+print(f"Using grading model: {grading_model}\n")
 
 with open("preset_prompts/grading_prompt.txt", "r") as f:
     grading_prompt = f.read()
 
-grade_text = generate_single(grading_model, grading_prompt + '\n' + response_text)
+# Combine all conversation turns for grading
+full_conversation = "\n".join(all_responses)
+print("Sending conversation to grader...")
+grade_text = generate_single(grading_model, grading_prompt + '\n\nFULL CONVERSATION HISTORY:\n\n' + full_conversation)
 
 grade_dir = f"multi_chat_grades/{model_name}/trial_{TRIAL}"
 os.makedirs(grade_dir, exist_ok=True)
 with open(f"{grade_dir}/grading_response.txt", "w", encoding='utf-8') as f:
     f.write(f"[Graded by: {grading_model}]\n\n{grade_text}")
+
+print("\n" + "="*60)
+print("GRADING COMPLETE")
+print("="*60)
+print(f"\nGrade saved to: {grade_dir}/grading_response.txt")
+print(f"\nGrading Summary:")
+print("-"*60)
+print(grade_text)
+print("-"*60)
 

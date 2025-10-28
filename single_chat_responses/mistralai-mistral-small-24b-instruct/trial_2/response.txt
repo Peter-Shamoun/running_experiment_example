@@ -138,4 +138,4 @@ Designing a high-performance slingshot involves a careful balance of mechanical 
 
 ### 8. Conclusion
 
-This design proposal outlines a slingshot with a robust aluminum frame, high-elasticity latex bands, a durable leather pocket, and ergonomic rubber handle. The steel projectiles are optimized for aerodynamic efficiency. The quantitative analysis demonstrates the energy transfer, force output, and potential range, ensuring a competitive edge in the design competition.
+This design proposal outlines a slingshot with a robust aluminum frame, high-energy latex rubber bands, a durable leather pocket, and ergonomic rubber handle. The steel projectiles are optimized for aerodynamic efficiency. The quantitative analysis demonstrates the energy transfer, force output, and potential range, ensuring a competitive edge in the design competition.

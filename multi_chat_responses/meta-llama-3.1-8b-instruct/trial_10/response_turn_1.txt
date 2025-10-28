@@ -11,19 +11,19 @@ Here's a high-level conceptual idea for a human-powered projectile launcher that
 **Why Aerius excels:**
 
 1. **Energy Efficiency**: The flywheel-based energy storage system allows for efficient energy transfer, minimizing energy loss and maximizing the projectile's kinetic energy.
-2. **Precision**: The pneumatic launch system provides a consistent, repeatable acceleration profile, while the precision guidance system enables accurate aiming and trajectory control.
-3. **Scalability**: The design can be easily scaled up or down to accommodate different projectile sizes and weights, making it a versatile contender.
+2. **Precision**: The pneumatic launch system provides a consistent and repeatable acceleration profile, while the precision guidance system enables accurate aiming and trajectory control.
+3. **Scalability**: The design can be easily scaled up or down to accommodate different projectile sizes and weights.
 
 **Key Tradeoffs to Consider:**
 
-1. **Complexity vs. Simplicity**: While Aerius has a high degree of precision and control, its complexity may make it more challenging to assemble, test, and maintain.
-2. **Energy Storage vs. Launch Speed**: The flywheel-based energy storage system may require a longer crank time to achieve maximum energy storage, potentially compromising launch speed.
-3. **Guidance System Accuracy vs. Cost**: The precision guidance system adds significant cost and complexity, but its accuracy may be critical for achieving high scores in the contest.
+1. **Complexity vs. Simplicity**: The flywheel-based energy storage system and pneumatic launch system introduce complexity, but offer significant performance benefits. Balancing complexity with simplicity will be crucial for presentation.
+2. **Weight vs. Portability**: The flywheel and air cylinder will add weight, but the design can be optimized for portability and ease of transportation.
+3. **Cost vs. Performance**: The use of high-performance components (e.g., flywheel, servo motors) may increase costs, but the design's potential for high-distance and precision performance may justify the investment.
 
 **Presentation Tips:**
 
-1. **Highlight the key innovations**: Emphasize the flywheel-based energy storage and pneumatic launch system as the core differentiators of Aerius.
-2. **Showcase the precision guidance system**: Demonstrate the accuracy and repeatability of the guidance system, highlighting its potential to achieve high scores.
-3. **Discuss the tradeoffs**: Acknowledge the potential drawbacks of Aerius, such as complexity and cost, and explain how your team plans to mitigate these challenges.
+1. **Highlight the key innovations**: Emphasize the flywheel-based energy storage system and precision guidance system as the core differentiators of the Aerius design.
+2. **Showcase the scalability**: Demonstrate how the design can be easily scaled up or down to accommodate different projectile sizes and weights.
+3. **Address the tradeoffs**: Acknowledge the potential complexity and weight tradeoffs, and explain how the design balances these factors to achieve optimal performance.
 
-This high-level concept should give you a solid starting point for brainstorming and developing your design. Good luck with the contest, and have fun!
+This high-level conceptual idea should provide a solid foundation for your team's brainstorming and presentation. Good luck with the design contest!
