@@ -1,43 +1,80 @@
-Let's scale the dimensions of the Aerius launcher to fit an average adult user.
+USER PROMPT:
+Thanks for the detailed start! However I should clarify: this is specifically a Y-frame handheld slingshot design not a larger frame. Can you revise with: 1) Y-shaped frame with two fork arms and handle suitable for adult hand grip 2) Fork gap width and fork height dimensions 3) Steel ball bearing projectile (spherical) not plate 4) Latex tubing or flat bands not generic rubber 5) Total frame weight 6) Band attachment method. Please provide corrected specifications for a standard Y-frame slingshot configuration.
 
-**Ergonomic Considerations:**
+============================================================
 
-1. **Crank Handle Height**: The crank handle should be positioned to allow the user to operate it comfortably with their hands at or below shoulder height. A good starting point is to place the crank handle at a height of around 30-40 inches (76-102 cm) above the ground.
-2. **Crank Handle Radius**: The radius of the crank handle should be large enough to accommodate the user's hand comfortably, but not so large that it becomes unwieldy. A radius of around 4-6 inches (10-15 cm) is a good starting point.
-3. **Flywheel and Air Tank Placement**: The flywheel and air tank should be positioned to minimize the user's reach and strain. A good placement would be to locate them at a height of around 20-30 inches (51-76 cm) above the ground, and at a distance of around 12-18 inches (30-46 cm) from the crank handle.
-4. **Overall Length and Width**: The overall length and width of the launcher should be proportional to the user's height and arm span. A good starting point is to make the launcher around 60-80 inches (152-203 cm) long and 20-30 inches (51-76 cm) wide.
+MODEL RESPONSE:
+Here are the revised specifications for a standard Y-frame slingshot configuration:
 
-**Material Selection:**
+**Frame Material and Dimensions:**
 
-For the structural frame of the Aerius launcher, I recommend using a high-strength, lightweight material such as:
+* Frame material: High-strength, low-alloy (HSLA) steel (e.g., ASTM A572 Gr. 50)
+* Frame dimensions:
+	+ Length: 180 mm (7.09 in)
+	+ Width: 80 mm (3.15 in)
+	+ Height: 50 mm (1.97 in)
+	+ Thickness: 3 mm (0.118 in)
+* Frame geometry:
+	+ Y-frame angle: 120° between the two fork arms
+	+ Handle angle: 30° between the handle and the fork arms
 
-**Carbon Fiber Reinforced Polymer (CFRP)**
+**Fork Geometry:**
 
-* **Density**: around 1.8-2.0 g/cm³
-* **Tensile Strength**: up to 5000-6000 MPa
-* **Young's Modulus**: around 200-300 GPa
-* **Cost**: relatively high, but suitable for a high-performance contest entry
+* Fork material: Same as the frame material (HSLA steel)
+* Fork dimensions:
+	+ Fork gap width: 20 mm (0.787 in)
+	+ Fork height: 30 mm (1.18 in)
+	+ Fork thickness: 2 mm (0.079 in)
+* Fork geometry:
+	+ Curvature: 50 mm (1.97 in) radius of curvature for the fork arms
+	+ Angle: 45° between the fork arms and the handle
 
-CFRP offers an excellent balance of strength, stiffness, and weight, making it an ideal choice for the Aerius launcher. Its high tensile strength and modulus allow it to withstand the stresses and strains imposed by the flywheel and air tank, while its low density minimizes the overall weight of the launcher.
+**Handle Dimensions:**
 
-**Basic Stress Considerations:**
+* Handle material: Same as the frame material (HSLA steel)
+* Handle dimensions:
+	+ Length: 80 mm (3.15 in)
+	+ Width: 20 mm (0.787 in)
+	+ Thickness: 3 mm (0.118 in)
+* Handle geometry:
+	+ Contour: Ergonomic, curved shape to fit an adult hand
 
-Under simulated loads, the Aerius launcher will experience various types of stresses, including:
+**Projectile Parameters:**
 
-1. **Tensile Stress**: due to the flywheel's rotational inertia and the air tank's pressure
-2. **Compressive Stress**: due to the weight of the launcher and the user's force on the crank handle
-3. **Shear Stress**: due to the rotational motion of the flywheel and the air tank's pressure
+* Projectile material: Steel ball bearing (spherical)
+* Projectile dimensions:
+	+ Diameter: 12 mm (0.472 in)
+	+ Weight: 10 grams (0.35 oz)
+* Projectile aerodynamics:
+	+ Drag coefficient (Cd): 0.5
+	+ Lift coefficient (Cl): 0
 
-To ensure the structural integrity of the launcher, we can apply basic stress considerations:
+**Elastic Band Specifications:**
 
-1. **Tensile Stress**: Ensure that the CFRP material can withstand the maximum tensile stress imposed by the flywheel and air tank. A safety factor of 2-3 is recommended.
-2. **Compressive Stress**: Ensure that the launcher's structure can withstand the maximum compressive stress imposed by the user's weight and the launcher's own weight. A safety factor of 2-3 is recommended.
-3. **Shear Stress**: Ensure that the launcher's structure can withstand the maximum shear stress imposed by the rotational motion of the flywheel and air tank. A safety factor of 2-3 is recommended.
+* Elastic band material: Latex tubing (e.g., 1/4" ID x 1/2" OD x 12" long)
+* Elastic band properties:
+	+ Young's modulus: 10 MPa (1450 psi)
+	+ Tensile strength: 20 MPa (2900 psi)
+	+ Strain at break: 300%
 
-By applying these basic stress considerations, we can ensure that the Aerius launcher is designed to withstand the stresses and strains imposed by its operation, while also providing a safe and ergonomic user experience.
+**Band Attachment Method:**
 
-**Presentation Tips:**
+* Band attachment method: Rubber bands are attached to the fork arms using small metal clips (e.g., 1/4" x 1/2" x 1/8" thick).
 
-1. **Highlight the ergonomic design**: Emphasize the importance of ergonomic design in ensuring a comfortable and efficient user experience.
-2. **Showcase the material selection**: Explain the benefits of using CFRP, including its high strength-to-weight ratio and resistance to fatigue.
-3. **Discuss the stress considerations**: Explain the basic stress considerations that were applied to ensure the structural integrity of the launcher, and highlight the safety factors used to ensure a safe and reliable design.
+**Total Frame Weight:**
+
+* Estimated total frame weight: 250 grams (8.82 oz)
+
+**Performance Calculations:**
+
+1. **Energy Storage:**
+	* Elastic band energy storage: Calculate the energy stored in the elastic band using the formula: Energy = 0.5 \* k \* x^2, where k is the spring constant and x is the displacement.
+	* Spring constant (k): Calculate the spring constant using the formula: k = (E \* A) / (3 \* L), where E is the Young's modulus, A is the cross-sectional area, and L is the length of the elastic band.
+	* Displacement (x): Calculate the displacement using the formula: x = (F \* L) / (E \* A), where F is the force applied to the elastic band.
+2. **Projectile Velocity:**
+	* Calculate the projectile velocity using the formula: v = sqrt(2 \* E / m), where E is the energy stored in the elastic band and m is the mass of the projectile.
+3. **Range and Accuracy:**
+	* Calculate the range using the formula: R = (v^2 \* sin(2θ)) / g, where θ is the angle of launch and g is the acceleration due to gravity.
+	* Calculate the accuracy using the formula: Accuracy = (R \* sin(θ)) / (2 \* v), where R is the range and v is the projectile velocity.
+
+Please note that these specifications are for a standard Y-frame slingshot configuration and can be adjusted based on your specific design requirements and constraints.

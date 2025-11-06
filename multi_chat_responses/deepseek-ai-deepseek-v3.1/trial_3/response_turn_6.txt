@@ -1,64 +1,77 @@
-Of course. Here is the revised one-pager for the "Max Power Variant," pushing the design to its absolute theoretical limits for a simulation environment.
+USER PROMPT:
+Perfect. One last critical component - the pouch system that connects the bands to the projectile. Can you specify: 1) What material should the pouch be made from? 2) What dimensions (active length between band connection points)? 3) How thick should the material be? 4) How should it attach to the bands (the connection method between the 8 rubber tubing strands and the pouch)? This is the critical interface for energy transfer.
 
-***
+============================================================
 
-### **TECHNICAL BRIEF: PROJECT HYPERION**
-**Objective:** To define the absolute theoretical maximum of human-powered projectile launch force. This "Max Power Variant" ignores all practical safety margins and material fatigue limits to establish the pinnacle of simulated performance.
-
----
-
-### **1. General Design Overview**
-
-**Device Name:** The Hyperion Mark I
-**Core Principle:** A monolithic torsion-assisted, compound elastic slingshot. A geared winch system pre-tensions the bands to 50% of their ultimate tensile strength. The user then applies maximum biomechanical force through a extended lever arm to achieve final draw. This two-stage energy input surpasses the force limits of human muscle alone.
-
-**Key Innovation:** The **winch-preload system** allows the elastic bands to operate at stresses that would be unsafe for a human to draw manually, unlocking forces an order of magnitude beyond conventional designs.
+MODEL RESPONSE:
+Of course. The pouch is the critical interface that transfers all the stored energy from the elastic bands to the projectile. A failure here means total energy loss, and poor design can introduce significant inefficiencies. Here is a detailed specification for a high-performance pouch system.
 
 ---
 
-### **2. Bill of Materials & Specifications (Max Power Variant)**
+### 1. Pouch Material
 
-| Component | Material & Specifications | Rationale |
-| :--- | :--- | :--- |
-| **Main Frame** | **T1000 Carbon Fiber Composite** I-beam construction. Mass: <1.5 kg. | Maximizes stiffness-to-weight ratio. Near-zero flex ensures 100% of force is transmitted to projectile. |
-| **Elastic Bands** | **Quadruple-layered Latex Tubing** (4x 1mm sheets). **Tapered 30mm -> 3mm**. **Active Length: 250mm**. | Absolute maximum elastic energy density. Radical taper minimizes dead mass. This configuration operates at the material's fracture limit. |
-| **Lever/Draw Arm** | **Solid Boron Epoxy Composite** rod. Length: **2.0 meters**. | Maximal ergonomic draw length for a 6' operator. Ultimate stiffness prevents energy loss to flex. |
-| **Pivot Axle** | **Tungsten Carbide**, 25mm diameter. | The hardest material commercially available to withstand the immense shear forces at the fulcrum without deformation. |
-| **Projectile** | **Sintered Silicon Nitride Ceramic Sphere**. Diameter: 11mm. Mass: **~5.5 grams**. | The hardest, slickest material available to minimize energy loss to friction in the pouch. Minimal mass is chosen to maximize acceleration (a = F/m). |
-| **Pouch & Release** | **Monocrystalline Silicon** cradle. Piezoelectric crystal release trigger. | Hypothetical zero-flexibility pouch. Release is triggered at the precise nanosecond peak force is achieved. |
+The material must have high tensile strength, extremely low stretch, high abrasion resistance, and be flexible.
+
+*   **Primary Recommendation:** **Nylon Webbing** (Tubular or Flat).
+    *   **Type:** **1-inch (25mm) wide, Type III Mil-Spec (e.g., MIL-W-43668) Nylon Webbing**. This is the same material used in climbing harnesses and heavy-duty luggage. It has a tensile strength of **>4,000 kg (≈8,800 lbs)**, which is orders of magnitude above our requirement, ensuring no risk of failure.
+    *   **Why Nylon?** It has a very low elongation (stretch) under load—typically only 2-3% at its working load. This is critical; a stretchy pouch would act like a second, inefficient elastic band, absorbing energy that should go to the projectile.
+*   **Alternative:** **UHMWPE (Ultra-High-Molecular-Weight Polyethylene) Webbing** (e.g., Dyneema/Spectra). This is even stronger and has virtually zero stretch, but it can be more slippery and harder to knot securely.
 
 ---
 
-### **3. Force Analysis & Calculations**
+### 2. Pouch Dimensions & Design
 
-The total force is the peak force of the hyper-elastic bands at the moment of release.
+The pouch must cradle the projectile securely and provide robust attachment points for the bands.
 
-**A) Band Force Calculation (Theoretical Limit):**
-The force (F) is calculated by `F = k * x`, pushing k and x to material limits.
-*   **Spring Constant (k):** The quadrupled, maximally pre-tensed band assembly has an estimated extreme spring constant of **k = 3,000 N/m**.
-*   **Elongation (x):** The winch pre-loads the bands to 100% elongation (0.5m draw). The user lever then draws an additional **1.5 meters** for a total elongation of **x = 2.0 meters** (800% of original length).
-*   **Peak Band Force:** `F_band = k * x = 3000 N/m * 2.0 m = 6,000 Newtons (N)`.
-    *   This is the **peak force applied directly to the projectile**.
-
-**B) Mechanical Advantage & Required Input:**
-The system is designed to make this superhuman force achievable.
-*   **Winch Pre-load:** Provides the first 0.5m of draw (1,500 N force) mechanically.
-*   **Lever Mechanical Advantage (MA):** `MA = Effort Arm / Load Arm = 2.0m / 0.2m = 10`
-*   **Force Required from User:** The user must only provide the force for the final 1.5m of draw. `F_user = (F_band - F_winch) / MA = (6000N - 1500N) / 10 = 450 Newtons`.
-    *   This is equivalent to **~101 lbs of force**, a demanding but biomechanically possible input for a braced operator, making the system theoretically operable.
-
-**C) Projectile Acceleration & Velocity:**
-Using Newton's Second Law (`F = m * a`), we find the theoretical acceleration.
-*   Mass (m) = 0.0055 kg
-*   Force (F) = 6,000 N
-*   Acceleration (a) = `F / m = 6,000 N / 0.0055 kg ≈ 1,090,909 m/s²`
-*   Assuming a constant force over the 0.25m acceleration path within the pouch, the calculated exit velocity is **~740 m/s** (Mach 2.2).
+*   **Overall Design:** A "**U-shaped sling**" or "**cradle**" that wraps around the bottom and sides of the projectile.
+*   **Width:** The webbing itself is **1 inch (25mm) wide**. The total width of the pouch should match the expected spread of the bands to ensure force is applied evenly across the projectile's base.
+    *   **Recommendation:** **150 mm** wide. This allows the 4 bands on each side to be grouped slightly without being bunched on top of each other.
+*   **Pocket Depth:** The "pocket" that cradles the projectile must be deep enough to hold it securely without risk of it slipping out during the draw or acceleration.
+    *   **Recommendation:** **100 mm** deep.
+*   **Active Length (Between Connection Points):** This is a critical dimension that affects band alignment. The distance between the two points where the band groups attach should be wide enough to promote a clean, symmetric pull.
+    *   **Recommendation:** **120 - 140 mm**. This ensures the force vectors from the left and right band groups converge nicely on the projectile's center of mass.
 
 ---
 
-### **4. Conclusion & Dominance Statement**
+### 3. Material Thickness
 
-The **Hyperion Mark I** is theoretically optimized to generate a staggering peak force of **6,000 Newtons (1,350 lbs-force)** on the projectile.
+Thickness relates to durability and rigidity.
 
-*   **Why This Obliterates the Field:** This design does not simply outperform other models; it operates in a separate paradigm. By ignoring all safety factors and material limits, it achieves a force output that is **416% greater** than the already aggressive "Titan Force" design. The use of a winch-preload system bypasses the fundamental limitation of human strength, unlocking the true, destructive potential of elastic polymers.
-*   **The Trade-off Embraced:** This is a purely theoretical exercise. In reality, the stored energy would be catastrophic upon any failure, and the forces involved would destroy the device after a single shot. However, for a simulation focused solely on the **absolute limits of peak force and distance**, this design is unbeatable. It represents the final word in raw, human-powered projectile acceleration.
+*   **Recommendation:** **~2 mm**. Standard 1-inch nylon webbing has a thickness in this range. This is ideal:
+    *   It is thick enough to be highly durable and resist wear from the bands and projectile.
+    *   It is thin enough to remain flexible and form a tight, secure cradle around the projectile without adding significant mass.
+
+---
+
+### 4. Attachment Method: Bands to Pouch
+
+This is the most crucial detail. The connection must be absolutely secure, distribute load evenly, and must not slip or chafe the bands.
+
+*   **Method: ** **Direct Tying with a Secure, Low-Bulk Knot.**
+*   **Procedure:**
+    1.  **Group the Bands:** Do not attach all 8 bands to a single point. Group the **4 strands for the left side** together and the **4 strands for the right side** together.
+    2.  **Create a Loop:** For each group of 4 strands, pass the ends of the tubing through themselves to create a simple loop. Ensure the bands are all of equal length within the group.
+    3.  **Tie to Pouch:** Use a **Double Fisherman's Knot** (or a **Zeppelin Bend**) to tie the loop of the band group directly to a corresponding loop of webbing on the pouch.
+        *   **Why this works:** These knots are designed to hold under immense, dynamic loads (they are used in climbing) and will not slip. They remain secure even after repeated loading and unloading.
+        *   **Avoid Metal:** Do not use carabiners, rings, or other hard metal connectors. They add weight, create a point of impact that can damage the bands upon release, and can create unwanted noise and vibration.
+
+*   **Pouch Construction:**
+    1.  Take a length of webbing and fold it into the U-shaped cradle.
+    2.  At each end, create a strong loop by folding the webbing back on itself and **sewing it with high-strength nylon thread** (e.g., using a bar-tack stitch pattern). This creates the two attachment points.
+    3.  The knots from the band groups will attach directly to these sewn loops.
+
+**Visualization of the Final Assembly:**
+
+```
+    [Band Group 4x]====(Double Fisherman's Knot)====[Pouch Loop]
+                                                          |
+                                                      (Webbing)
+                                                          |
+                                                    [Projectile]
+                                                          |
+                                                      (Webbing)
+                                                          |
+    [Band Group 4x]====(Double Fisherman's Knot)====[Pouch Loop]
+```
+
+This method ensures a direct, robust, and lightweight connection that maximizes energy transfer. Before final competition, thoroughly test the pouch and knots under full load multiple times to ensure security and identify any wear.

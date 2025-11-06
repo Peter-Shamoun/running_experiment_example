@@ -1,0 +1,94 @@
+USER PROMPT:
+Excellent guidelines! Now I need exact numerical specifications for a maximum-power design. Please provide: 1) Specific frame dimensions (arm length, width, wall thickness) using aluminum 6061 or carbon fiber, 2) Exact elastic band specifications (material, diameter or thickness, length, number of bands) that maximize stored energy, 3) Specific draw length for maximum energy storage, 4) Projectile specifications (exact mass, diameter, material) optimized for maximum kinetic energy output. I want to achieve the highest possible Joules in the final output.
+
+============================================================
+
+MODEL RESPONSE:
+Here’s a **maximum-power design specification** for your Y-frame elastic launcher, optimized for **maximum kinetic energy output (Joules)** while balancing **human-operability** and **engineering constraints**:
+
+---
+
+### **1. Frame Dimensions (Aluminum 6061 or Carbon Fiber)**  
+**Material**:  
+- **Aluminum 6061**: 6061-T6, 2.5 mm wall thickness, 10% weight penalty vs. carbon fiber.  
+- **Carbon Fiber**: 1.2 mm wall thickness, 30% lighter, 20% higher stiffness.  
+
+**Dimensions**:  
+- **Arm Length**: 30 cm (12 inches)  
+- **Frame Width**: 10 cm (4 inches)  
+- **Y-Frame Geometry**:  
+  - **Central Pivot**: 5 cm diameter, 30° angle between arms for optimal force distribution.  
+  - **Mounting Points**: 2 cm from the pivot to the band attachment points.  
+- **Weight**:  
+  - **Aluminum**: ~1.2 kg (100g for bands, 1.1 kg for frame).  
+  - **Carbon Fiber**: ~0.8 kg (100g for bands, 0.7 kg for frame).  
+
+---
+
+### **2. Elastic Band Specifications**  
+**Material**:  
+- **Natural Rubber** (high elasticity, 150% pre-stretch limit).  
+- **Alternative**: **Synthetic Silicone** (durable, 120% pre-stretch limit).  
+
+**Specifications**:  
+- **Number of Bands**: 4 (parallel configuration for 80% efficiency).  
+- **Band Length**: 1.5 m (unstretched).  
+- **Pre-Stretch Ratio**: 150% (stretched to **2.25 m**).  
+- **Band Diameter**: 1.5 cm (natural rubber) or 1.2 cm (silicone).  
+- **Stiffness (k)**:  
+  - Natural rubber: ~100 N/m.  
+  - Silicone: ~70 N/m.  
+- **Energy Storage**:  
+  $$
+  E_{\text{elastic}} = \frac{1}{2} k x^2 = \frac{1}{2} \times 100 \times (0.75)^2 = 28.125 \, \text{J/band} \times 4 = 112.5 \, \text{J}
+  $$  
+
+---
+
+### **3. Draw Length for Maximum Energy Storage**  
+- **Unstretched Length**: 1.5 m.  
+- **Stretched Length**: 2.25 m (150% pre-stretch).  
+- **Human-Operable Force**: ~8 N (requires 10 N of force to fully stretch, 8 N for optimal energy storage).  
+
+---
+
+### **4. Projectile Specifications**  
+**Material**:  
+- **Aluminum 6061** (100g mass, 5 cm diameter, 15 cm length).  
+- **Alternative**: **Plastic (ABS)** for lighter weight (80g, 5 cm diameter).  
+
+**Dimensions**:  
+- **Mass**: 100 g (maximized for KE).  
+- **Diameter**: 5 cm (matches frame width for minimal friction).  
+- **Length**: 15 cm (aerodynamic, 10 cm for stability).  
+
+**Optimized for KE**:  
+- **Velocity**: 30 m/s (achieved via 150% pre-stretch and 100g mass).  
+- **Kinetic Energy**:  
+  $$
+  KE = \frac{1}{2} m v^2 = \frac{1}{2} \times 0.1 \times (30)^2 = 45 \, \text{J}
+  $$  
+- **Efficiency**: 40% (80% of elastic energy transferred to projectile).  
+
+---
+
+### **5. Key Performance Metrics**  
+| Parameter          | Value                          | Notes                          |  
+|-------------------|-------------------------------|-------------------------------|  
+| Frame Material    | Carbon Fiber (0.8 kg)         | 20% lighter than aluminum     |  
+| Elastic Energy    | 112.5 J (4 bands)             | Natural rubber for max stretch|  
+| Projectile Mass   | 100 g                         | Optimized for KE             |  
+| Projectile KE     | 45 J (80% efficiency)         | 30 m/s velocity              |  
+| Total KE Output   | **~40 J** (after losses)      | Adjust for 80% efficiency     |  
+
+---
+
+### **6. Optimization Tips**  
+- **Carbon Fiber Frame**: Use for 100g projectile (0.8 kg total).  
+- **Elastic Bands**: Use 4 natural rubber bands (1.5 cm diameter) for 150% pre-stretch.  
+- **Projectile**: Use a 5 cm diameter, 15 cm long aluminum cylinder for 100g mass.  
+- **Testing**: Use a **high-speed camera** to verify launch dynamics and adjust for energy loss.  
+
+---
+
+This design balances **human-operability** (8 N force, 1.5 m draw) with **maximum energy storage** (112.5 J) and **projectile efficiency** (45 J KE). Adjust materials and dimensions based on competition rules (e.g., weight limits, size constraints). Let me know if you need a **3D model** or **CAD specifications**!

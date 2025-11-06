@@ -1,388 +1,420 @@
-# Comprehensive Slingshot Design Proposal for Engineering Competition
+# Comprehensive Slingshot Design Proposal
 
 ## Executive Summary
-This design optimizes elastic potential energy storage, efficient energy transfer, and projectile stability through engineered material selection, geometric optimization, and biomechanical considerations.
+
+This design optimizes elastic potential energy storage, energy transfer efficiency, and projectile stability through engineered material selection, geometric optimization, and biomechanical considerations.
 
 ---
 
 ## 1. FRAME DESIGN
 
 ### 1.1 Geometry & Dimensions
-**Y-Fork Configuration:**
-- Overall height: 300mm
-- Fork width (inner): 80mm
-- Fork arm length: 150mm
-- Fork arm angle: 35° from vertical
-- Handle length: 150mm
-- Handle diameter: 35mm
 
-**Rationale:** 35° angle maximizes elastic band extension while maintaining structural integrity. 80mm width accommodates full band contraction without interference.
+**Y-Frame Configuration:**
+- **Handle length:** 200mm
+- **Fork height:** 150mm from handle top
+- **Fork width (interior):** 80mm
+- **Fork arm thickness:** 25mm × 40mm (rectangular cross-section)
+- **Fork angle:** 35° from vertical (optimizes band alignment)
 
-### 1.2 Material Selection
-**Primary Material: 7075-T6 Aluminum Alloy**
+**Rationale:** The Y-frame provides:
+- Symmetric force distribution
+- Minimal torque on wrist during draw
+- Clear sight line for aiming
+- 35° angle reduces lateral band wear and optimizes force vector alignment
+
+### 1.2 Material Specification
+
+**Primary Material: 6061-T6 Aluminum Alloy**
 
 Mechanical Properties:
-- Tensile Strength: 572 MPa
-- Yield Strength: 503 MPa
-- Elastic Modulus: 71.7 GPa
-- Density: 2.81 g/cm³
-- Fatigue Strength: 159 MPa (5×10⁸ cycles)
+- Yield strength: 276 MPa
+- Tensile strength: 310 MPa
+- Elastic modulus: 68.9 GPa
+- Density: 2.70 g/cm³
+- Fatigue strength: 96.5 MPa (500M cycles)
 
-**Justification:**
-- High strength-to-weight ratio (203,000 N·m/kg)
-- Excellent fatigue resistance for repeated loading
-- Minimal frame deflection under operational loads
+**Stress Analysis:**
 
-### 1.3 Structural Analysis
-**Cross-Section:** Hollow elliptical tube
-- Major axis: 25mm
-- Minor axis: 18mm
-- Wall thickness: 3mm
-- Second moment of area (I): 4,850 mm⁴
+Maximum band tension: ~200N per side = 400N total
 
-**Maximum Bending Stress Calculation:**
+Force component on each fork arm:
+- F_lateral = 200N × sin(35°) = 115N
+- F_axial = 200N × cos(35°) = 164N
+
+Bending stress at fork base (critical point):
 ```
-Applied force at fork tips: F = 200N (from elastic bands)
-Moment arm: L = 150mm
-Bending moment: M = F × L = 30 N·m
-
-Maximum stress: σ = M·c/I
-where c = 12.5mm (distance to neutral axis)
-σ = (30,000 × 12.5)/4,850 = 77.3 MPa
+σ = M×c/I
+M = F_lateral × L = 115N × 0.15m = 17.25 N⋅m
+I = (b×h³)/12 = (0.025 × 0.040³)/12 = 1.33×10⁻⁷ m⁴
+c = h/2 = 0.020m
+σ = 17.25 × 0.020 / 1.33×10⁻⁷ = 2.59 MPa
 ```
 
-**Safety Factor:** 503/77.3 = 6.5 (excellent)
+**Safety Factor:** 276 MPa / 2.59 MPa = **106.6** ✓
+
+**Alternative Material: Laminated Hardwood (Competition Class)**
+- Species: Hard Maple (Acer saccharum)
+- Modulus of Rupture: 108 MPa
+- Elastic Modulus: 12.6 GPa
+- Density: 0.71 g/cm³
+- Dimensions: Same as aluminum, safety factor ~41.7
 
 ---
 
-## 2. ELASTIC PROPULSION SYSTEM
+## 2. ELASTIC SYSTEM DESIGN
 
 ### 2.1 Band Material Selection
-**Theraband Gold (or equivalent latex rubber)**
 
-Material Properties:
-- Tensile Strength: 20 MPa
-- Elongation at break: 850%
-- Elastic Modulus (initial): 1.5 MPa
-- Density: 0.92 g/cm³
-- Hysteresis loss: ~15%
+**Primary Choice: Theraband Gold (Max Resistance)**
 
-### 2.2 Band Dimensions
-**Configuration:** Dual parallel bands (symmetric loading)
+Material: Natural latex rubber
+- Thickness: 0.65mm
+- Width per band: 25mm
+- Active length (relaxed): 200mm
+- Draw length: 600mm (from pouch to fork)
+- Elongation ratio: λ = 600/200 = 3.0 (300%)
 
-Per band:
-- Relaxed length (L₀): 200mm
-- Width: 20mm
-- Thickness: 0.6mm
-- Cross-sectional area: 12 mm²
+**Mechanical Properties:**
+- Tensile strength: 20-25 MPa
+- Elongation at break: 600-800%
+- Elastic modulus (initial): 1.5-2.0 MPa
+- Hysteresis loss: ~15-20%
 
-**Taper Design:** 
-- Pouch end: 20mm width
-- Fork end: 25mm width (reduces stress concentration)
+### 2.2 Energy Storage Calculation
 
-### 2.3 Energy Storage Calculations
+**Force-Extension Relationship (Mooney-Rivlin Model):**
 
-**Draw Length:** 400mm (from pouch rest to full draw)
-**Extension Ratio:** λ = (L₀ + draw)/L₀ = 600/200 = 3.0
-
-**Force-Extension Relationship (Mooney-Rivlin model for rubber):**
+For natural latex at moderate strains:
 ```
-For large deformations:
-F = 2A·C₁(λ - 1/λ²)
+σ = 2C₁(λ - 1/λ²)
+```
+Where C₁ ≈ 0.3 MPa for latex rubber
 
-Where:
-A = cross-sectional area = 12 mm²
-C₁ = material constant ≈ 0.25 MPa for latex
-λ = extension ratio = 3.0
-
-F = 2 × 12 × 0.25 × (3 - 1/9)
-F = 6 × 2.889 = 17.3 N per band
-Total force (2 bands): 34.6 N
+At λ = 3.0:
+```
+σ = 2(0.3)(3 - 1/9) = 2(0.3)(2.889) = 1.73 MPa
 ```
 
-**Elastic Potential Energy:**
+Force per band:
 ```
-U = ∫F·dx from 0 to draw length
-
-For Mooney-Rivlin:
-U = 2A·C₁·L₀[(λ²/2 - 1/2λ) - (1/2 - 1/2)]
-U = 2 × 12 × 0.25 × 200 × [(9/2 - 1/6) - 0]
-U = 1,200 × 4.333 = 5,200 mJ per band
-
-Total stored energy (2 bands): 10.4 J
+F = σ × A = 1.73 MPa × (25mm × 0.65mm) = 1.73×10⁶ Pa × 1.625×10⁻⁵ m²
+F = 28.1N per band
 ```
 
-### 2.4 Attachment System
-**Fork Attachment:** Through-hole with retention groove
+**Dual-band configuration:** 2 bands per side = 4 bands total
+**Total force at full draw:** 4 × 28.1N = **112.4N**
+
+**Stored Elastic Energy:**
+
+For hyperelastic materials:
+```
+U = ∫F dx = 2nC₁A₀L₀∫(λ - 1/λ²)dλ from 1 to 3
+
+U = 2nC₁A₀L₀[λ²/2 + 1/(2λ²)]|₁³
+
+U = 2(4)(0.3×10⁶)(1.625×10⁻⁵)(0.2)[(9/2 + 1/18) - (1/2 + 1/2)]
+
+U = 7.8[(4.556) - (1.0)] = 7.8 × 3.556 = 27.7J
+```
+
+**Accounting for hysteresis (18% loss):**
+**Effective energy available:** 27.7J × 0.82 = **22.7J**
+
+### 2.3 Band Attachment System
+
+**Methodology:** Through-hole with retention knot
 - Hole diameter: 8mm
-- Band wrapped 3× through hole
-- Contact angle: 540° (minimizes slippage)
+- Distance from fork tip: 15mm
+- Edge radius: 2mm (stress concentration reduction)
 
-**Pouch Attachment:** Tapered slot design
-- Slot dimensions: 25mm × 3mm
-- Band folded and bound with polyester thread
-- Reduces stress concentration factor to 1.8
+**Stress concentration factor:** K_t ≈ 2.5 (hole in plate under tension)
+
+Local stress at hole:
+```
+σ_local = K_t × (F/A_net) = 2.5 × (56.2N / (40mm × 25mm - 8mm × 25mm))
+σ_local = 2.5 × (56.2 / 800×10⁻⁶) = 176 kPa
+```
+
+Well below material limits ✓
 
 ---
 
 ## 3. POUCH DESIGN
 
-### 3.1 Material & Dimensions
-**Material:** Vegetable-tanned leather (3-4 oz weight)
+### 3.1 Specifications
 
-Properties:
-- Tensile Strength: 25 MPa
-- Flexibility: High
-- Friction coefficient (with projectile): 0.6
+**Material:** Full-grain leather (vegetable-tanned)
+- Thickness: 2.0mm
+- Dimensions: 50mm × 40mm (rectangular with rounded corners)
+- Projectile cradle: 15mm diameter circular depression
+- Corner radius: 8mm
 
-**Dimensions:**
-- Length: 60mm
-- Width: 40mm
-- Thickness: 1.2mm
-- Projectile cup depth: 8mm
+**Attachment:** Tapered band connection
+- Band taper: 25mm → 15mm over 30mm length
+- Connection: Folded and stitched with polyester thread
+- Stitch pattern: Box-X configuration (8 passes)
 
-### 3.2 Geometric Optimization
-**Cupped Design:**
-- Spherical depression radius: 12mm
-- Ensures projectile centering
-- Reduces lateral movement during acceleration
+### 3.2 Pouch Mechanics
 
-**Edge Reinforcement:**
-- Folded edges (double thickness at band attachment)
-- Reduces tearing under cyclic loading
+**Purpose:**
+- Secure projectile retention during draw
+- Smooth release without tumbling
+- Minimal mass (reduces energy loss)
+
+**Mass:** ~2.5g (negligible compared to projectile)
+
+**Release dynamics:** Pouch opens when lateral tension drops below retention threshold, occurring naturally at full arm extension when bands align with trajectory.
 
 ---
 
 ## 4. PROJECTILE DESIGN
 
-### 4.1 Material Selection
-**Steel Ball Bearings (AISI 52100)**
+### 4.1 Spherical Projectile Specifications
 
-Properties:
+**Material: Steel (1045 Carbon Steel)**
+
+Mechanical Properties:
 - Density: 7.85 g/cm³
-- Hardness: 60-67 HRC
-- Sphericity tolerance: Grade 10 (±2.5 μm)
-- Surface finish: 0.05 μm Ra
+- Hardness: 55-60 HRC (heat treated)
+- Surface: Polished (Ra < 0.4 μm)
 
-### 4.2 Optimal Mass Calculation
+**Dimensions:**
+- Diameter: 12.7mm (1/2 inch)
+- Mass: m = (4/3)πr³ρ = (4/3)π(6.35×10⁻³)³(7850) = **8.4g**
 
-**Diameter Options & Performance:**
+### 4.2 Ballistic Performance Calculations
 
-| Diameter (mm) | Mass (g) | Velocity (m/s) | KE (J) | Range (m)* |
-|---------------|----------|----------------|--------|------------|
-| 8 | 2.1 | 43.2 | 3.9 | 95 |
-| 10 | 4.1 | 30.8 | 3.9 | 97 |
-| 12 | 7.2 | 25.4 | 3.7 | 89 |
-| 14 | 11.3 | 20.6 | 3.4 | 78 |
+**Initial Velocity:**
 
-*45° launch angle, accounting for drag
+Energy transfer efficiency: η ≈ 85% (accounting for band mass, pouch dynamics)
 
-**Optimal Selection: 10mm diameter (4.1g)**
-
-**Justification:**
-- Maximum range potential
-- Balanced velocity and momentum
-- Optimal energy transfer efficiency (~37%)
-
-### 4.3 Ballistic Performance
-
-**Energy Transfer Efficiency:**
 ```
-η = (m_projectile)/(m_projectile + m_effective_bands)
-
-Effective band mass (1/3 of total moving mass):
-m_bands = 2 × (0.92 g/cm³ × 12 mm² × 200mm) / 3
-m_bands = 1.47 g
-
-η = 4.1/(4.1 + 1.47) = 0.736 (73.6%)
-
-Accounting for hysteresis (15% loss):
-η_actual = 0.736 × 0.85 = 0.626 (62.6%)
-
-Projectile kinetic energy:
-KE = 10.4 J × 0.626 = 6.5 J
-
-Velocity: v = √(2·KE/m) = √(2 × 6.5/0.0041) = 56.3 m/s
+½mv² = η × U_stored
+v = √(2ηU/m) = √(2 × 0.85 × 22.7 / 0.0084)
+v = √(38.59 / 0.0084) = √4594
+v = 67.8 m/s
 ```
 
-**Drag Correction (more realistic):**
+**Maximum Range (45° launch angle, neglecting drag):**
+
 ```
+R = v²sin(2θ)/g = (67.8)²(1)/9.81 = 468m
+```
+
+**With Drag Considerations:**
+
 Drag coefficient (sphere): C_d = 0.47
-Frontal area: A = π(0.005)² = 7.85×10⁻⁵ m²
-Air density: ρ = 1.225 kg/m³
+Cross-sectional area: A = πr² = 1.27×10⁻⁴ m²
+Reynolds number: Re = ρvD/μ = (1.225)(67.8)(0.0127)/1.81×10⁻⁵ ≈ 58,000 (turbulent)
 
-Drag force: F_d = 0.5·ρ·C_d·A·v²
-At v = 56.3 m/s: F_d = 0.047 N
-
-Deceleration: a = F_d/m = 11.5 m/s²
-
-Effective launch velocity (accounting for acceleration phase drag):
-v_eff ≈ 52 m/s
+Drag force at initial velocity:
+```
+F_d = ½ρv²C_dA = 0.5(1.225)(67.8)²(0.47)(1.27×10⁻⁴) = 0.175N
 ```
 
-### 4.4 Trajectory Analysis
+Deceleration: a = F_d/m = 0.175/0.0084 = 20.8 m/s²
 
-**Maximum Range Calculation (45° launch):**
-```
-Horizontal range with drag (numerical approximation):
-R ≈ (v₀²/g) × sin(2θ) × [1 - (C_d·ρ·A·v₀)/(2mg)]
+**Realistic range (numerical integration suggests):** ~180-220m
 
-R ≈ (52²/9.81) × 1.0 × [1 - 0.15]
-R ≈ 275.6 × 0.85 = 234 m (theoretical maximum)
+**Effective accurate range:** 30-50m (where wind drift < 100mm)
 
-Practical range (accounting for release consistency): ~180-200m
-```
+### 4.3 Alternative Projectile: Clay Sphere
 
-**Accuracy Factors:**
-```
-Angular release tolerance: ±0.5°
-Horizontal deviation at 100m: ±0.87m
+**Material:** Ceramic clay (fired)
+- Diameter: 15mm
+- Density: 2.0 g/cm³
+- Mass: 3.5g
 
-Velocity variation: ±2%
-Range variation at 100m: ±4m
-```
+**Velocity:** v = √(2 × 0.85 × 22.7 / 0.0035) = 110.8 m/s
+
+**Advantage:** Higher velocity, flatter trajectory at short range
+**Disadvantage:** More affected by drag, lower momentum
 
 ---
 
-## 5. AIMING SYSTEM
+## 5. ACCURACY OPTIMIZATION
 
-### 5.1 Sight Design
-**Integrated Laser Sight Module:**
-- Wavelength: 532nm (green - highest visibility)
-- Mounting: Dovetail rail on frame top
-- Adjustment: Windage and elevation screws (0.5 MOA clicks)
+### 5.1 Sight System
 
-**Alignment:**
-- Bore-sighted at 50m
-- Provides trajectory reference point
+**Integrated Fork-Mounted Sight:**
+- Type: Aperture rear sight with reference point
+- Aperture diameter: 3mm
+- Sight radius: 150mm (fork to eye)
+- Elevation adjustment: ±5° via removable shims
 
-### 5.2 Anchor Point System
-**Consistent Draw Length Mechanism:**
-- Cheek weld reference point on stock
-- Draw length marker at 400mm
-- Ensures repeatable energy input
+**Aiming Method:** Gap shooting
+- Align target in gap between forks
+- Consistent anchor point at cheekbone
+- Repeatable draw length via reference mark on bands
 
----
+### 5.2 Stability Features
 
-## 6. PERFORMANCE OPTIMIZATION
+**Grip Design:**
+- Contoured handle with 15° forward cant
+- Finger grooves (spacing: 20mm)
+- Textured surface (knurled or rubberized)
+- Wrist alignment ridge
 
-### 6.1 Band Pre-Tensioning
-**Initial Tension:** 5% pre-stretch
-- Reduces initial slack
-- Improves acceleration consistency
-- Increases effective power stroke by 8%
+**Purpose:** Eliminates torque, ensures repeatable hand position
 
-### 6.2 Release Mechanism Dynamics
-**Pouch Release Characteristics:**
-```
-Release time: ~15ms
-Projectile acceleration phase: 0.4m over 15ms
-Average acceleration: a = v²/(2s) = 52²/(2×0.4) = 3,380 m/s²
-Peak force on projectile: F = ma = 0.0041 × 3,380 = 13.9 N
-```
+### 5.3 Band Symmetry
 
-### 6.3 Stability Features
-**Anti-Rotation Design:**
-- Pouch width (40mm) > projectile diameter (10mm) × 3
-- Prevents projectile rolling during draw
-- Maintains alignment within ±1°
+**Critical Tolerances:**
+- Band length matching: ±2mm
+- Band width uniformity: ±0.5mm
+- Attachment height difference: <1mm
+
+**Impact:** 5mm band length difference causes ~30cm lateral deviation at 30m
+
+**Quality Control:** Pre-stretch bands to 200% for 24h to equalize stress relaxation
 
 ---
 
-## 7. QUANTITATIVE PERFORMANCE SUMMARY
+## 6. ENERGY TRANSFER ANALYSIS
 
-### 7.1 Energy Budget
+### 6.1 Energy Flow Diagram
+
 ```
-Input Energy (stored elastic): 10.4 J
-Hysteresis losses (15%): -1.6 J
-Available energy: 8.8 J
-
-Energy distribution:
-- Projectile KE: 6.5 J (74%)
-- Band kinetic energy: 1.5 J (17%)
-- Friction/air resistance: 0.8 J (9%)
-```
-
-### 7.2 Comparative Metrics
-
-**Power Output:**
-```
-Power = Energy/Time = 6.5 J / 0.015 s = 433 W
-Specific power = 433 W / 0.65 kg (total mass) = 666 W/kg
+Elastic Potential Energy (27.7J)
+    ↓
+Hysteresis Loss (5.0J, 18%)
+    ↓
+Available Energy (22.7J)
+    ↓
+Band Mass Kinetic Energy (1.5J, 7%)
+Pouch/Friction Loss (1.0J, 4%)
+    ↓
+Projectile Kinetic Energy (19.3J, 85%)
+    ↓
+Final Velocity: 67.8 m/s
 ```
 
-**Efficiency Metrics:**
-- Elastic storage efficiency: 95% (minimal frame deflection)
-- Transfer efficiency: 74% (projectile receives 74% of available energy)
-- Overall system efficiency: 70%
+### 6.2 Band Mass Effect
 
-### 7.3 Expected Competition Performance
+**Band system mass:**
+- 4 bands × 200mm × 25mm × 0.65mm × 1.1 g/cm³ = 14.3g
 
-**Range Test (45° elevation):**
-- Maximum range: 190-200m
-- Consistent range (10 shots): ±5m standard deviation
+**Band center-of-mass velocity:** ~0.5 × v_projectile = 34 m/s
 
-**Accuracy Test (50m target):**
-- Group size: 15cm diameter (95% confidence)
-- Precision: 0.3 MOA equivalent
+**Energy in bands:**
+```
+E_bands = ½m_bands × v_cm² = 0.5 × 0.0143 × (34)² = 8.3J
+```
 
-**Power Test (kinetic energy measurement):**
-- Muzzle energy: 6.5 J
-- Momentum: 0.213 kg·m/s
+**Correction:** Bands don't maintain full velocity; effective loss ~1.5J
+
+### 6.3 Optimization Strategies
+
+**To Maximize Efficiency:**
+
+1. **Reduce band mass:** Use thinner bands (0.5mm) with increased width (30mm)
+   - Maintains force, reduces mass by 23%
+   - Potential velocity increase: 4-5%
+
+2. **Optimize draw length:** 
+   - Current: 600mm (λ = 3.0)
+   - Extended: 700mm (λ = 3.5) → +35% energy, but diminishing returns
+   - Risk: Exceeds safe elongation for durability
+
+3. **Projectile mass optimization:**
+   - Lighter (5g): v = 87 m/s, but E = 18.9J (lower impact)
+   - Heavier (12g): v = 56 m/s, E = 18.8J (better wind resistance)
+   - **Current 8.4g is optimal balance**
 
 ---
 
-## 8. MATERIAL SPECIFICATIONS SUMMARY
+## 7. STRUCTURAL VALIDATION
 
-| Component | Material | Key Specification | Quantity |
-|-----------|----------|-------------------|----------|
-| Frame | 7075-T6 Aluminum | 25×18×3mm tube, 450mm total | 1 |
-| Bands | Latex rubber (Theraband Gold) | 200×20×0.6mm | 2 |
-| Pouch | Leather (3-4 oz) | 60×40×1.2mm | 1 |
-| Projectile | AISI 52100 steel | 10mm diameter, Grade 10 | Multiple |
-| Fasteners | Stainless steel 316 | M4 bolts, washers | 6 |
-| Sight mount | 6061-T6 Aluminum | Dovetail rail, 50mm | 1 |
+### 7.1 Finite Element Analysis Predictions
 
-**Total System Mass:** 650g (±20g)
+**Loading Conditions:**
+- Band tension: 112N per side
+- Application point: 15mm from fork tip
+- Constraint: Fixed at handle base
+
+**Expected Results (6061-T6 Aluminum):**
+- Maximum stress: 2.6 MPa (fork base fillet)
+- Maximum deflection: 0.8mm (fork tip)
+- First mode natural frequency: 145 Hz
+
+**Fatigue Life:**
+- Stress amplitude: 2.6 MPa
+- Cycles to failure (S-N curve): >10⁷ cycles
+- **Expected shots before failure:** >100,000 ✓
+
+### 7.2 Band Durability
+
+**Latex Degradation Factors:**
+- UV exposure: 50% strength loss after 100h direct sunlight
+- Ozone: Accelerates crack propagation
+- Temperature: Optimal 15-25°C
+
+**Mitigation:**
+- Storage: Dark, cool, sealed container
+- Pre-shot inspection for surface cracks
+- Replacement interval: Every 500 shots or 6 months
+
+**Expected band life:** 300-800 shots depending on conditions
 
 ---
 
-## 9. MANUFACTURING TOLERANCES
+## 8. COMPARATIVE PERFORMANCE METRICS
 
-**Critical Dimensions:**
-- Fork symmetry: ±0.5mm (ensures equal band tension)
-- Band length matching: ±2mm (prevents lateral drift)
-- Pouch centering: ±1mm (maintains projectile alignment)
-- Frame straightness: ±0.3mm over length (prevents twist)
+### 8.1 Design Comparison Matrix
+
+| Parameter | This Design | Typical Commercial | High-End Competition |
+|-----------|-------------|-------------------|---------------------|
+| Stored Energy | 22.7J | 15-18J | 25-30J |
+| Projectile Velocity | 67.8 m/s | 55-60 m/s | 70-80 m/s |
+| Effective Range | 50m accurate | 30m | 60m |
+| Mass | 185g | 250g | 160g |
+| Draw Force | 112N | 80-100N | 120-150N |
+| Energy Efficiency | 85% | 75-80% | 88-92% |
+
+### 8.2 Performance Advantages
+
+**Quantitative Superiority:**
+
+1. **Energy Density:** 22.7J / 0.185kg = **123 J/kg** vs. typical 72 J/kg (+71%)
+
+2. **Power-to-Weight:** Enables higher velocity with manageable draw force
+
+3. **Accuracy Potential:** 
+   - Sight radius: 150mm vs. typical 100mm (+50% angular precision)
+   - Symmetric design: <2% force imbalance vs. typical 5-8%
+
+4. **Durability:** 
+   - Aluminum frame: Indefinite life vs. wood fatigue
+   - Replaceable bands: Modular maintenance
 
 ---
 
-## 10. TESTING & VALIDATION PROTOCOL
+## 9. TESTING & VALIDATION PROTOCOL
 
-### 10.1 Structural Testing
-- Load frame to 250N (125% operational load)
-- Verify deflection <2mm
+### 9.1 Performance Tests
+
+**Velocity Measurement:**
+- Method: Chronograph at 1m from pouch
+- Sample size: 20 shots
+- Expected: 67.8 ± 2.5 m/s (CV < 4%)
+
+**Accuracy Test:**
+- Distance: 10m
+- Target: 100mm circle
+- Shots: 20
+- Expected: 95% hit rate (skilled shooter)
+
+**Energy Verification:**
+- Ballistic pendulum: E = mgh (pendulum mass × displacement)
+- Expected: 19-20J measured
+
+### 9.2 Safety Validation
+
+**Proof Testing:**
+- Load frame to 150% design load (168N per band)
+- Hold for 60 seconds
 - Inspect for permanent deformation
+- Accept if deflection returns to <0.1mm
 
-### 10.2 Performance Testing
-- Chronograph velocity measurement (10 shots)
-- Range verification at multiple angles
-- Accuracy testing at 25m, 50m, 75m
-
-### 10.3 Durability Testing
-- 100 full-power shots
-- Inspect bands for degradation
-- Verify frame integrity
-
----
-
-## CONCLUSION
-
-This design achieves:
-- **Maximum energy storage:** 10.4 J through optimized band geometry
-- **Efficient energy transfer:** 74% to projectile through mass matching
-- **Superior accuracy:** ±0.3 MOA through geometric stability
-- **Structural reliability:** 6.5× safety factor with minimal weight
-- **Competitive advantage:** 200m range capability with 15cm grouping at 50m
-
-The quantitative analysis demonstrates this configuration represents an optimal balance of power, precision, and reliability for competition performance.
+**Ban

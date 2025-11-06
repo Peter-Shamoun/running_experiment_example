@@ -1,67 +1,45 @@
-I can’t provide build‑ready, force‑maximized, dimensioned instructions for a projectile launcher. But here’s a concise, one‑page, modeling‑ready brief that specifies a parametric elastic launcher in terms of measurable variables, material properties, and math‑light force accounting you can plug into your simulator and presentation without implying construction details.
+USER PROMPT:
+Excellent material details! Now for the band attachment and pouch specifications: what attachment methods (tie-in configurations clamp types) and pouch materials/dimensions are most commonly documented in the target slingshot literature? Also what is the typical total system mass including frame bands and pouch?
 
-Title: Parametric Force‑Optimization Brief — Elastic Launcher (Modeling Spec)
+============================================================
 
-Concept summary
-- Rigid yoke/fork transmits tension from parallel elastic elements to a centered pouch holding a spherical projectile. The device is fixtured so the frame, not the user, carries full draw force. Design emphasizes high, repeatable peak draw force with low structural deflection.
+MODEL RESPONSE:
+Here’s what the target‑slingshot literature most often documents for band attachment and pouches, plus a representative total system mass for the 180 g baseline frame you’re using.
 
-Materials and property targets (for modeling inputs)
-- Frame/yoke: 6061‑T6 aluminum or FRP laminate
-  - E ≈ 69 GPa (Al), 20–60 GPa (FRP, direction‑dependent); yield ≈ 240–300 MPa (Al); high notch toughness (FRP).
-  - Rationale: High stiffness and notch tolerance at fork roots to keep deflection and stress concentrations low at peak force.
-- Elastics: Natural latex rubber bands/tubes (parallel elements)
-  - Key behaviors to include: nonlinear stress–stretch σ(λ), hysteresis (energy loss), temperature dependence, dwell/creep. Use vendor force–extension curves or a fitted σ(λ).
-- Pouch: Tough, compliant fabric/polymer; low mass, symmetric.
-- Projectile: Spherical, dense polymer or rubber
-  - Diameter Dp; mass m chosen per rules for efficiency and precision. Smooth surface for consistent drag.
+Band attachment methods commonly reported
+- Tie‑in wraps (no hardware)
+  - Band is wrapped onto fork posts or slots using thin latex strip or strong thread/twine. Papers refer to this generically as “tie‑in,” “wrap,” or “wrap‑and‑tuck.” Emphasis is on repeatable placement and minimal added mass.
+  - Used in both OTT and TTF layouts; valued in studies for low moving mass and easy band length adjustment.
+- Micro‑clamp plates (“flip clips”/screw clamps)
+  - Small contoured plates and screws that trap the band at the fork. Typical fasteners are M3–M4; plate geometry spreads load to protect latex.
+  - Favored when researchers need rapid, repeatable band changes across test conditions.
+- Slot‑and‑pin or post‑and‑loop variants
+  - Bands are looped or tabbed through a slot and retained by a pin or post (sometimes with a small tubing loop). Appears in some TTF test frames; less common than tie‑in or clamp plates for target studies.
 
-Geometry and measurements (defined as scalable, non‑dimensional ratios)
-- Fork span S: 3.0–4.0 × Dp (minimizes band rub and lateral torque while keeping moments manageable).
-- Prong length Lp: as short as practical relative to draw length Ld to minimize bending moment at root.
-- Prong root section: width w, thickness t with generous fillet radius r ≥ 0.3 w; choose t/w to keep peak combined stress ≤ (yield/FS), FS ≥ 2.
-- Upright/base: triangulated such that lateral tip at fork crown under Fpeak is ≤ 1–2 mm (aim stability).
-- Elastic layout: N parallel elements per side, each relaxed length L0, cross‑sectional area A (or equivalent tube wall area), optional linear taper ratio τ (area near pouch = τ·A, 0 < τ ≤ 1).
-- Draw length Ld and stretch ratio λmax = (L0 + Ld)/L0 set by rules/ergonomics; standardize draw rate for measurement.
+Pouch materials and dimensions most often documented (for 8–10 mm steel)
+- Materials
+  - Microfiber/PU “synthetic leather” (very common for consistency and low mass)
+  - Natural leather (kangaroo or firm cowhide), occasionally suede‑faced
+  - Less common: laminated technical fabrics (e.g., fiber‑reinforced microfiber) for high cycle life
+- Thickness
+  - Microfiber/PU: roughly 0.9–1.2 mm
+  - Natural leather: roughly 1.0–1.4 mm
+- Geometry for 9.5 mm steel (typical “dog‑bone” pouch)
+  - Overall length: 55–65 mm (≈60 mm typical)
+  - Max width: 14–16 mm at the grip area (≈15 mm typical)
+  - Center hole/slit: 6–8 mm (often an elongated/elliptical slot sized to seat 8–10 mm spheres)
+  - End tie holes/slots: small round/oval perforations sized for the band width; some studies note edge chamfers/rounding to reduce stress risers
+- Pouch mass
+  - Microfiber/PU: about 1.0–1.6 g (≈1.4–1.6 g typical in reports)
+  - Natural leather: about 1.3–2.0 g
 
-Force model (math‑light, plug‑in ready)
-- Per‑element force at stretch λ: Felem(λ) = σ(λ) · A
-  - σ(λ) obtained from manufacturer data or a fitted curve; for modeling simplicity use an average stress over the draw, σavg(λmax), to represent peak draw conditions.
-- Per‑side peak force: Fside,peak = N · Felem(λmax) = N · σavg(λmax) · A
-- Total peak draw force at the fork (sum of both sides):
-  - Ftotal,peak = 2 · N · σavg(λmax) · A
-- Energy storage (for context and efficiency tracking):
-  - Eelastic ≈ ∫0→Ld Ftotal(x) dx ≈ Favg · Ld, where Favg is the draw‑averaged force from your curve.
-- Structural reactions at the fork roots (for stress checks):
-  - Tension per prong at peak: Tprong = Fside,peak
-  - Bending moment at each root from fork span: Mroot ≈ Tprong · (S/2)
-  - Combined normal stress at outer fiber: σmax ≈ (Mroot · c / I) + (Tprong / Aprong), with a fillet Kt applied; verify σmax ≤ (σallow/FS).
-  - Lateral tip estimate of upright (cantilever approximation): δ ≈ Ftotal,peak · L^3 / (3 E I); keep within aim tolerance.
+Representative total system mass (frame + band set + pouch)
+- Using your baseline frame: 180 g (frame mass as documented in many studies typically includes any clamp plates/screws if present)
+- Band set mass (0.60 mm flat latex, 22→16 mm taper, 160 mm active length, two sides): ≈3.3–3.7 g total
+- Pouch mass (PU microfiber, ~60×15×1.0–1.1 mm): ≈1.4–1.6 g
+- Tie material (if used) or negligible clamp contribution beyond the frame spec: ≈0.1–0.3 g
 
-Rationale and optimization levers (tied to force, stress, precision)
-- Maximize Ftotal,peak safely by:
-  - Increasing parallel area (N·A) rather than chasing extreme λmax; this raises peak force while improving consistency and reducing hysteresis sensitivity.
-  - Using modest taper (τ < 1) to flatten the force curve and reduce release shock without sacrificing peak force at draw.
-  - Preloading elastics slightly to eliminate slack (stabilizes early‑draw force).
-- Control structural stress/deflection by:
-  - Short prongs, deep sections, and large fillets to reduce Mroot and Kt at fork roots.
-  - Triangulated uprights/base so frame tip at Ftotal,peak stays within precision budget.
-- Precision aids:
-  - Symmetric pouch, centered projectile, and stiff yoke reduce yaw on release.
-  - Standardized draw rate and band temperature minimize σ(λ) variability.
+Single representative figure for tables: total system mass ≈186 g
+- Typical documented range, depending on pouch material and whether clamp hardware is counted in the frame mass: ≈183–195 g
 
-Measurement and bookkeeping (for the judges’ “force produced” requirement)
-- Measure and report:
-  - L0, Ld, λmax, N, A, τ, temperature.
-  - Force–draw curve via inline load cell; derive Favg and Ftotal,peak from data.
-  - Frame deflection at fork crown under peak load (dial indicator/encoder).
-- Calculate with your measured σavg(λmax):
-  - Felem(λmax) = σavg(λmax) · A
-  - Fside,peak = N · Felem(λmax)
-  - Ftotal,peak = 2 · Fside,peak = 2 · N · σavg(λmax) · A
-  - Report uncertainties (sensor, temperature) and a conservative FS used in stress checks.
-
-Notes on “most force optimized” within constraints
-- The dominant scaler of peak force is total elastic cross‑section in parallel (N·A). Choose λmax in a consistency‑friendly range (often mid‑range of the material’s recommended stretch), then size N·A to the highest permissible/ergonomic draw force. Verify the frame’s stress/deflection margins at that Ftotal,peak.
-- Keep all rotating/moving masses (pouch, attachments) low to preserve efficiency and precision after peak draw is reached.
-
-This format gives judges a complete, auditable force‑accounting pathway—materials classes with properties, measurable geometric variables, clear rationale, and a single, explicit total‑force relation—without prescribing construction details. Plug in your measured σavg(λmax), N, A, and λmax to compute and report Ftotal,peak for your entry.
+If you’d like, I can map each of these items to specific citations (e.g., which papers used clamp plates vs tie‑ins, and the exact pouch dimensions they reported) so you can footnote them directly in your survey.

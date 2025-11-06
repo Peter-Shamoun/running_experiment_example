@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration
-MODEL = "qwen/qwen3-4b:free"  # Options: gemini-*, gpt-*, claude-*, deepseek-ai/*, mistralai/*, meta/*, qwen/*
+MODEL = "gpt-4o"  # Options: gemini-*, gpt-*, claude-*, deepseek-ai/*, mistralai/*, meta/*, qwen/*
 TRIAL = 1
 
 # Helper functions
@@ -40,17 +40,19 @@ def generate_multi_turn(model, conversation_history, new_prompt):
                 raise Exception(f"Both Gemini SDKs failed. New SDK error: {e}. Old SDK error: {e2}")
     else:  # OpenAI-compatible (OpenRouter, NVIDIA, OpenAI, Anthropic)
         from openai import OpenAI
-        if model.startswith("qwen/"):
+        if model.startswith(("qwen/", "meta-llama/")):
+            # Route qwen and meta-llama models through OpenRouter
             client = OpenAI(
                 base_url="https://openrouter.ai/api/v1",
                 api_key=os.getenv("OPENROUTER_API_KEY")
             )
             max_tokens = 4096
             extra = {}
-        elif model.startswith(("deepseek-ai/", "mistralai/", "meta/")):
+        elif model.startswith(("deepseek-ai/", "mistralai/")):
+            # Route deepseek and mistralai through NVIDIA
             client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", 
                            api_key=os.getenv("NVIDIA_API_KEY"))
-            max_tokens = 16384 if "deepseek" in model else (8192 if "mistral" in model else 4096)
+            max_tokens = 16384 if "deepseek" in model else 8192
             extra = {"extra_body": {"chat_template_kwargs": {"thinking": True}}} if "deepseek" in model else {}
         else:
             max_tokens = 4096
@@ -96,7 +98,8 @@ def generate_single(model, prompt):
                 return response.text
             except Exception as e2:
                 raise Exception(f"Both Gemini SDKs failed. New SDK error: {e}. Old SDK error: {e2}")
-    elif model.startswith("qwen/"):
+    elif model.startswith(("qwen/", "meta-llama/")):
+        # Route qwen and meta-llama models through OpenRouter
         from openai import OpenAI
         client = OpenAI(
             base_url="https://openrouter.ai/api/v1",
@@ -109,11 +112,12 @@ def generate_single(model, prompt):
             max_tokens=4096
         )
         return completion.choices[0].message.content
-    elif model.startswith(("deepseek-ai/", "mistralai/", "meta/")):
+    elif model.startswith(("deepseek-ai/", "mistralai/")):
+        # Route deepseek and mistralai through NVIDIA
         from openai import OpenAI
         client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", 
                        api_key=os.getenv("NVIDIA_API_KEY"))
-        max_tokens = 16384 if "deepseek" in model else (8192 if "mistral" in model else 4096)
+        max_tokens = 16384 if "deepseek" in model else 8192
         extra = {"extra_body": {"chat_template_kwargs": {"thinking": True}}} if "deepseek" in model else {}
         completion = client.chat.completions.create(
             model=model, messages=[{"role": "user", "content": prompt}],
@@ -150,8 +154,8 @@ output_dir = f"multi_chat_responses/{model_name}/trial_{TRIAL}"
 os.makedirs(output_dir, exist_ok=True)
 
 # Interactive multi-turn conversation
-conversation = []
-all_responses = []  # Store all turns for grading
+conversation = []  # For API conversation history
+full_conversation_history = []  # Track FULL conversation: user prompts + model responses
 turn = 1
 
 print(f"\n{'='*60}")
@@ -191,17 +195,34 @@ while True:
         response_text = generate_multi_turn(MODEL, conversation, user_prompt)
         print(f"\n[Turn {turn}] Assistant: {response_text}\n")
         
-        # Save individual turn
+        # Save individual turn with BOTH user prompt and model response
         with open(f"{output_dir}/response_turn_{turn}.txt", "w", encoding='utf-8') as f:
-            f.write(f"User: {user_prompt}\n\nAssistant: {response_text}")
+            f.write(f"USER PROMPT:\n{user_prompt}\n\n{'='*60}\n\nMODEL RESPONSE:\n{response_text}")
         
-        # Store for full conversation grading
-        all_responses.append(f"=== TURN {turn} ===\nUser: {user_prompt}\n\nAssistant: {response_text}\n")
+        # Store FULL conversation history (both user prompts and model responses)
+        full_conversation_history.append({
+            "turn": turn,
+            "user_prompt": user_prompt,
+            "model_response": response_text
+        })
         
         turn += 1
     except Exception as e:
         print(f"\n[ERROR] Failed to get response from model: {e}\n")
         continue
+
+# Save full conversation history to a single file
+full_conversation_text = ""
+for entry in full_conversation_history:
+    full_conversation_text += f"{'='*60}\n"
+    full_conversation_text += f"TURN {entry['turn']}\n"
+    full_conversation_text += f"{'='*60}\n\n"
+    full_conversation_text += f"USER PROMPT:\n{entry['user_prompt']}\n\n"
+    full_conversation_text += f"{'-'*60}\n\n"
+    full_conversation_text += f"MODEL RESPONSE:\n{entry['model_response']}\n\n"
+
+with open(f"{output_dir}/full_conversation_history.txt", "w", encoding='utf-8') as f:
+    f.write(full_conversation_text)
 
 # Grade full conversation history with random grading model
 GRADING_MODELS = ["gemini-2.5-pro", "deepseek-ai/deepseek-v3.1"]
@@ -211,20 +232,30 @@ print(f"Using grading model: {grading_model}\n")
 with open("preset_prompts/grading_prompt.txt", "r") as f:
     grading_prompt = f.read()
 
-# Combine all conversation turns for grading
-full_conversation = "\n".join(all_responses)
-print("Sending conversation to grader...")
-grade_text = generate_single(grading_model, grading_prompt + '\n\nFULL CONVERSATION HISTORY:\n\n' + full_conversation)
+# Use the full conversation text for grading
+print("Sending full conversation history to grader...")
+grade_text = generate_single(grading_model, grading_prompt + '\n\nFULL CONVERSATION HISTORY:\n\n' + full_conversation_text)
 
 grade_dir = f"multi_chat_grades/{model_name}/trial_{TRIAL}"
 os.makedirs(grade_dir, exist_ok=True)
+
+# Save the grade with full conversation included
 with open(f"{grade_dir}/grading_response.txt", "w", encoding='utf-8') as f:
-    f.write(f"[Graded by: {grading_model}]\n\n{grade_text}")
+    f.write(f"[Graded by: {grading_model}]\n\n")
+    f.write("="*60 + "\n")
+    f.write("GRADE\n")
+    f.write("="*60 + "\n\n")
+    f.write(grade_text)
+    f.write("\n\n" + "="*60 + "\n")
+    f.write("FULL CONVERSATION THAT WAS GRADED\n")
+    f.write("="*60 + "\n\n")
+    f.write(full_conversation_text)
 
 print("\n" + "="*60)
 print("GRADING COMPLETE")
 print("="*60)
 print(f"\nGrade saved to: {grade_dir}/grading_response.txt")
+print(f"Full conversation saved to: {output_dir}/full_conversation_history.txt")
 print(f"\nGrading Summary:")
 print("-"*60)
 print(grade_text)

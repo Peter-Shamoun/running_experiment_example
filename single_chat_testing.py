@@ -5,7 +5,7 @@ load_dotenv()
 
 # Configuration
 MODEL = "qwen/qwen3-4b:free"  # Options: gemini-*, gpt-*, claude-*, deepseek-ai/*, mistralai/*, meta/*
-TRIAL = 10
+TRIAL = 5
 
 # Helper function
 def generate_single(model, prompt):
@@ -26,7 +26,8 @@ def generate_single(model, prompt):
                 return response.text
             except Exception as e2:
                 raise Exception(f"Both Gemini SDKs failed. New SDK error: {e}. Old SDK error: {e2}")
-    elif model.startswith("qwen/"):
+    elif model.startswith(("qwen/", "meta-llama/")):
+        # Route qwen and meta-llama models through OpenRouter
         from openai import OpenAI
         client = OpenAI(
             base_url="https://openrouter.ai/api/v1",
@@ -39,11 +40,12 @@ def generate_single(model, prompt):
             max_tokens=4096
         )
         return completion.choices[0].message.content
-    elif model.startswith(("deepseek-ai/", "mistralai/", "meta/")):
+    elif model.startswith(("deepseek-ai/", "mistralai/")):
+        # Route deepseek and mistralai through NVIDIA
         from openai import OpenAI
         client = OpenAI(base_url="https://integrate.api.nvidia.com/v1", 
                        api_key=os.getenv("NVIDIA_API_KEY"))
-        max_tokens = 16384 if "deepseek" in model else (8192 if "mistral" in model else 4096)
+        max_tokens = 16384 if "deepseek" in model else 8192
         extra = {"extra_body": {"chat_template_kwargs": {"thinking": True}}} if "deepseek" in model else {}
         completion = client.chat.completions.create(
             model=model, messages=[{"role": "user", "content": prompt}],

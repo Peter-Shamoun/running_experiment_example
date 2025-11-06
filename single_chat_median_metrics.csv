@@ -1,0 +1,8 @@
+Model,Median Correctness,Median Completeness,Median Model KE Claim,Median Grader KE Estimate
+claude-sonnet-4-5-20250929,15.0/18,34.0/34,36.9 J,27.8 J
+deepseek-ai-deepseek-v3.1,17.0/18,30.0/34,56.75 J,48.0 J
+gemini-2.5-pro,17.5/18,30.5/34,38.94 J,33.75 J
+gpt-5,15.5/18,15.5/34,0.0 J,0.0 J
+meta-llama-3.1-8b-instruct,7.0/18,14.0/34,46.125 J,0.0 J
+mistralai-mistral-small-24b-instruct,14.0/18,23.0/34,0.315 J,1.75 J
+qwen-qwen3-4b-free,8.5/18,21.0/34,21.875 J,4.35 J

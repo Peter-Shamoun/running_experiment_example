@@ -1,0 +1,1 @@
+Perfect specifications! Now for question (3) that I asked - can you calculate the expected kinetic energy output with these exact specs (8 strands, 1/2" latex tubing with k=100 N/m per strand, 800mm draw, 160mm unstretched length, 80g projectile, assuming 40% efficiency)? Please walk through the calculation: elastic PE stored, then final KE of the projectile.
